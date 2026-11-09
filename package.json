@@ -1,0 +1,1 @@
+{"name":"we-know-lalm-posters","private":true,"version":"1.0.0","scripts":{"preview:render":"node design/export.cjs","print:render":"node design/export.cjs --print"},"dependencies":{"sharp":"0.35.5"}}

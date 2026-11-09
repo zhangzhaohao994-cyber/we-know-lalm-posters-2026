@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "source": "2026-11-10 approved final + subsequent explicit 26-poster brief",
+  "locked": {
+    "brand": "LALM",
+    "brand_expansion": "Live Art Live Meet",
+    "year": "2026",
+    "title": {
+      "zh": "我们知道",
+      "en": "We Know"
+    },
+    "event_name": {
+      "zh": "LALM 项目资料交流展",
+      "en": "Project Materials Exhibition of Project"
+    },
+    "dates": "2026.11.19–11.21",
+    "hours": "10:00–18:00",
+    "venue_short": "丄美术馆 · 杭州",
+    "schedule": [
+      {
+        "name": "开幕现场导览",
+        "time": "11.21｜14:00–15:30"
+      },
+      {
+        "name": "我们不知道—开放现场",
+        "time": "11.21｜16:00–18:00"
+      }
+    ],
+    "work_team": [
+      {
+        "id": "person_wendi",
+        "zh": "问地",
+        "en": "Wen-Di Wu"
+      },
+      {
+        "id": "person_wangyitu",
+        "zh": "王一土",
+        "en": "Wang Yitu"
+      },
+      {
+        "id": "person_lyudesheng",
+        "zh": "吕德生",
+        "en": "Lyu Desheng"
+      }
+    ],
+    "observers": [
+      {
+        "id": "observer_pending",
+        "display": "（    ）",
+        "status": "intentional_blank"
+      },
+      {
+        "id": "person_wangyitu",
+        "zh": "王一土",
+        "en": "Wang Yitu"
+      },
+      {
+        "id": "person_zhengyifang",
+        "zh": "郑一方",
+        "en": "Zheng Yifang"
+      }
+    ],
+    "organizer": {
+      "zh": "水泥公园",
+      "en": "CementPark"
+    },
+    "coorganizer": {
+      "zh": "丄美术馆",
+      "en": "Shang Art Museum"
+    },
+    "address": {
+      "zh": [
+        "浙江省杭州市萧山区河上镇",
+        "下门村泽坞墅2号，丄美术馆"
+      ],
+      "en": [
+        "Shang Art Museum, No. 2, Zewushu, Xiamen Village,",
+        "Heshang Town, Xiaoshan District, Hangzhou, Zhejiang Province"
+      ]
+    },
+    "column_labels": {
+      "project": {
+        "zh": "空间／项目",
+        "en": "Space / Project"
+      },
+      "attendee": {
+        "zh": "参会者",
+        "en": "Attendees"
+      }
+    },
+    "roles": {
+      "work_team": {
+        "zh": "工作团队",
+        "en": "WORK TEAM"
+      },
+      "observers": {
+        "zh": "观察员",
+        "en": "OBSERVERS"
+      },
+      "organizer": {
+        "zh": "主办",
+        "en": "Organizer"
+      },
+      "coorganizer": {
+        "zh": "协办",
+        "en": "Co-organizer"
+      },
+      "venue": {
+        "zh": "地址",
+        "en": "Venue"
+      }
+    },
+    "qr_code": null,
+    "logos": [
+      {
+        "id": "lalm",
+        "filename": "lalm.png",
+        "role": "primary_brand"
+      },
+      {
+        "id": "cement",
+        "filename": "cement.png",
+        "role": "organizer"
+      },
+      {
+        "id": "museum",
+        "filename": "museum.jpg",
+        "role": "coorganizer_and_venue"
+      },
+      {
+        "id": "council",
+        "filename": "council.webp",
+        "role": "provided_combined_partner_mark_relationship_not_specified"
+      },
+      {
+        "id": "fund",
+        "filename": "fund.jpg",
+        "role": "provided_partner_mark_relationship_not_specified"
+      }
+    ],
+    "roster": [
+      {
+        "id": "pair_01",
+        "project_id": "project_01",
+        "person_id": "person_roster_01",
+        "order": 1,
+        "sort_key": "Alkali",
+        "project": {
+          "zh": "强碱",
+          "en": "Alkali"
+        },
+        "person": {
+          "zh": "最高",
+          "en": "Highest"
+        }
+      },
+      {
+        "id": "pair_02",
+        "project_id": "project_02",
+        "person_id": "person_roster_02",
+        "order": 2,
+        "sort_key": "Bbeyond",
+        "project": {
+          "zh": "比比扬德",
+          "en": "Bbeyond"
+        },
+        "person": {
+          "zh": "布赖恩·帕特森",
+          "en": "Brian Patterson"
+        }
+      },
+      {
+        "id": "pair_03",
+        "project_id": "project_03",
+        "person_id": "person_lyudesheng",
+        "order": 3,
+        "sort_key": "CementPark",
+        "project": {
+          "zh": "水泥公园",
+          "en": "CementPark"
+        },
+        "person": {
+          "zh": "吕德生",
+          "en": "Lyu Desheng"
+        }
+      },
+      {
+        "id": "pair_04",
+        "project_id": "project_04",
+        "person_id": "person_roster_04",
+        "order": 4,
+        "sort_key": "CementPark Tokyo",
+        "project": {
+          "zh": "水泥公园·东京",
+          "en": "CementPark·Tokyo"
+        },
+        "person": {
+          "zh": "大原由",
+          "en": "Yu Ohara"
+        }
+      },
+      {
+        "id": "pair_05",
+        "project_id": "project_05",
+        "person_id": "person_roster_05",
+        "order": 5,
+        "sort_key": "FEICHUAN",
+        "project": {
+          "zh": "废船",
+          "en": "FEICHUAN"
+        },
+        "person": {
+          "zh": "潘晨农",
+          "en": "Pan Chennong"
+        }
+      },
+      {
+        "id": "pair_06",
+        "project_id": "project_06",
+        "person_id": "person_roster_06",
+        "order": 6,
+        "sort_key": "Feminale",
+        "project": {
+          "zh": "费米纳勒",
+          "en": "Feminale 페미날레"
+        },
+        "person": {
+          "zh": "缘定",
+          "en": "Yeonjeong"
+        }
+      },
+      {
+        "id": "pair_07",
+        "project_id": "project_07",
+        "person_id": "person_roster_07",
+        "order": 7,
+        "sort_key": "HEXXYDUXXYBOX",
+        "project": {
+          "zh": "赫克西杜克西博克斯",
+          "en": "HEXXYDUXXYBOX (HDBOX)"
+        },
+        "person": {
+          "zh": "萨塔德鲁·索万",
+          "en": "Satadru Sovan"
+        }
+      },
+      {
+        "id": "pair_08",
+        "project_id": "project_08",
+        "person_id": "person_roster_08",
+        "order": 8,
+        "sort_key": "Kua Jia",
+        "project": {
+          "zh": "跨甲",
+          "en": "Kua Jia"
+        },
+        "person": {
+          "zh": "高旭",
+          "en": "Gao Xu"
+        }
+      },
+      {
+        "id": "pair_09",
+        "project_id": "project_09",
+        "person_id": "person_roster_09",
+        "order": 9,
+        "sort_key": "OPEN SPACE",
+        "project": {
+          "zh": "OPEN 空间",
+          "en": "OPEN SPACE"
+        },
+        "person": {
+          "zh": "陈进",
+          "en": "Chen Jin"
+        }
+      },
+      {
+        "id": "pair_10",
+        "project_id": "project_10",
+        "person_id": "person_roster_10",
+        "order": 10,
+        "sort_key": "Shallow breathing",
+        "project": {
+          "zh": "浅呼吸",
+          "en": "Shallow breathing"
+        },
+        "person": {
+          "zh": "黄宗镇",
+          "en": "Huang Zongzhen"
+        }
+      },
+      {
+        "id": "pair_11",
+        "project_id": "project_11",
+        "person_id": "person_roster_11",
+        "order": 11,
+        "sort_key": "Studio erte",
+        "project": {
+          "zh": "埃尔泰工作室",
+          "en": "Studio eŕté"
+        },
+        "person": {
+          "zh": "罗科·尤哈斯",
+          "en": "Rokko Juhasz"
+        }
+      },
+      {
+        "id": "pair_12",
+        "project_id": "project_12",
+        "person_id": "person_roster_12",
+        "order": 12,
+        "sort_key": "Ta-Academy",
+        "project": {
+          "zh": "塔院",
+          "en": "Ta-Academy"
+        },
+        "person": {
+          "zh": "阿莫",
+          "en": "Taikonot"
+        }
+      },
+      {
+        "id": "pair_13",
+        "project_id": "project_13",
+        "person_id": "person_roster_13",
+        "order": 13,
+        "sort_key": "Waterfield Studio Catmaoworm",
+        "project": {
+          "zh": "水田部落行為藝術營、貓蚯蚓",
+          "en": "Waterfield Studio, Catmaoworm"
+        },
+        "person": {
+          "zh": "江源祥",
+          "en": "Chiang Yuan Hsiang"
+        }
+      },
+      {
+        "id": "pair_14",
+        "project_id": "project_14",
+        "person_id": "person_roster_14",
+        "order": 14,
+        "sort_key": "ZOO",
+        "project": {
+          "zh": "粗",
+          "en": "ZOO"
+        },
+        "person": {
+          "zh": "金今今",
+          "en": "Jin Jinjin"
+        }
+      }
+    ]
+  },
+  "designable": [
+    "layout",
+    "line breaks that preserve wording",
+    "position",
+    "font family",
+    "size",
+    "color",
+    "original visual image",
+    "material",
+    "language prominence per variant group"
+  ],
+  "unresolved": [
+    {
+      "id": "native_review",
+      "status": "not_done",
+      "detail": "Japanese, Korean and Hindi newly proposed title transliterations have not been reviewed by native speakers. Hindi is user-selected for this design; it is not a claim about any participant native language."
+    },
+    {
+      "id": "temporary_chinese_names",
+      "status": "locked_for_design_not_official_verification",
+      "detail": "Existing approved transliterations are preserved. They are not claimed legal names or official institution Chinese names."
+    }
+  ],
+  "sort_rule": "English institution/project name A-Z ignoring case; retain exact 14 pair order; never artist name or nationality",
+  "native_reviewed": false,
+  "all_original_text_entries": [
+    "We Know",
+    "2026",
+    "LALM",
+    "LALM 项目资料交流展",
+    "Project Materials Exhibition of Project",
+    "2026.11.19–11.21",
+    "10:00–18:00",
+    "丄美术馆 · 杭州",
+    "开幕现场导览",
+    "11.21｜14:00–15:30",
+    "我们不知道—开放现场",
+    "11.21｜16:00–18:00",
+    "工作团队",
+    "WORK TEAM",
+    "观察员",
+    "OBSERVERS",
+    "问地 Wen-Di Wu",
+    "王一土 Wang Yitu",
+    "吕德生 Lyu Desheng",
+    "（    ）",
+    "王一土 Wang Yitu",
+    "郑一方 Zheng Yifang",
+    "主办",
+    "Organizer",
+    "水泥公园 CementPark",
+    "协办",
+    "Co-organizer",
+    "丄美术馆 Shang Art Museum",
+    "地址",
+    "Venue",
+    "浙江省杭州市萧山区河上镇",
+    "下门村泽坞墅2号，丄美术馆",
+    "Shang Art Museum, No. 2, Zewushu, Xiamen Village,",
+    "Heshang Town, Xiaoshan District, Hangzhou, Zhejiang Province",
+    "空间／项目",
+    "参会者",
+    "Space / Project",
+    "Attendees",
+    "强碱",
+    "Alkali",
+    "最高",
+    "Highest",
+    "比比扬德",
+    "Bbeyond",
+    "布赖恩·帕特森",
+    "Brian Patterson",
+    "水泥公园",
+    "CementPark",
+    "吕德生",
+    "Lyu Desheng",
+    "水泥公园·东京",
+    "CementPark·Tokyo",
+    "大原由",
+    "Yu Ohara",
+    "废船",
+    "FEICHUAN",
+    "潘晨农",
+    "Pan Chennong",
+    "费米纳勒",
+    "Feminale 페미날레",
+    "缘定",
+    "Yeonjeong",
+    "赫克西杜克西博克斯",
+    "HEXXYDUXXYBOX (HDBOX)",
+    "萨塔德鲁·索万",
+    "Satadru Sovan",
+    "跨甲",
+    "Kua Jia",
+    "高旭",
+    "Gao Xu",
+    "OPEN 空间",
+    "OPEN SPACE",
+    "陈进",
+    "Chen Jin",
+    "浅呼吸",
+    "Shallow breathing",
+    "黄宗镇",
+    "Huang Zongzhen",
+    "埃尔泰工作室",
+    "Studio eŕté",
+    "罗科·尤哈斯",
+    "Rokko Juhasz",
+    "塔院",
+    "Ta-Academy",
+    "阿莫",
+    "Taikonot",
+    "水田部落行為藝術營、貓蚯蚓",
+    "Waterfield Studio, Catmaoworm",
+    "江源祥",
+    "Chiang Yuan Hsiang",
+    "粗",
+    "ZOO",
+    "金今今",
+    "Jin Jinjin"
+  ],
+  "language_selection": {
+    "india": {
+      "language": "Hindi",
+      "script": "Devanagari",
+      "bcp47": "hi-Deva",
+      "selected_by": "user explicitly confirmed on 2026-11-10",
+      "user_reply": "是，使用印地语（天城文字）",
+      "participant_native_language_claim": false,
+      "title_phonetic_proposal": "वी नो",
+      "identity_anchor": "We Know / 我们知道",
+      "native_reviewed": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Local browser verification of gallery mechanics; not a language or poster-content review",
+  "date": "2026-11-10",
+  "desktopViewport": [
+    1440,
+    1100
+  ],
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "cards": 27,
+  "previewImagesDecoded": 27,
+  "filters": {
+    "JA": 2,
+    "KO": 2,
+    "IN": 2,
+    "ZH": 10,
+    "EN": 10
+  },
+  "originalFirst": true,
+  "modalOpen": true,
+  "arrowNext": true,
+  "escapeClose": true,
+  "mobileHorizontalOverflow": false,
+  "pageErrors": [],
+  "onlineDeploymentVerified": false
+}

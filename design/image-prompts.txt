@@ -1,0 +1,4 @@
+Tool: built-in image_gen; no external paid API or stock purchase.
+Asset 1: hands.png. Vertical 2:3 monochrome fine-art photographic study of adult hands pressing from behind translucent frosted glass, one sharp, one dissolving into motion. Bone gray and charcoal, no faces, no text, no border. Gesture expresses knowing a boundary through touch.
+Asset 2: paper.png. Vertical 2:3 macro photographic study of torn translucent handmade tracing paper, a diagonal fibrous edge, grazing light, pale ice-blue and umber shadows. No text, no objects, no border. Boundary becomes a microscopic terrain.
+Both are original generated source images, converted into deterministic vector halftone circles in final SVG rather than enlarged raster photographs. Image generation is not guaranteed deterministic; saved source pixels and subsequent halftone geometry are reproducible.

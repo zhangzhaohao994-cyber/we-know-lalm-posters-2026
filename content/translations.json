@@ -1,0 +1,95 @@
+[
+  {
+    "id": "title",
+    "zh": "我们知道",
+    "en": "We Know",
+    "ja": "ウィー・ノウ",
+    "ko": "위 노우",
+    "mode": "phonetic title from locked English, NOT semantic translation",
+    "use": "main title on JA/KO/IN concepts; locked We Know / 我们知道 retained as identity anchor",
+    "status": "machine proposal; native confirmation pending",
+    "hi": "वी नो",
+    "hi_script": "Devanagari",
+    "hi_selection": "user selected Hindi; transliteration machine draft, native confirmation pending"
+  },
+  {
+    "id": "space_project",
+    "zh": "空间／项目",
+    "en": "Space / Project",
+    "ja": "スペース／プロジェクト",
+    "ko": "공간／프로젝트",
+    "mode": "ordinary label translation",
+    "use": "optional supplemental label; keep locked zh/en elsewhere",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "attendees",
+    "zh": "参会者",
+    "en": "Attendees",
+    "ja": "参加者",
+    "ko": "참가자",
+    "mode": "ordinary label translation",
+    "use": "optional",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "work_team",
+    "zh": "工作团队",
+    "en": "WORK TEAM",
+    "ja": "運営チーム",
+    "ko": "운영팀",
+    "mode": "ordinary role translation",
+    "use": "optional",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "observers",
+    "zh": "观察员",
+    "en": "OBSERVERS",
+    "ja": "オブザーバー",
+    "ko": "옵서버",
+    "mode": "ordinary role translation",
+    "use": "optional",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "organizer",
+    "zh": "主办",
+    "en": "Organizer",
+    "ja": "主催",
+    "ko": "주최",
+    "mode": "ordinary role translation",
+    "use": "optional",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "coorganizer",
+    "zh": "协办",
+    "en": "Co-organizer",
+    "ja": "共催",
+    "ko": "공동 주최",
+    "mode": "ordinary role translation",
+    "use": "optional; role nuance requires review",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "venue",
+    "zh": "地址",
+    "en": "Venue",
+    "ja": "会場",
+    "ko": "장소",
+    "mode": "ordinary label translation",
+    "use": "optional",
+    "status": "machine translation; native confirmation pending"
+  },
+  {
+    "id": "open_hours",
+    "zh": "开放时间",
+    "en": "Opening hours",
+    "ja": "開場時間",
+    "ko": "관람 시간",
+    "mode": "ordinary label translation",
+    "use": "optional; no new event claim",
+    "status": "machine translation; native confirmation pending"
+  }
+]

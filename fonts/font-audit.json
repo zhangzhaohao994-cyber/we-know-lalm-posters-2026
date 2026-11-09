@@ -1,0 +1,183 @@
+[
+  {
+    "file": "Anton-Regular.ttf",
+    "family": "Anton",
+    "weight": 400,
+    "bytes": 170812,
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Anton-OFL.txt"
+  },
+  {
+    "file": "ArchivoBlack-Regular.ttf",
+    "family": "Archivo Black",
+    "weight": 400,
+    "bytes": 90988,
+    "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "ArchivoBlack-OFL.txt"
+  },
+  {
+    "file": "NotoSansCJKjp-Bold.otf",
+    "family": "Noto Sans CJK JP",
+    "weight": 700,
+    "bytes": 17032620,
+    "sha256": "e53dcb0dcb2922e45d01aae1ebd2f382bb81d4229b18b6b883bd170678af1f76",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Noto-CJK-LICENSE.txt"
+  },
+  {
+    "file": "NotoSansCJKkr-Bold.otf",
+    "family": "Noto Sans CJK KR",
+    "weight": 700,
+    "bytes": 16997996,
+    "sha256": "26d0c6748500a0444844280b308f5b62c7ae92ac6c6ac88148e502dd211eb52a",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Noto-CJK-LICENSE.txt"
+  },
+  {
+    "file": "NotoSansCJKsc-Bold.otf",
+    "family": "Noto Sans CJK SC",
+    "weight": 700,
+    "bytes": 17002248,
+    "sha256": "b5f0d1a190a7f9b43c310a8850630af12553df32c4c050543f9059732d9b4c0a",
+    "missing_required_characters": [
+      "ŕ"
+    ],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Noto-CJK-LICENSE.txt"
+  },
+  {
+    "file": "NotoSansCJKsc-Regular.otf",
+    "family": "Noto Sans CJK SC",
+    "weight": 400,
+    "bytes": 16437364,
+    "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "missing_required_characters": [
+      "ŕ"
+    ],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Noto-CJK-LICENSE.txt"
+  },
+  {
+    "file": "NotoSans-Variable.ttf",
+    "family": "Noto Sans",
+    "weight": 400,
+    "bytes": 2049096,
+    "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+    "license": "OFL 1.1",
+    "license_file": "NotoSans-OFL.txt",
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "default": 400.0,
+        "max": 900.0
+      },
+      {
+        "tag": "wdth",
+        "min": 62.5,
+        "default": 100.0,
+        "max": 100.0
+      }
+    ]
+  },
+  {
+    "file": "NotoSans-Regular.ttf",
+    "family": "Noto Sans",
+    "weight": 400,
+    "bytes": 646160,
+    "sha256": "f6d85117e8f23535aada72886e4f1ce0803daa4125be6abceacf3e52c96ea437",
+    "license": "OFL 1.1",
+    "license_file": "NotoSans-OFL.txt",
+    "variable": false,
+    "axes": []
+  },
+  {
+    "file": "BodoniModa-Variable.ttf",
+    "family": "Bodoni Moda",
+    "weight": 400,
+    "bytes": 162104,
+    "sha256": "550f5e34ee0a828d7941b1fe9bc58b34e5260d3f33a61532e6d0a0114e79a5cf",
+    "license": "OFL 1.1",
+    "license_file": "BodoniModa-OFL.txt",
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "default": 400.0,
+        "max": 900.0
+      },
+      {
+        "tag": "opsz",
+        "min": 6.0,
+        "default": 11.0,
+        "max": 96.0
+      }
+    ]
+  },
+  {
+    "file": "BodoniModa-Regular.ttf",
+    "family": "Bodoni Moda",
+    "weight": 400,
+    "bytes": 58724,
+    "sha256": "665b2596444a1ac892aef909d688dfd13d5e2aa2f387eab55e93888532ef5a1c",
+    "license": "OFL 1.1",
+    "license_file": "BodoniModa-OFL.txt",
+    "variable": false,
+    "axes": []
+  },
+  {
+    "file": "BodoniModa-Bold.ttf",
+    "family": "Bodoni Moda",
+    "weight": 700,
+    "bytes": 58928,
+    "sha256": "2fdb8eac7b281ecf7767f53b7c3a59db04b9451d5b32a92c4acfca8b4a7fa81a",
+    "license": "OFL 1.1",
+    "license_file": "BodoniModa-OFL.txt",
+    "variable": false,
+    "axes": []
+  },
+  {
+    "file": "NotoSansDevanagari-Variable.ttf",
+    "family": "Noto Sans Devanagari",
+    "weight": 400,
+    "bytes": 641944,
+    "sha256": "14ec4af41f27482216d1c2229f417ff9b1425e1babb014e57d1d40d03229853e",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "NotoSansDevanagari-OFL.txt",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosansdevanagari",
+    "provenance": "downloaded variable source"
+  },
+  {
+    "file": "NotoSansDevanagari-Regular.ttf",
+    "family": "Noto Sans Devanagari",
+    "weight": 400,
+    "bytes": 218236,
+    "sha256": "c6f747cd7c1d9a764d4ae1c291da033fdf5ac8111e0f2645e7290df779c3354f",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "NotoSansDevanagari-OFL.txt",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosansdevanagari",
+    "provenance": "fontTools static instance wght=400, wdth=100"
+  },
+  {
+    "file": "NotoSansDevanagari-Bold.ttf",
+    "family": "Noto Sans Devanagari",
+    "weight": 700,
+    "bytes": 218828,
+    "sha256": "450078329f2152a2139c2fc065babe003e19a5c79c43e9feae9ac49055602962",
+    "missing_required_characters": [],
+    "license": "SIL Open Font License 1.1",
+    "license_file": "NotoSansDevanagari-OFL.txt",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosansdevanagari",
+    "provenance": "fontTools static instance wght=700, wdth=100"
+  }
+]

@@ -1,0 +1,1780 @@
+{
+  "englishTitle": "We Know",
+  "eventTitle": "LALM 项目资料交流展",
+  "background": "#FFFFFF",
+  "englishTitleFont": "Arial Black",
+  "temporaryChineseNames": true,
+  "sortBasis": "English organization/project name, case-insensitive A–Z",
+  "order": [
+    "Alkali",
+    "Bbeyond",
+    "CementPark",
+    "CementPark Tokyo",
+    "FEICHUAN",
+    "Feminale",
+    "HEXXYDUXXYBOX",
+    "Kua Jia",
+    "OPEN SPACE",
+    "Shallow breathing",
+    "Studio erte",
+    "Ta-Academy",
+    "Waterfield Studio Catmaoworm",
+    "ZOO"
+  ],
+  "rows": [
+    {
+      "key": "Alkali",
+      "zh": "强碱",
+      "en": [
+        "Alkali"
+      ],
+      "name": [
+        "最高",
+        "Highest"
+      ]
+    },
+    {
+      "key": "Bbeyond",
+      "zh": "比比扬德",
+      "en": [
+        "Bbeyond"
+      ],
+      "name": [
+        "布赖恩·帕特森",
+        "Brian Patterson"
+      ]
+    },
+    {
+      "key": "CementPark",
+      "zh": "水泥公园",
+      "en": [
+        "CementPark"
+      ],
+      "name": [
+        "吕德生",
+        "Lyu Desheng"
+      ]
+    },
+    {
+      "key": "CementPark Tokyo",
+      "zh": "水泥公园·东京",
+      "en": [
+        "CementPark·Tokyo"
+      ],
+      "name": [
+        "大原由",
+        "Yu Ohara"
+      ]
+    },
+    {
+      "key": "FEICHUAN",
+      "zh": "废船",
+      "en": [
+        "FEICHUAN"
+      ],
+      "name": [
+        "潘晨农",
+        "Pan Chennong"
+      ]
+    },
+    {
+      "key": "Feminale",
+      "zh": "费米纳勒",
+      "en": [
+        "Feminale 페미날레"
+      ],
+      "name": [
+        "缘定",
+        "Yeonjeong"
+      ]
+    },
+    {
+      "key": "HEXXYDUXXYBOX",
+      "zh": "赫克西杜克西博克斯",
+      "en": [
+        "HEXXYDUXXYBOX (HDBOX)"
+      ],
+      "name": [
+        "萨塔德鲁·索万",
+        "Satadru Sovan"
+      ]
+    },
+    {
+      "key": "Kua Jia",
+      "zh": "跨甲",
+      "en": [
+        "Kua Jia"
+      ],
+      "name": [
+        "高旭",
+        "Gao Xu"
+      ]
+    },
+    {
+      "key": "OPEN SPACE",
+      "zh": "OPEN 空间",
+      "en": [
+        "OPEN SPACE"
+      ],
+      "name": [
+        "陈进",
+        "Chen Jin"
+      ]
+    },
+    {
+      "key": "Shallow breathing",
+      "zh": "浅呼吸",
+      "en": [
+        "Shallow breathing"
+      ],
+      "name": [
+        "黄宗镇",
+        "Huang Zongzhen"
+      ]
+    },
+    {
+      "key": "Studio erte",
+      "zh": "埃尔泰工作室",
+      "en": [
+        "Studio eŕté"
+      ],
+      "name": [
+        "罗科·尤哈斯",
+        "Rokko Juhasz"
+      ]
+    },
+    {
+      "key": "Ta-Academy",
+      "zh": "塔院",
+      "en": [
+        "Ta-Academy"
+      ],
+      "name": [
+        "阿莫",
+        "Taikonot"
+      ]
+    },
+    {
+      "key": "Waterfield Studio Catmaoworm",
+      "zh": "水田部落行為藝術營、貓蚯蚓",
+      "en": [
+        "Waterfield Studio, Catmaoworm"
+      ],
+      "name": [
+        "江源祥",
+        "Chiang Yuan Hsiang"
+      ]
+    },
+    {
+      "key": "ZOO",
+      "zh": "粗",
+      "en": [
+        "ZOO"
+      ],
+      "name": [
+        "金今今",
+        "Jin Jinjin"
+      ]
+    }
+  ],
+  "textBounds": [
+    {
+      "text": "We Know",
+      "bounds": [
+        43,
+        965,
+        576,
+        1040
+      ],
+      "size": 104,
+      "baseline": 1039,
+      "weight": 700,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "2026",
+      "bounds": [
+        852,
+        982,
+        916,
+        1002
+      ],
+      "size": 26,
+      "baseline": 1001,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "LALM",
+      "bounds": [
+        852,
+        1015,
+        941,
+        1038
+      ],
+      "size": 32,
+      "baseline": 1038,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "LALM 项目资料交流展",
+      "bounds": [
+        44,
+        1075,
+        387,
+        1108
+      ],
+      "size": 34,
+      "baseline": 1104,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Project Materials Exhibition of Project",
+      "bounds": [
+        44,
+        1114,
+        368,
+        1132
+      ],
+      "size": 18,
+      "baseline": 1128,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "2026.11.19–11.21",
+      "bounds": [
+        44,
+        1158,
+        313,
+        1185
+      ],
+      "size": 35,
+      "baseline": 1184,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "10:00–18:00",
+      "bounds": [
+        44,
+        1199,
+        189,
+        1219
+      ],
+      "size": 25,
+      "baseline": 1218,
+      "weight": 500,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "丄美术馆 · 杭州",
+      "bounds": [
+        44,
+        1236,
+        287,
+        1269
+      ],
+      "size": 34,
+      "baseline": 1265,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "开幕现场导览",
+      "bounds": [
+        44,
+        1290,
+        170,
+        1311
+      ],
+      "size": 21,
+      "baseline": 1308,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "11.21｜14:00–15:30",
+      "bounds": [
+        44,
+        1317,
+        238,
+        1340
+      ],
+      "size": 22,
+      "baseline": 1336,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "我们不知道—开放现场",
+      "bounds": [
+        44,
+        1355,
+        254,
+        1376
+      ],
+      "size": 21,
+      "baseline": 1373,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "11.21｜16:00–18:00",
+      "bounds": [
+        44,
+        1382,
+        238,
+        1405
+      ],
+      "size": 22,
+      "baseline": 1401,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "工作团队",
+      "bounds": [
+        44,
+        1439,
+        116,
+        1456
+      ],
+      "size": 18,
+      "baseline": 1454,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "WORK TEAM",
+      "bounds": [
+        44,
+        1463,
+        118,
+        1473
+      ],
+      "size": 12,
+      "baseline": 1472,
+      "weight": 450,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "观察员",
+      "bounds": [
+        330,
+        1439,
+        384,
+        1456
+      ],
+      "size": 18,
+      "baseline": 1454,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "OBSERVERS",
+      "bounds": [
+        330,
+        1463,
+        403,
+        1473
+      ],
+      "size": 12,
+      "baseline": 1472,
+      "weight": 450,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "问地 Wen-Di Wu",
+      "bounds": [
+        44,
+        1485,
+        185,
+        1502
+      ],
+      "size": 18,
+      "baseline": 1500,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "王一土 Wang Yitu",
+      "bounds": [
+        44,
+        1509,
+        191,
+        1528
+      ],
+      "size": 18,
+      "baseline": 1524,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "吕德生 Lyu Desheng",
+      "bounds": [
+        44,
+        1533,
+        213,
+        1552
+      ],
+      "size": 18,
+      "baseline": 1548,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "（    ）",
+      "bounds": [
+        330,
+        1485,
+        390,
+        1502
+      ],
+      "size": 18,
+      "baseline": 1500,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "王一土 Wang Yitu",
+      "bounds": [
+        330,
+        1509,
+        477,
+        1528
+      ],
+      "size": 18,
+      "baseline": 1524,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "郑一方 Zheng Yifang",
+      "bounds": [
+        330,
+        1533,
+        503,
+        1552
+      ],
+      "size": 18,
+      "baseline": 1548,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "主办",
+      "bounds": [
+        44,
+        1580,
+        74,
+        1595
+      ],
+      "size": 15,
+      "baseline": 1593,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Organizer",
+      "bounds": [
+        86,
+        1584,
+        141,
+        1596
+      ],
+      "size": 12,
+      "baseline": 1593,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "水泥公园 CementPark",
+      "bounds": [
+        190,
+        1578,
+        371,
+        1595
+      ],
+      "size": 18,
+      "baseline": 1593,
+      "weight": 500,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "协办",
+      "bounds": [
+        44,
+        1608,
+        74,
+        1623
+      ],
+      "size": 15,
+      "baseline": 1621,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Co-organizer",
+      "bounds": [
+        86,
+        1612,
+        162,
+        1624
+      ],
+      "size": 12,
+      "baseline": 1621,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "丄美术馆 Shang Art Museum",
+      "bounds": [
+        190,
+        1606,
+        427,
+        1625
+      ],
+      "size": 18,
+      "baseline": 1621,
+      "weight": 500,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "地址",
+      "bounds": [
+        44,
+        1636,
+        74,
+        1651
+      ],
+      "size": 15,
+      "baseline": 1649,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Venue",
+      "bounds": [
+        86,
+        1640,
+        122,
+        1650
+      ],
+      "size": 12,
+      "baseline": 1649,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "浙江省杭州市萧山区河上镇",
+      "bounds": [
+        190,
+        1634,
+        394,
+        1651
+      ],
+      "size": 17,
+      "baseline": 1649,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "下门村泽坞墅2号，丄美术馆",
+      "bounds": [
+        190,
+        1656,
+        404,
+        1674
+      ],
+      "size": 17,
+      "baseline": 1671,
+      "weight": 450,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Shang Art Museum, No. 2, Zewushu, Xiamen Village,",
+      "bounds": [
+        44,
+        1685,
+        353,
+        1698
+      ],
+      "size": 13,
+      "baseline": 1695,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "Heshang Town, Xiaoshan District, Hangzhou, Zhejiang Province",
+      "bounds": [
+        44,
+        1705,
+        420,
+        1718
+      ],
+      "size": 13,
+      "baseline": 1715,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "空间／项目",
+      "bounds": [
+        640,
+        1088,
+        760,
+        1111
+      ],
+      "size": 24,
+      "baseline": 1108,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "参会者",
+      "bounds": [
+        982,
+        1088,
+        1054,
+        1111
+      ],
+      "size": 24,
+      "baseline": 1108,
+      "weight": 650,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Space / Project",
+      "bounds": [
+        640,
+        1115,
+        749,
+        1131
+      ],
+      "size": 15,
+      "baseline": 1128,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "Attendees",
+      "bounds": [
+        982,
+        1117,
+        1051,
+        1129
+      ],
+      "size": 15,
+      "baseline": 1128,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "强碱",
+      "bounds": [
+        640,
+        1154,
+        684,
+        1175
+      ],
+      "size": 22,
+      "baseline": 1172,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Alkali",
+      "bounds": [
+        640,
+        1178,
+        680,
+        1191
+      ],
+      "size": 16,
+      "baseline": 1190,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "最高",
+      "bounds": [
+        982,
+        1154,
+        1024,
+        1175
+      ],
+      "size": 21,
+      "baseline": 1172,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Highest",
+      "bounds": [
+        982,
+        1178,
+        1039,
+        1194
+      ],
+      "size": 16,
+      "baseline": 1190,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "比比扬德",
+      "bounds": [
+        640,
+        1197,
+        728,
+        1219
+      ],
+      "size": 22,
+      "baseline": 1216,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Bbeyond",
+      "bounds": [
+        640,
+        1222,
+        704,
+        1238
+      ],
+      "size": 16,
+      "baseline": 1234,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "布赖恩·帕特森",
+      "bounds": [
+        982,
+        1198,
+        1119,
+        1219
+      ],
+      "size": 21,
+      "baseline": 1216,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Brian Patterson",
+      "bounds": [
+        982,
+        1222,
+        1098,
+        1235
+      ],
+      "size": 16,
+      "baseline": 1234,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "水泥公园",
+      "bounds": [
+        640,
+        1241,
+        728,
+        1263
+      ],
+      "size": 22,
+      "baseline": 1260,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "CementPark",
+      "bounds": [
+        640,
+        1266,
+        733,
+        1279
+      ],
+      "size": 16,
+      "baseline": 1278,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "吕德生",
+      "bounds": [
+        982,
+        1242,
+        1045,
+        1263
+      ],
+      "size": 21,
+      "baseline": 1260,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Lyu Desheng",
+      "bounds": [
+        982,
+        1266,
+        1077,
+        1282
+      ],
+      "size": 16,
+      "baseline": 1278,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "水泥公园·东京",
+      "bounds": [
+        640,
+        1285,
+        783,
+        1307
+      ],
+      "size": 22,
+      "baseline": 1304,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "CementPark·Tokyo",
+      "bounds": [
+        640,
+        1310,
+        784,
+        1326
+      ],
+      "size": 16,
+      "baseline": 1322,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "大原由",
+      "bounds": [
+        982,
+        1286,
+        1045,
+        1307
+      ],
+      "size": 21,
+      "baseline": 1304,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Yu Ohara",
+      "bounds": [
+        982,
+        1310,
+        1052,
+        1323
+      ],
+      "size": 16,
+      "baseline": 1322,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "废船",
+      "bounds": [
+        640,
+        1329,
+        684,
+        1351
+      ],
+      "size": 22,
+      "baseline": 1348,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "FEICHUAN",
+      "bounds": [
+        640,
+        1354,
+        721,
+        1367
+      ],
+      "size": 16,
+      "baseline": 1366,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "潘晨农",
+      "bounds": [
+        982,
+        1330,
+        1045,
+        1351
+      ],
+      "size": 21,
+      "baseline": 1348,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Pan Chennong",
+      "bounds": [
+        982,
+        1354,
+        1090,
+        1370
+      ],
+      "size": 16,
+      "baseline": 1366,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "费米纳勒",
+      "bounds": [
+        640,
+        1373,
+        728,
+        1395
+      ],
+      "size": 22,
+      "baseline": 1392,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Feminale 페미날레",
+      "bounds": [
+        640,
+        1397,
+        762,
+        1412
+      ],
+      "size": 16,
+      "baseline": 1410,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "缘定",
+      "bounds": [
+        982,
+        1374,
+        1024,
+        1395
+      ],
+      "size": 21,
+      "baseline": 1392,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Yeonjeong",
+      "bounds": [
+        982,
+        1398,
+        1060,
+        1414
+      ],
+      "size": 16,
+      "baseline": 1410,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "赫克西杜克西博克斯",
+      "bounds": [
+        640,
+        1417,
+        838,
+        1439
+      ],
+      "size": 22,
+      "baseline": 1436,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "HEXXYDUXXYBOX (HDBOX)",
+      "bounds": [
+        640,
+        1440,
+        850,
+        1456
+      ],
+      "size": 16,
+      "baseline": 1454,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "萨塔德鲁·索万",
+      "bounds": [
+        982,
+        1418,
+        1119,
+        1439
+      ],
+      "size": 21,
+      "baseline": 1436,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Satadru Sovan",
+      "bounds": [
+        982,
+        1442,
+        1090,
+        1455
+      ],
+      "size": 16,
+      "baseline": 1454,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "跨甲",
+      "bounds": [
+        640,
+        1461,
+        684,
+        1483
+      ],
+      "size": 22,
+      "baseline": 1480,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Kua Jia",
+      "bounds": [
+        640,
+        1486,
+        695,
+        1499
+      ],
+      "size": 16,
+      "baseline": 1498,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "高旭",
+      "bounds": [
+        982,
+        1462,
+        1024,
+        1483
+      ],
+      "size": 21,
+      "baseline": 1480,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Gao Xu",
+      "bounds": [
+        982,
+        1486,
+        1036,
+        1499
+      ],
+      "size": 16,
+      "baseline": 1498,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "OPEN 空间",
+      "bounds": [
+        640,
+        1505,
+        752,
+        1527
+      ],
+      "size": 22,
+      "baseline": 1524,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "OPEN SPACE",
+      "bounds": [
+        640,
+        1530,
+        742,
+        1543
+      ],
+      "size": 16,
+      "baseline": 1542,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "陈进",
+      "bounds": [
+        982,
+        1506,
+        1024,
+        1527
+      ],
+      "size": 21,
+      "baseline": 1524,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Chen Jin",
+      "bounds": [
+        982,
+        1530,
+        1047,
+        1543
+      ],
+      "size": 16,
+      "baseline": 1542,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "浅呼吸",
+      "bounds": [
+        640,
+        1549,
+        706,
+        1571
+      ],
+      "size": 22,
+      "baseline": 1568,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Shallow breathing",
+      "bounds": [
+        640,
+        1574,
+        772,
+        1590
+      ],
+      "size": 16,
+      "baseline": 1586,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "黄宗镇",
+      "bounds": [
+        982,
+        1550,
+        1045,
+        1571
+      ],
+      "size": 21,
+      "baseline": 1568,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Huang Zongzhen",
+      "bounds": [
+        982,
+        1574,
+        1107,
+        1590
+      ],
+      "size": 16,
+      "baseline": 1586,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "埃尔泰工作室",
+      "bounds": [
+        640,
+        1593,
+        772,
+        1615
+      ],
+      "size": 22,
+      "baseline": 1612,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Studio eŕté",
+      "bounds": [
+        640,
+        1618,
+        717,
+        1630
+      ],
+      "size": 16,
+      "baseline": 1630,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "罗科·尤哈斯",
+      "bounds": [
+        982,
+        1594,
+        1098,
+        1615
+      ],
+      "size": 21,
+      "baseline": 1612,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Rokko Juhasz",
+      "bounds": [
+        982,
+        1618,
+        1083,
+        1631
+      ],
+      "size": 16,
+      "baseline": 1630,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "塔院",
+      "bounds": [
+        640,
+        1637,
+        684,
+        1659
+      ],
+      "size": 22,
+      "baseline": 1656,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Ta-Academy",
+      "bounds": [
+        640,
+        1662,
+        738,
+        1678
+      ],
+      "size": 16,
+      "baseline": 1674,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "阿莫",
+      "bounds": [
+        982,
+        1638,
+        1024,
+        1659
+      ],
+      "size": 21,
+      "baseline": 1656,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Taikonot",
+      "bounds": [
+        982,
+        1662,
+        1046,
+        1675
+      ],
+      "size": 16,
+      "baseline": 1674,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "水田部落行為藝術營、貓蚯蚓",
+      "bounds": [
+        640,
+        1681,
+        926,
+        1703
+      ],
+      "size": 22,
+      "baseline": 1700,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Waterfield Studio, Catmaoworm",
+      "bounds": [
+        640,
+        1706,
+        878,
+        1721
+      ],
+      "size": 16,
+      "baseline": 1718,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "江源祥",
+      "bounds": [
+        982,
+        1682,
+        1045,
+        1703
+      ],
+      "size": 21,
+      "baseline": 1700,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Chiang Yuan Hsiang",
+      "bounds": [
+        982,
+        1706,
+        1133,
+        1722
+      ],
+      "size": 16,
+      "baseline": 1718,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "粗",
+      "bounds": [
+        640,
+        1725,
+        662,
+        1747
+      ],
+      "size": 22,
+      "baseline": 1744,
+      "weight": 600,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "ZOO",
+      "bounds": [
+        640,
+        1750,
+        674,
+        1763
+      ],
+      "size": 16,
+      "baseline": 1762,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "text": "金今今",
+      "bounds": [
+        982,
+        1726,
+        1045,
+        1747
+      ],
+      "size": 21,
+      "baseline": 1744,
+      "weight": 550,
+      "color": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "text": "Jin Jinjin",
+      "bounds": [
+        982,
+        1750,
+        1046,
+        1766
+      ],
+      "size": 16,
+      "baseline": 1762,
+      "weight": 400,
+      "color": [
+        88,
+        88,
+        88
+      ]
+    }
+  ]
+}

@@ -366,7 +366,7 @@
     {
       "id": "native_review",
       "status": "not_done",
-      "detail": "Japanese, Korean and Hindi newly proposed title transliterations have not been reviewed by native speakers. Hindi is user-selected for this design; it is not a claim about any participant native language."
+      "detail": "Full-page Japanese, Korean and Hindi localization and newly transliterated names have not been reviewed by native speakers or the named individuals."
     },
     {
       "id": "temporary_chinese_names",
@@ -480,9 +480,12 @@
       "selected_by": "user explicitly confirmed on 2026-11-10",
       "user_reply": "是，使用印地语（天城文字）",
       "participant_native_language_claim": false,
-      "title_phonetic_proposal": "वी नो",
       "identity_anchor": "We Know / 我们知道",
-      "native_reviewed": false
+      "native_reviewed": false,
+      "title": "हम जानते हैं",
+      "title_mode": "semantic translation by latest user instruction"
     }
-  }
+  },
+  "current_localization_source": "localizations.json",
+  "localization_policy": "Full target-language primary text in all foreign-language new posters; original Chinese/Latin retained as identity data and optional small anchors. Approved ORIGINAL unchanged."
 }

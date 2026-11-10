@@ -2,11 +2,13 @@ from pathlib import Path
 import json,math,random,base64,html,sys
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.boundsPen import BoundsPen
 from PIL import Image,ImageChops
-from devanagari_shape import shaped_paths,shaped_width
+from devanagari_shape import shaped_paths,shaped_width,shape_run
 R=Path(__file__).resolve().parent.parent
 DATA=json.loads((R/'content/final-layout.json').read_text())
 ROWS=DATA['rows'];AS=R/'assets'
+LOCALES=json.loads((R/'content/localizations.json').read_text())['languages'] if (R/'content/localizations.json').exists() else {}
 F={}
 for k,n in [('reg','NotoSansCJKsc-Regular.otf'),('bold','NotoSansCJKsc-Bold.otf'),('jp','NotoSansCJKjp-Bold.otf'),('ko','NotoSansCJKkr-Bold.otf'),('cond','Anton-Regular.ttf'),('wide','ArchivoBlack-Regular.ttf'),('latin','NotoSans-Regular.ttf'),('serif','BodoniModa-Regular.ttf')]:
  f=TTFont(R/'fonts'/n);F[k]=(f,f.getBestCmap(),f.getGlyphSet(),f['head'].unitsPerEm)
@@ -17,9 +19,18 @@ for rec in f['GSUB'].table.FeatureList.FeatureRecord:
    for st in f['GSUB'].table.LookupList.Lookup[ix].SubTable:
     vmap.update(getattr(st,'mapping',{}))
 F['jpv']=(f,{cp:vmap.get(g,g) for cp,g in cm.items()},gs,up)
+EXTRA_FONTS={'song':'LALM-NotoSerifSC-Regular.ttf','songBold':'LALM-NotoSerifSC-Bold.ttf','wenkai':'LALM-WenKai-Regular.ttf','brush':'LALM-MaShanZheng-Regular.ttf','xiaowei':'LALM-XiaoWei-Regular.ttf','qing':'LALM-QingKeHuangYou-Regular.ttf','jpSerif':'LALM-NotoSerifJP-Regular.ttf','jpSerifBold':'LALM-NotoSerifJP-Bold.ttf','koSerif':'LALM-NotoSerifKR-Regular.ttf','koSerifBold':'LALM-NotoSerifKR-Bold.ttf'}
+EXTRA_FONTS['latinBold']='NotoSans-Bold.ttf'
+for k,n in EXTRA_FONTS.items():
+ f=TTFont(R/'fonts'/n);F[k]=(f,f.getBestCmap(),f.getGlyphSet(),f['head'].unitsPerEm)
+BODY_FONTS={'ZH01':('song','songBold'),'ZH02':('wenkai','wenkai'),'ZH03':('reg','bold'),'ZH04':('song','songBold'),'ZH05':('wenkai','wenkai'),'ZH06':('song','songBold'),'ZH07':('wenkai','wenkai'),'ZH08':('song','songBold'),'ZH09':('reg','bold'),'ZH10':('wenkai','wenkai')}
+BODY_FONTS.update({'JA01':('jpSerif','jp'),'JA02':('jpSerif','jpSerifBold'),'KO01':('koSerif','ko'),'KO02':('koSerif','koSerifBold')})
+BODY_FONTS.update({f'EN{i:02}':('latin','latinBold') for i in range(1,11)})
+TITLE_FONTS={'ZH01':'songBold','ZH02':'brush','ZH03':'qing','ZH04':'song','ZH05':'xiaowei','ZH06':'bold','ZH07':'wenkai','ZH08':'brush','ZH09':'song','ZH10':'wenkai'}
 # Caption fonts are OFL; all final text is outlined to remove runtime font substitutions.
 class Art:
- def __init__(self,bg,ink):self.p=[];self.defs={};self.log=[];self.ink=ink;self.rect(0,0,1200,1800,bg)
+ def __init__(self,bg,ink,id):
+  self.p=[];self.defs={};self.log=[];self.ink=ink;self.id=id;self.lang=id[:2];self.in_info=False;self.module=None;self.rect(0,0,1200,1800,bg)
  def rect(self,x,y,w,h,c,**kw):self.p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}" '+attrs(kw)+'/>')
  def path(self,d,c='none',stroke=None,sw=1,**kw):self.p.append(f'<path d="{d}" fill="{c}" '+(f'stroke="{stroke}" stroke-width="{sw}" ' if stroke else '')+attrs(kw)+'/>')
  def circle(self,x,y,r,c,**kw):self.p.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c}" '+attrs(kw)+'/>')
@@ -27,24 +38,44 @@ class Art:
  def group(self,t):self.p.append(f'<g transform="{t}">')
  def end(self):self.p.append('</g>')
  def width(self,s,size,font):
-  f,cm,gs,up=F[font];return sum(gs[cm.get(ord(ch),'space')].width for ch in s)/up*size
+  if any('\u0900'<=ch<='\u097f' for ch in s):return shaped_width(s,size,font='Bold' if font in ['bold','hiBold'] else 'Regular')
+  return sum(self.charfont(ch,font)[2][self.charfont(ch,font)[1][ord(ch)]].width/self.charfont(ch,font)[3]*size for ch in s)
+ def charfont(self,ch,font):
+  fallback=['songBold' if 'Bold' in font else 'song'] if 'Serif' in font else []
+  for k in [font,*fallback,'latin','reg','jp','ko']:
+   if ord(ch) in F[k][1]:return (*F[k],k)
+  raise ValueError(f'Missing {ch} in all fonts')
  def text(self,s,x,y,size=18,font='reg',color=None,width=None,rotate=None,opacity=1):
+  if not s:return 0
   color=color or self.ink
+  if self.in_info and font in ['reg','bold']:
+   font=BODY_FONTS.get(self.id,('reg','bold'))[font=='bold']
+  if any('\u0900'<=ch<='\u097f' for ch in s):
+   weight='Bold' if font in ['bold','hiBold'] else 'Regular';natural=shaped_width(s,size,font=weight)
+   if width and natural>width:size*=width/natural
+   run=shape_run(s,size,font=weight,x=x,y=y,fill=color)
+   self.p.append(f'<g opacity="{opacity}">'+run['svg']+'</g>')
+   self.log.append({'text':s,'x':x,'y':y,'size':size,'font':'Devanagari-'+weight,'bbox':run['bbox'],'module':self.module})
+   return run['advance_width']
   if 'ŕ' in s:font='latin'
   # Mixed Korean runs use the actual Korean face.
   if any('\uac00'<=c<='\ud7af' for c in s) and font in ['reg','bold']:font='ko'
   if any(ord(c)>255 for c in s) and font in ['wide','cond']:font='bold'
-  f,cm,gs,up=F[font];natural=self.width(s,size,font)
+  natural=self.width(s,size,font)
   if width and natural>width:size*=width/natural
-  self.log.append({'text':s,'x':x,'y':y,'size':size,'font':font})
+  entry={'text':s,'x':x,'y':y,'size':size,'font':font,'module':self.module};self.log.append(entry)
   self.p.append(f'<g aria-label="{html.escape(s,quote=True)}" transform="translate({x},{y})'+(f' rotate({rotate})' if rotate else '')+f'" fill="{color}" opacity="{opacity}">')
-  cur=0
+  cur=0;boxes=[]
   for ch in s:
-   assert ord(ch) in cm, f'missing {ch} in {font}'
-   g=cm[ord(ch)];gid=font+'_'+str(ord(ch))
+   f,cm,gs,up,actual_font=self.charfont(ch,font)
+   g=cm[ord(ch)];gid=actual_font+'_'+str(ord(ch))
+   bp=BoundsPen(gs);gs[g].draw(bp)
+   if bp.bounds:
+    x0,y0,x1,y1=bp.bounds;boxes.append((x+cur+x0*size/up,y-y1*size/up,x+cur+x1*size/up,y-y0*size/up))
    if gid not in self.defs:
     pen=SVGPathPen(gs);gs[g].draw(pen);self.defs[gid]=f'<path id="{gid}" d="{pen.getCommands()}"/>'
    self.p.append(f'<use href="#{gid}" transform="translate({cur},0) scale({size/up}, {-size/up})"/>');cur+=gs[g].width*size/up
+  if boxes:entry['bbox']=[min(b[0] for b in boxes),min(b[1] for b in boxes),max(b[2] for b in boxes),max(b[3] for b in boxes)]
   self.p.append('</g>');return cur
  def logos(self,x,y,w=1080):
   for i,(key,bw) in enumerate([('lalm',75),('cement',130),('museum',52),('council',120),('fund',130)]):
@@ -58,21 +89,42 @@ class Art:
   (R/'sources'/f'{id}.svg').write_text(svg);(R/'design'/f'{id}.text.json').write_text(json.dumps(self.log,ensure_ascii=False))
 def attrs(d):return ' '.join(f'{k.replace("_","-")}="{v}"' for k,v in d.items())
 def details(a,x,y,w=430,scale=1):
+ a.module='details'
  a.group(f'translate({x},{y}) scale({scale})');x=y=0
  lines=[('LALM 项目资料交流展',0,25,'bold'),('Project Materials Exhibition of Project',27,14,'reg'),('2026.11.19–11.21',70,32,'wide'),('10:00–18:00',103,23,'reg'),('丄美术馆 · 杭州',147,27,'bold'),('开幕现场导览',188,18,'bold'),('11.21｜14:00–15:30',214,19,'reg'),('我们不知道—开放现场',250,18,'bold'),('11.21｜16:00–18:00',276,19,'reg'),('工作团队 / WORK TEAM',316,15,'bold'),('问地 Wen-Di Wu · 王一土 Wang Yitu',341,15,'reg'),('吕德生 Lyu Desheng',364,15,'reg'),('观察员 / OBSERVERS',397,15,'bold'),('（    ）· 王一土 Wang Yitu · 郑一方 Zheng Yifang',422,15,'reg'),('主办 Organizer：水泥公园 CementPark',457,15,'reg'),('协办 Co-organizer：丄美术馆 Shang Art Museum',480,15,'reg'),('地址 Venue',513,14,'bold'),('浙江省杭州市萧山区河上镇',537,15,'reg'),('下门村泽坞墅2号，丄美术馆',560,15,'reg'),('Shang Art Museum, No. 2, Zewushu, Xiamen Village,',585,12,'reg'),('Heshang Town, Xiaoshan District, Hangzhou, Zhejiang Province',604,12,'reg')]
+ if a.lang in LOCALES:
+  localized=LOCALES[a.lang]['details']
+  assert len(localized)==len(lines),(a.lang,len(localized))
+  lines=[(item['text'],base[1],base[2],base[3]) for item,base in zip(localized,lines)]
  for s,dy,sz,f in lines:a.text(s,0,dy,sz,f,width=w)
  a.end()
+ a.module=None
 def roster(a,x,y,w=610,scale=1,columns=False):
+ a.module='roster'
  a.group(f'translate({x},{y}) scale({scale})');cut=w*.64
- a.text('空间／项目',0,0,20,'bold');a.text('参会者',cut,0,20,'bold')
- a.text('Space / Project',0,24,13);a.text('Attendees',cut,24,13)
- for i,r in enumerate(ROWS):
-  yy=62+i*39
-  a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+18,13,width=cut-15)
-  a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+18,13,width=w-cut)
+ if a.lang in LOCALES:
+  loc=LOCALES[a.lang];labels=loc['labels']
+  a.text(labels['project'],0,0,20,'bold',width=cut-15);a.text(labels['attendees'],cut,0,20,'bold',width=w-cut)
+  a.line(0,23,w,23,a.ink,.7)
+  for i,r in enumerate(loc['roster']):
+   yy=62+i*39
+   a.text(r['project'],0,yy,19,'bold',width=cut-15);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
+   # Original identities are subordinate anchors, never untranslated instructions.
+   if a.lang=='EN':
+    a.text(r['project_zh'],0,yy+18,11,'reg',width=cut-15);a.text(r['name_zh'],cut,yy+18,11,'reg',width=w-cut)
+   else:
+    a.text(r['project_original'],0,yy+18,11,'latin',width=cut-15);a.text(r['name_original'],cut,yy+18,11,'latin',width=w-cut)
+ else:
+  a.text('空间／项目',0,0,20,'bold');a.text('参会者',cut,0,20,'bold')
+  a.text('Space / Project',0,24,12,'latin');a.text('Attendees',cut,24,12,'latin')
+  for i,r in enumerate(ROWS):
+   yy=62+i*39
+   a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+18,12,width=cut-15)
+   a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+18,12,width=w-cut)
  a.end()
+ a.module=None
 def info(a,mode,paper,ink):
- old=a.ink;a.ink=ink
+ old=a.ink;a.ink=ink;a.in_info=True
  if mode=='bottom':
   a.rect(0,1130,1200,670,paper);details(a,48,1180,500,0.83);roster(a,500,1170,720,.90);a.logos(48,1710,1104)
  elif mode=='top':
@@ -95,11 +147,11 @@ def info(a,mode,paper,ink):
   a.rect(0,1120,530,680,paper);details(a,50,1180,500,.85);a.logos(570,1690,580)
  elif mode=='register':
   a.rect(48,390,1104,1230,paper);details(a,85,460,440,.96);roster(a,575,460,540,.96);a.logos(85,1450,1030)
- a.ink=old
+ a.ink=old;a.in_info=False
 
 def title(a,lang,x,y,width=1080,size=220,font='bold',color=None):
- text={'ZH':'我们知道','EN':'WE KNOW','JA':'ウィー・ノウ','KO':'위 노우','IN':'LANGUAGE PENDING'}[lang]
- f={'JA':'jp','KO':'ko'}.get(lang,font);a.text(text,x,y,size,f,color,width)
+ text={'ZH':'我们知道','EN':'WE KNOW','JA':'私たちは知っている','KO':'우리는 알고 있다','IN':'हम जानते हैं'}[lang]
+ f=TITLE_FONTS.get(a.id,{'JA':'jp','KO':'ko'}.get(lang,font));a.text(text,x,y,size,f,color,width)
  # Locked bilingual identity remains a modest anchor.
  if lang!='ZH':a.text('我们知道',x,y+42,22,'bold',color,width)
  if lang!='EN':a.text('We Know',x,y+72,20,'wide',color,width)
@@ -114,18 +166,18 @@ def dots(a,file,x,y,w,h,c):
    if k>.04:a.circle(x+(xx+.5)*w/110,y+(yy+.5)*h/150,round((w/110)*.47*math.sqrt(k),2),c)
 
 def art(id):
- spec=SPECS[id];bg,ink,accent=spec['colors'];a=Art(bg,ink);lang=id[:2];mode=spec['layout']
+ spec=SPECS[id];bg,ink,accent=spec['colors'];a=Art(bg,ink,id);lang=id[:2];mode=spec['layout']
  if id=='ZH01':
-  a.rect(0,0,1200,1100,ink);a.text('我们',-28,510,560,'bold',bg,1250);a.text('知道',-28,1040,560,'bold',bg,1250)
+  a.rect(0,0,1200,1100,ink);a.text('我们',-28,510,560,'songBold',bg,1250);a.text('知道',-28,1040,560,'songBold',bg,1250)
   a.path('M0,435 L1200,335 L1200,390 L0,490',bg);a.text('We Know',65,1095,36,'wide',bg)
  elif id=='ZH02':
   dots(a,'hands.png',70,40,1060,1100,ink);a.rect(0,810,680,190,bg);title(a,lang,65,925,610,117,color=accent)
  elif id=='ZH03':
-  for i in range(4):a.text('我们知道',45,880+i*260,228,'bold',ink,1110)
+  for i in range(4):a.text('我们知道',45,880+i*260,248,'qing',ink,1110)
   a.rect(0,1568,1200,65,bg);a.text('We Know',75,1770,80,'wide',ink)
  elif id=='ZH04':
   for i in range(7):a.path(f'M{470+i*36},150 L{1120-i*12},310 L{1050-i*20},1520 L{460+i*33},1400',accent,opacity=.16)
-  for i,ch in enumerate('我们知道'):a.text(ch,570+i*37,450+i*300,235,'bold',ink)
+  for i,ch in enumerate('我们知道'):a.text(ch,570+i*37,450+i*300,235,'song',ink)
   a.text('We Know',490,1720,52,'wide')
  elif id=='ZH05':
   for yy in range(70,1790,96):a.line(45,yy,1155,yy,accent,1)
@@ -136,11 +188,11 @@ def art(id):
   title(a,lang,80,1005,1050,110)
  elif id=='ZH07':
   a.path('M0,0 L720,0 L540,1800 L0,1800',accent)
-  for i,ch in enumerate('我们知道'):a.group(f'translate(70,{380+i*340}) rotate(-12)');a.text(ch,0,0,320,'bold',bg);a.end()
+  for i,ch in enumerate('我们知道'):a.group(f'translate(70,{380+i*340}) rotate(-12)');a.text(ch,0,0,320,'wenkai',bg);a.end()
   a.text('We Know',80,1750,44,'wide',bg)
  elif id=='ZH08':
   for i,ch in enumerate('我们知道'):
-   a.group(f'translate({60+(i%2)*320},{630+(i//2)*590}) rotate({[-8,5,3,-5][i]})');a.text(ch,0,0,340,'bold',ink);a.end()
+   a.group(f'translate({60+(i%2)*320},{630+(i//2)*590}) rotate({[-8,5,3,-5][i]})');a.text(ch,0,0,340,'brush',ink);a.end()
   random.seed(8)
   for _ in range(95):
    x=random.randint(50,700);y=random.randint(250,1270);a.path(f'M{x},{y} l{random.randint(20,120)},-8',stroke=bg,sw=random.choice([1,2,3]))
@@ -151,7 +203,7 @@ def art(id):
   a.rect(70,760,1060,250,bg);title(a,lang,110,910,1000,170,color=ink)
   a.circle(280,350,170,'none',stroke=accent,stroke_width=3);a.line(280,520,280,720,accent,3)
  elif id=='ZH10':
-  a.rect(572,350,5,480,accent);a.text('我们知道',610,515,43,'bold');a.text('We Know',610,550,17,'wide')
+  a.rect(572,350,5,480,accent);a.text('我们知道',610,515,78,'wenkai',width=535);a.text('We Know',610,565,20,'serif')
   a.path('M577,830 l125,-55 l-125,15',accent)
  elif id=='EN01':
   for txt,x,y,sz in [('WE',40,340,220),('KNOW',60,910,190),('WE',320,1450,120)]:a.text(txt,x,y,sz,'wide',ink,690)
@@ -189,30 +241,30 @@ def art(id):
   for i,y in enumerate(range(1330,1750,35)):
    a.line(50,y,1150,y,accent,2);a.rect(180+(i*83)%750,y-9,130,18,accent)
  elif id=='KO01':
-  a.rect(0,0,1200,610,ink);a.text('위',40,500,530,'ko',bg);a.text('노우',540,470,310,'ko',bg,620)
-  a.text('위 노우',55,1670,290,'ko',ink,1080);a.text('我们知道 / We Know',70,1740,30,'bold')
+  a.rect(0,0,1200,610,ink);a.text('우리는',50,252,260,'ko',bg,1090);a.text('알고 있다',50,535,260,'ko',bg,1090)
+  a.text('우리는',60,1485,180,'ko',ink,1080);a.text('알고 있다',60,1710,220,'ko',ink,1080);a.text('我们知道 / We Know',70,1760,22,'bold')
  elif id=='KO02':
   a.path('M90,1700 C970,1550 -50,790 1050,870 C700,1250 650,1600 1140,1730',stroke=accent,sw=7)
-  a.text('위 노우',75,1120,190,'ko',ink,1000);a.text('我们知道 / We Know',80,1180,27,'bold')
+  a.text('우리는',75,1080,240,'koSerif',ink,1030);a.text('알고 있다',75,1395,240,'koSerif',ink,1050);a.text('我们知道 / We Know',80,1730,24,'bold')
  elif id=='JA01':
-  a.rect(510,690,190,1040,accent)
-  for i,ch in enumerate(['ウ','ィ','ー','・','ノ','ウ']):a.text(ch,525,850+i*162,150,'jpv',ink)
+  a.rect(760,700,160,800,accent);a.rect(460,840,160,865,accent)
+  for i,ch in enumerate('私たちは'):a.text(ch,770,900+i*180,150,'jpv',ink)
+  for i,ch in enumerate('知っている'):a.text(ch,470,1025+i*160,145,'jpv',ink)
   a.text('我们知道 / We Know',60,1740,28,'bold',ink,450)
  elif id=='JA02':
   for i in range(8):a.rect(75+i*28,90+i*80,940-i*55,860-i*36,accent,opacity=.10)
-  for i in range(3):a.text('ウィー・ノウ',40+i*20,390+i*245,160,'jp',ink if i==2 else accent,1100)
+  for i in range(3):a.text('私たちは知っている',40+i*20,390+i*245,160,'jpSerif',ink if i==2 else accent,1100)
   a.text('我们知道 / We Know',65,1070,30,'bold')
  elif id=='IN01':
   for i in range(8):a.path(f'M30,{180+i*195} C630,{100+i*195} 100,{500+i*150} 720,{300+i*180}',stroke=accent,sw=5)
-  for x,y,sz in [(65,470,335),(115,960,310),(55,1460,355)]:
-   sz=min(sz,sz*(720-x)/shaped_width('वी नो',sz))
-   a.p.append(shaped_paths('वी नो',sz,x=x,y=y,fill=ink));a.log.append({'text':'वी नो','x':x,'y':y,'size':sz,'font':'NotoSansDevanagari-Bold / HarfBuzz'})
+  for word,x,y,sz in [('हम',55,490,400),('जानते',55,1000,360),('हैं',330,1490,430)]:
+   a.text(word,x,y,sz,'bold',ink,width=710-x)
   a.text('我们知道 / We Know',65,1710,25,'bold')
  elif id=='IN02':
   for i in range(7):a.rect(65+i*8,70+i*6,1070-i*16,950-i*12,accent,opacity=.08)
-  sz=420;xx=(1200-shaped_width('वी नो',sz))/2
-  for dx,dy,col in [(5,5,accent),(-4,-3,'#fffdf4'),(0,0,ink)]:a.p.append(shaped_paths('वी नो',sz,x=xx+dx,y=670+dy,fill=col))
-  a.log.append({'text':'वी नो','x':xx,'y':670,'size':sz,'font':'NotoSansDevanagari-Bold / HarfBuzz'})
+  for word,baseline,sz in [('हम जानते',490,270),('हैं',890,390)]:
+   sz=min(sz,sz*1030/shaped_width(word,sz));xx=(1200-shaped_width(word,sz))/2
+   for dx,dy,col in [(5,5,accent),(-4,-3,'#fffdf4'),(0,0,ink)]:a.text(word,xx+dx,baseline+dy,sz,'bold',col)
   a.text('我们知道 / We Know',90,1040,30,'bold')
  info(a,mode,spec['paper'],bg if id in ['ZH03','EN10'] else ink)
  # Title identity is already in composition; body always preserves all locked data.
@@ -253,7 +305,12 @@ for id,title_,layout,bg,ink,accent,concept,skeleton,type_,medium,reading in TABL
  paper=bg
  if id in ['ZH03','EN10']:paper=ink;ink_for_body=bg
  else:ink_for_body=ink
- SPECS[id]={'id':id,'title':title_,'language':id[:2],'layout':layout,'colors':[bg,ink,accent],'paper':paper,'concept':concept,'skeleton':skeleton,'typography':type_,'medium':medium,'reading':reading}
+ SPECS[id]={'id':id,'title':id,'language':id[:2],'layout':layout,'colors':[bg,ink,accent],'paper':paper,'concept':concept,'skeleton':skeleton,'typography':type_,'medium':medium,'reading':reading}
+for id in TITLE_FONTS:
+ SPECS[id]['typography']={'title_font':TITLE_FONTS[id],'body_fonts':BODY_FONTS[id]}
+for id in ['JA01','JA02','KO01','KO02','IN01','IN02']:
+ SPECS[id]['typography']='Full-page localized typography'
+ SPECS[id]['concept']='Natural-language theme, localized details and phonetic proper-name identities.'
 # Ensure text on light information panels is dark for two dark-field cases.
 if __name__=='__main__':
  (R/'design'/'matrix.json').write_text(json.dumps(list(SPECS.values()),ensure_ascii=False,indent=2))

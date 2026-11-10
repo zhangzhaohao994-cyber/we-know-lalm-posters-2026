@@ -1,7 +1,7 @@
 [
   {
     "id": "ZH01",
-    "title": "缺失的共识",
+    "title": "ZH01",
     "language": "ZH",
     "layout": "bottom",
     "colors": [
@@ -12,28 +12,19 @@
     "paper": "#ffffff",
     "concept": "负形中的缺口成为共同认知的边界。",
     "skeleton": "超大字双行／负形切口",
-    "typography": "黑体负形",
-    "medium": "标题空缺",
-    "reading": "高密度上部→信息底部",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "War",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "高密边缘与低信息中心形成认知张力。",
-      "notCopied": "不复制眼睛、橙色刺形边框及其组合。"
+    "typography": {
+      "title_font": "songBold",
+      "body_fonts": [
+        "song",
+        "songBold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "标题空缺",
+    "reading": "高密度上部→信息底部"
   },
   {
     "id": "ZH02",
-    "title": "身体的证词",
+    "title": "ZH02",
     "language": "ZH",
     "layout": "bottom",
     "colors": [
@@ -44,28 +35,19 @@
     "paper": "#e4e0db",
     "concept": "手掌接触看不见的表面，知道来自身体的阻力。",
     "skeleton": "摄影网点／左下标题",
-    "typography": "克制黑体",
-    "medium": "原创摄影转矢量网点",
-    "reading": "触感图像→精确信息",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Giselle ballet, Basler Freilichtspiele poster",
-      "url": "https://www.sfmoma.org/artwork/2014.669/",
-      "principle": "动作残影可以作为身体经验的证据，并与稳定文字并置。",
-      "notCopied": "不复制舞者照片、左竖Giselle字形与画面比例。"
+    "typography": {
+      "title_font": "brush",
+      "body_fonts": [
+        "wenkai",
+        "wenkai"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "原创摄影转矢量网点",
+    "reading": "触感图像→精确信息"
   },
   {
     "id": "ZH03",
-    "title": "公共声明",
+    "title": "ZH03",
     "language": "ZH",
     "layout": "top",
     "colors": [
@@ -76,28 +58,19 @@
     "paper": "#f8f6ed",
     "concept": "重复的确定声明被一条空白打断。",
     "skeleton": "上置信息／整行文字场",
-    "typography": "整行黑体",
-    "medium": "重复与擦除",
-    "reading": "小字入口→向下重复",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Langnau Jazz Nights",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "文字的长短与密度能够制造公共声明的节拍。",
-      "notCopied": "不复制爵士字形、贴柱排列及原有扭曲比例。"
+    "typography": {
+      "title_font": "qing",
+      "body_fonts": [
+        "reg",
+        "bold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "重复与擦除",
+    "reading": "小字入口→向下重复"
   },
   {
     "id": "ZH04",
-    "title": "知识的剖面",
+    "title": "ZH04",
     "language": "ZH",
     "layout": "left",
     "colors": [
@@ -108,28 +81,19 @@
     "paper": "#dedbe4",
     "concept": "只有透过多层边界才能辨认一句话。",
     "skeleton": "左索引／纵向层叠",
-    "typography": "单字纵深",
-    "medium": "半透明矢量材料",
-    "reading": "左→层层向右",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Blindness/Aveuglement",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "遮蔽与显露的交替使观看成为主动重建。",
-      "notCopied": "不复制任何脸部照片、涂抹形状及脸部切割位置。"
+    "typography": {
+      "title_font": "song",
+      "body_fonts": [
+        "song",
+        "songBold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "半透明矢量材料",
+    "reading": "左→层层向右"
   },
   {
     "id": "ZH05",
-    "title": "集体档案",
+    "title": "ZH05",
     "language": "ZH",
     "layout": "register",
     "colors": [
@@ -140,29 +104,19 @@
     "paper": "#eee9db",
     "concept": "名单与刻度把分散的经验收进同一份档案。",
     "skeleton": "登记索引／中部双栏",
-    "typography": "理性编号式字",
-    "medium": "横向索引线",
-    "reading": "标题→并列档案",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Schauspiel Stuttgart season opening",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "让真实信息成为构图材料，以尺度控制阅读顺序。",
-      "notCopied": "不复制超大25/27、盔甲照片及拥挤关系。"
+    "typography": {
+      "title_font": "xiaowei",
+      "body_fonts": [
+        "wenkai",
+        "wenkai"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "横向索引线",
+    "reading": "标题→并列档案"
   },
   {
     "id": "ZH06",
-    "title": "知道的回声",
+    "title": "ZH06",
     "language": "ZH",
     "layout": "bottom",
     "colors": [
@@ -173,28 +127,19 @@
     "paper": "#f48232",
     "concept": "同一句话沿不同角度传播而不重合。",
     "skeleton": "放射文字路径",
-    "typography": "旋转黑体",
-    "medium": "回声文字",
-    "reading": "旋转阅读→底部停顿",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Jazzdor 2016",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "重复文本可以形成连续的空间与声音节奏。",
-      "notCopied": "不复制三色条纹路径、Jazzdor重复字样或特有波峰构图。"
+    "typography": {
+      "title_font": "bold",
+      "body_fonts": [
+        "song",
+        "songBold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "回声文字",
+    "reading": "旋转阅读→底部停顿"
   },
   {
     "id": "ZH07",
-    "title": "不稳定的秩序",
+    "title": "ZH07",
     "language": "ZH",
     "layout": "right",
     "colors": [
@@ -205,28 +150,19 @@
     "paper": "#f6cdd0",
     "concept": "每个字都按同一斜率偏离稳定轴。",
     "skeleton": "右侧静态／左侧倾斜",
-    "typography": "倾斜厚字",
-    "medium": "偏心色面",
-    "reading": "对角上升→右侧核对",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Zukunftsräume",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "有规则的斜向压力可以制造不稳定但可读的秩序。",
-      "notCopied": "不复制黑白楔形拼接、展览照片和具体字块关系。"
+    "typography": {
+      "title_font": "wenkai",
+      "body_fonts": [
+        "wenkai",
+        "wenkai"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "偏心色面",
+    "reading": "对角上升→右侧核对"
   },
   {
     "id": "ZH08",
-    "title": "手的记忆",
+    "title": "ZH08",
     "language": "ZH",
     "layout": "right",
     "colors": [
@@ -237,28 +173,19 @@
     "paper": "#d9b65e",
     "concept": "印刷字像被手工反复擦印，保留未能完全复制的痕迹。",
     "skeleton": "右侧资料／四个独立拓印",
-    "typography": "磨损字形",
-    "medium": "原创矢量拓印",
-    "reading": "四字游走→边栏",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "das bisschen Totschlag – No Risiko Tour 2022",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "手势的时间性可与精确信息形成互补。",
-      "notCopied": "不临摹原手写字、线条轮廓和三联色彩分配。"
+    "typography": {
+      "title_font": "brush",
+      "body_fonts": [
+        "song",
+        "songBold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "原创矢量拓印",
+    "reading": "四字游走→边栏"
   },
   {
     "id": "ZH09",
-    "title": "局部成为整体",
+    "title": "ZH09",
     "language": "ZH",
     "layout": "windows",
     "colors": [
@@ -269,28 +196,19 @@
     "paper": "#daeaf1",
     "concept": "纸纤维被放大成无法轻易定位的边界。",
     "skeleton": "微观图像穿插对角资料窗口",
-    "typography": "测量式标题",
-    "medium": "原创微观影像转网点",
-    "reading": "微观→标题→信息",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Mental Borders",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "放大局部可以让熟悉的材料转为陌生边界。",
-      "notCopied": "不复制照片、人脸色彩处理及三条白线的位置。"
+    "typography": {
+      "title_font": "song",
+      "body_fonts": [
+        "reg",
+        "bold"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "原创微观影像转网点",
+    "reading": "微观→标题→信息"
   },
   {
     "id": "ZH10",
-    "title": "迟疑的确定",
+    "title": "ZH10",
     "language": "ZH",
     "layout": "split",
     "colors": [
@@ -301,28 +219,19 @@
     "paper": "#f6f4ec",
     "concept": "细线的突然折返让一句肯定停顿。",
     "skeleton": "对角双区／大留白",
-    "typography": "小型清晰标题",
-    "medium": "一根折线",
-    "reading": "空白→细小主题→名单",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Plan B",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "低信息密度让微小干预获得巨大注意力。",
-      "notCopied": "不复制渐变天空、底部风景及顶部色条。"
+    "typography": {
+      "title_font": "wenkai",
+      "body_fonts": [
+        "wenkai",
+        "wenkai"
+      ]
     },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "medium": "一根折线",
+    "reading": "空白→细小主题→名单"
   },
   {
     "id": "EN01",
-    "title": "A shared field",
+    "title": "EN01",
     "language": "EN",
     "layout": "right",
     "colors": [
@@ -335,26 +244,11 @@
     "skeleton": "多中心关系／右侧清单",
     "typography": "宽体散置",
     "medium": "节点与连接",
-    "reading": "游走式阅读",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "The Big Bang",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "多中心的聚集通过空隙产生关联，而非依靠中心大图。",
-      "notCopied": "不复制贴纸、放射裂缝或红蓝底部字形。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "游走式阅读"
   },
   {
     "id": "EN02",
-    "title": "A statement under pressure",
+    "title": "EN02",
     "language": "EN",
     "layout": "left",
     "colors": [
@@ -367,26 +261,11 @@
     "skeleton": "左注释／纵向文字柱",
     "typography": "极窄长体",
     "medium": "字形纵向压力",
-    "reading": "上下牵引",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "JP ISBA 2019",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "字的纵向比例本身可以传达压力。",
-      "notCopied": "不复制空心长字、自行车/飞盘图形或荧光背景布局。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "上下牵引"
   },
   {
     "id": "EN03",
-    "title": "An image withheld",
+    "title": "EN03",
     "language": "EN",
     "layout": "top",
     "colors": [
@@ -399,26 +278,11 @@
     "skeleton": "顶部资料／下方遮挡摄影",
     "typography": "窄体覆盖条",
     "medium": "摄影网点与遮挡",
-    "reading": "信息→缺失图像",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Black Flag",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "强烈具象局部可把观看者拉近，再让文字给出语境。",
-      "notCopied": "不复制人物、表情、Black Flag四杠商标或句子。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "信息→缺失图像"
   },
   {
     "id": "EN04",
-    "title": "Reading through a fold",
+    "title": "EN04",
     "language": "EN",
     "layout": "bottom",
     "colors": [
@@ -431,27 +295,11 @@
     "skeleton": "纸面折角／底部资料",
     "typography": "大宽体与窄体",
     "medium": "原创折纸矢量",
-    "reading": "折角引导阅读",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Royal Academy of Art Offprint Paris",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "物理折叠可以成为阅读顺序的原因。",
-      "notCopied": "不复制白纸倒折造型、彩色方块背景与皇家学院字体组合。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "折角引导阅读"
   },
   {
     "id": "EN05",
-    "title": "The register",
+    "title": "EN05",
     "language": "EN",
     "layout": "receipt",
     "colors": [
@@ -464,26 +312,11 @@
     "skeleton": "上部双域／名单放大为连续登记",
     "typography": "票据窄体",
     "medium": "序列与穿孔",
-    "reading": "纵向连续登记",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "serif"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Ruhr Ding: Territorien",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "日期与条目可作为可扫描的登记结构。",
-      "notCopied": "不复制街头装置、照片条带或原Ruhr Ding字块。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "纵向连续登记"
   },
   {
     "id": "EN06",
-    "title": "Between two voices",
+    "title": "EN06",
     "language": "EN",
     "layout": "split",
     "colors": [
@@ -496,26 +329,11 @@
     "skeleton": "交错双区",
     "typography": "宽体问答",
     "medium": "不对称色域",
-    "reading": "对角回应",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "East Palace West Palace — 3 years anniversary",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "两种声音可以通过交错而非机械均分建立对话。",
-      "notCopied": "不复制腿部轮廓、俱乐部字形及左右标题布局。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "对角回应"
   },
   {
     "id": "EN07",
-    "title": "One signal",
+    "title": "EN07",
     "language": "EN",
     "layout": "bottom",
     "colors": [
@@ -528,26 +346,11 @@
     "skeleton": "单一大符号／标题底座",
     "typography": "极少量宽体",
     "medium": "原创缺口环",
-    "reading": "中心凝视→信息",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Vienna-Fiera",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "一个细长核心形象可在极简场中建立纪念碑式焦点。",
-      "notCopied": "不复制国旗、中心塔、底座透视形及历史展会字形。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "中心凝视→信息"
   },
   {
     "id": "EN08",
-    "title": "Almost aligned",
+    "title": "EN08",
     "language": "EN",
     "layout": "top",
     "colors": [
@@ -560,27 +363,11 @@
     "skeleton": "信息在上／分色文字在下",
     "typography": "受控套印",
     "medium": "红蓝矢量错位",
-    "reading": "轮廓校准",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg",
-      "wide"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Minutos para el fin",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "图像分层和错位色片可以让表面呈现不稳定的知觉。",
-      "notCopied": "不复制头盔、反光摄影、物件排列和周边字列。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "轮廓校准"
   },
   {
     "id": "EN09",
-    "title": "A room of words",
+    "title": "EN09",
     "language": "EN",
     "layout": "left",
     "colors": [
@@ -593,26 +380,11 @@
     "skeleton": "左资料／右透视房间",
     "typography": "透视宽体",
     "medium": "线性空间模型",
-    "reading": "入口→深处",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg",
-      "serif"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Modelle",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "文字可以充当有表面的空间物件。",
-      "notCopied": "不复制白色标签形状、混色背景及照片拼贴路径。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "入口→深处"
   },
   {
     "id": "EN10",
-    "title": "An interrupted broadcast",
+    "title": "EN10",
     "language": "EN",
     "layout": "middle",
     "colors": [
@@ -625,26 +397,11 @@
     "skeleton": "上下信号被中央信息打断",
     "typography": "窄体信号",
     "medium": "有序中断线",
-    "reading": "脉冲式阅读",
-    "actualFonts": [
-      "bold",
-      "cond",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Crossfade",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "精细标记与大面积主体的密度差能控制读取的停顿。",
-      "notCopied": "不复制人体照片、身体上的文字坐标或线稿图案。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "脉冲式阅读"
   },
   {
     "id": "KO01",
-    "title": "语块的构筑",
+    "title": "KO01",
     "language": "KO",
     "layout": "middle",
     "colors": [
@@ -653,29 +410,15 @@
       "#29466e"
     ],
     "paper": "#efc577",
-    "concept": "完整韩文字块像可组合建筑，但不拆散音节。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "上下标题／中间信息",
-    "typography": "韩文字块",
+    "typography": "Full-page localized typography",
     "medium": "模块文字",
-    "reading": "两端聚合",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Extra Ball（画面标题；INTL caption 写作 Golden Ball）",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "模块边界与不同体量可以搭建完整结构。",
-      "notCopied": "不复制弹珠台造型、按钮组合、插画及标题形态；原网页caption存在互换。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "两端聚合"
   },
   {
     "id": "KO02",
-    "title": "轻声的共同体",
+    "title": "KO02",
     "language": "KO",
     "layout": "top",
     "colors": [
@@ -684,29 +427,15 @@
       "#6b886f"
     ],
     "paper": "#dce9d5",
-    "concept": "手势路径将间隔很远的文字联系起来。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "上资料／下方开放手势",
-    "typography": "韩文轻盈排字",
+    "typography": "Full-page localized typography",
     "medium": "连续手绘曲线",
-    "reading": "舒缓横向",
-    "actualFonts": [
-      "bold",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "FISSA",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "轻盈手势与稀疏文字能共同维持呼吸。",
-      "notCopied": "不复制人物剪影、四肢姿势或散落字母的位置。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "舒缓横向"
   },
   {
     "id": "IN01",
-    "title": "连续的认知",
+    "title": "IN01",
     "language": "IN",
     "layout": "right",
     "colors": [
@@ -715,30 +444,15 @@
       "#a94830"
     ],
     "paper": "#cae0e6",
-    "concept": "完整天城文字在连续笔势中保持读音。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "右资料／左笔势",
-    "typography": "HarfBuzz天城文拟音",
+    "typography": "Full-page localized typography",
     "medium": "连续贝塞尔笔势",
-    "reading": "沿流线观看",
-    "actualFonts": [
-      "NotoSansDevanagari-Bold / HarfBuzz",
-      "bold",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Apno",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "连续阅读可由字的节奏和行间介质产生，而非简单等距网格。",
-      "notCopied": "不复制扭曲拉丁字形、食物插画或虹彩纹理。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "沿流线观看"
   },
   {
     "id": "IN02",
-    "title": "共同的印记",
+    "title": "IN02",
     "language": "IN",
     "layout": "bottom",
     "colors": [
@@ -747,30 +461,15 @@
       "#d99826"
     ],
     "paper": "#eee8d9",
-    "concept": "重复压印让共同经验留下不完全相同的边。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "中央印痕／底部资料",
-    "typography": "HarfBuzz天城文拟音",
+    "typography": "Full-page localized typography",
     "medium": "多重压印矢量",
-    "reading": "层层显影",
-    "actualFonts": [
-      "NotoSansDevanagari-Bold / HarfBuzz",
-      "bold",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Golden Ball（画面标题；INTL caption 写作 Extra Ball）",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "局部压强与密集边界能够让一块平面产生触觉想象。",
-      "notCopied": "不复制发光眼睛、彩色机台边框、手写底部字；原网页caption存在互换。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "层层显影"
   },
   {
     "id": "JA01",
-    "title": "可见与不可见",
+    "title": "JA01",
     "language": "JA",
     "layout": "top",
     "colors": [
@@ -779,30 +478,15 @@
       "#e8d475"
     ],
     "paper": "#f2e6ab",
-    "concept": "纵向音译标题在白空间里建立可见的读取路径。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "上置信息／下方纵向音译",
-    "typography": "日文纵排",
+    "typography": "Full-page localized typography",
     "medium": "竖向空白",
-    "reading": "纵向穿行",
-    "actualFonts": [
-      "bold",
-      "jpv",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "ggg 第1回展「大橋正展／野菜のイラストレーション」",
-      "url": "https://www.dnpfcp.jp/publications/annual/pdf/annual_2023.pdf#page=7",
-      "principle": "纵向文字与一条有机形体可以在大片留白中建立方向。",
-      "notCopied": "不复制植物插画、ggg标志、标题与植物的特定尺度关系。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "纵向穿行"
   },
   {
     "id": "JA02",
-    "title": "复写中的差异",
+    "title": "JA02",
     "language": "JA",
     "layout": "bottom",
     "colors": [
@@ -811,25 +495,10 @@
       "#bf6d3b"
     ],
     "paper": "#dedce4",
-    "concept": "复写的同一句话总会错开一个位置。",
+    "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
     "skeleton": "上部复写／下部资料",
-    "typography": "日文横向复写",
+    "typography": "Full-page localized typography",
     "medium": "透明片层",
-    "reading": "叠影→清晰锚点",
-    "actualFonts": [
-      "bold",
-      "jp",
-      "ko",
-      "latin",
-      "reg"
-    ],
-    "fontLicense": "SIL OFL 1.1; see fonts/",
-    "reference": {
-      "title": "Gessnerallee Cycle 4–11",
-      "url": "https://intl.international/competition-legacy/",
-      "principle": "不同复制层的遮叠能够让共同记忆保留差异。",
-      "notCopied": "不复制人物拼贴、线描人物、装框与街头涂鸦的组合。"
-    },
-    "density": "正文分组紧凑、主视觉留白按独立构图处理；名单与图像不互相遮挡"
+    "reading": "叠影→清晰锚点"
   }
 ]

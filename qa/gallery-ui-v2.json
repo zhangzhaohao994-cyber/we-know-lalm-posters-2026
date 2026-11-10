@@ -1,0 +1,25 @@
+{
+  "tenLanguages": true,
+  "posterCount": 27,
+  "singleColumnDesktop": true,
+  "singleColumnMobile": true,
+  "desktopPoster": {
+    "x": 429.328125,
+    "y": 927.703125,
+    "width": 581.328125,
+    "height": 933.984375
+  },
+  "mobilePoster": {
+    "x": 15.59375,
+    "y": 250.90625,
+    "width": 358.8125,
+    "height": 593.21875
+  },
+  "noArtificialTitlesOrDescriptions": true,
+  "filter": true,
+  "modalArrows": true,
+  "escape": true,
+  "mobileOverflow": false,
+  "pageErrors": [],
+  "deployed": false
+}

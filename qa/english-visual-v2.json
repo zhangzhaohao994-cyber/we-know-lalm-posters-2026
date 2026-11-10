@@ -1,0 +1,36 @@
+{
+  "viewed": [
+    "EN01",
+    "EN02",
+    "EN03",
+    "EN04",
+    "EN05",
+    "EN06",
+    "EN07",
+    "EN08",
+    "EN09",
+    "EN10"
+  ],
+  "contact_sheets": [
+    "qa/en-v2-0.jpg",
+    "qa/en-v2-1.jpg"
+  ],
+  "findings": [
+    "All ten show English primary event information and roster. Chinese remains in smaller proper-identity lines.",
+    "No newly observed title clipping, information obstruction or logo overflow.",
+    "EN01 and EN05 also independently reviewed at full preview size; curly-apostrophe spacing corrected with dedicated Latin fonts."
+  ],
+  "unresolved_layout_issues": [],
+  "sha256": {
+    "EN01": "e8af141e913426642a5c7a95a502b9477ab89ff11bd2b68f7202ac94428baeec",
+    "EN02": "5475d6a94fdd1cf584b42d62532ce88e258036d134946a1993bba7d634dd3f27",
+    "EN03": "5a3d6310cdc6cd926ad60800cbd0396b24845f68b6ff0518121c3f6fe97019e2",
+    "EN04": "b4248f3953d4ed617e1f2fd0895a4d1d767b38a5ce61739af6bcf0ba7cdc6266",
+    "EN05": "8a6604e5ce7739c8a1526cd11c77efa3ece16ef4ea8e598c9bee881936da6c74",
+    "EN06": "92abfa963ebbb3dc950b2d4bddc4eceba0016472e3cc7a7369af0742146f3c54",
+    "EN07": "955a3e320fe1160ec92ca819c31ecffa3e9a71cef9cfd9689d26875f3df86b12",
+    "EN08": "313db06ea3a95c935d11bb2b890b953b77eaaeb735f295edd788441590ebc97a",
+    "EN09": "5df32393be9019545b4e978d708451a5e6633991a7d99ea61b668cf6c4d30980",
+    "EN10": "9f7dc593f0250f3cc2c57c08201561060b1aaf036cec5cd8aa6ac4411ab34004"
+  }
+}

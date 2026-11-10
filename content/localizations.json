@@ -1,0 +1,1585 @@
+{
+  "schema_version": 1,
+  "scope": "26 new poster variants only; approved ORIGINAL and locked source content stay unchanged",
+  "instruction_precedence": "Latest user instruction requests full target-language presentation and natural semantic theme translation; supersedes earlier phonetic-only new theme policy.",
+  "source_identity": "content.json locked and final-layout.json",
+  "sort_rule": "Keep confirmed project Latin A–Z order; never resort by translated script or nationality.",
+  "native_reviewed": false,
+  "name_policy": "Use user-provided original forms when known; otherwise direct machine transliteration from confirmed Latin identity. Retain Latin and Chinese in data; never claim provisional forms are official names.",
+  "layout_contract": {
+    "details": "21 objects with original dy baselines; text may be empty. identity is an optional small source-title anchor.",
+    "roster": "project/name are target-language primary; project_original/name_original are optional smaller Latin identity lines; Chinese fields are archival or optional tiny anchors, not mandatory three-language rows.",
+    "fonts": "JA use Noto CJK JP, KO Noto CJK KR; Hindi must shape whole strings with HarfBuzz. Latin name eŕté needs Noto Sans coverage. Do not scale Hindi by code-point count."
+  },
+  "languages": {
+    "EN": {
+      "bcp47": "en",
+      "display_name": "English",
+      "title": "We Know",
+      "title_mode": "semantic translation of 我们知道",
+      "labels": {
+        "project": "Space / Project",
+        "attendees": "Attendees",
+        "work_team": "Work team",
+        "observers": "Observers",
+        "organizer": "Organizer",
+        "coorganizer": "Co-organizer",
+        "address": "Address",
+        "dates": "Dates",
+        "hours": "Opening hours"
+      },
+      "identity_anchor": {
+        "title_zh": "我们知道",
+        "title_en": "We Know",
+        "venue_zh": "丄美术馆",
+        "venue_en": "Shang Art Museum"
+      },
+      "exhibition_original_en": "Project Materials Exhibition of Project",
+      "details": [
+        {
+          "id": "exhibition",
+          "text": "LALM Project Materials Exhibition of Project",
+          "dy": 0,
+          "role": "target_primary"
+        },
+        {
+          "id": "identity",
+          "text": "我们知道 / We Know",
+          "dy": 27,
+          "role": "small_identity_anchor"
+        },
+        {
+          "id": "dates",
+          "text": "2026.11.19–11.21",
+          "dy": 70,
+          "role": "target_primary"
+        },
+        {
+          "id": "hours",
+          "text": "10:00–18:00",
+          "dy": 103,
+          "role": "target_primary"
+        },
+        {
+          "id": "venue_short",
+          "text": "Shang Art Museum · Hangzhou",
+          "dy": 147,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_tour",
+          "text": "Opening guided tour",
+          "dy": 188,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_time",
+          "text": "11.21 | 14:00–15:30",
+          "dy": 214,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session",
+          "text": "We Don’t Know — Open Session",
+          "dy": 250,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session_time",
+          "text": "11.21 | 16:00–18:00",
+          "dy": 276,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_label",
+          "text": "Work team",
+          "dy": 316,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_1",
+          "text": "Wen-Di Wu · Wang Yitu",
+          "dy": 341,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_2",
+          "text": "Lyu Desheng",
+          "dy": 364,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers_label",
+          "text": "Observers",
+          "dy": 397,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers",
+          "text": "(    ) · Wang Yitu · Zheng Yifang",
+          "dy": 422,
+          "role": "target_primary"
+        },
+        {
+          "id": "organizer",
+          "text": "Organizer: CementPark",
+          "dy": 457,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer",
+          "text": "Co-organizer: Shang Art Museum",
+          "dy": 480,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_label",
+          "text": "Address",
+          "dy": 513,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_1",
+          "text": "Shang Art Museum, No. 2, Zewushu,",
+          "dy": 537,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_2",
+          "text": "Xiamen Village, Heshang Town,",
+          "dy": 560,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_3",
+          "text": "Xiaoshan District, Hangzhou,",
+          "dy": 585,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_4",
+          "text": "Zhejiang Province",
+          "dy": 604,
+          "role": "target_primary"
+        }
+      ],
+      "roster": [
+        {
+          "id": "pair_01",
+          "project_id": "project_01",
+          "person_id": "person_roster_01",
+          "order": 1,
+          "sort_key": "Alkali",
+          "project": "Alkali",
+          "name": "Highest",
+          "project_original": "Alkali",
+          "name_original": "Highest",
+          "project_zh": "强碱",
+          "name_zh": "最高",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_02",
+          "project_id": "project_02",
+          "person_id": "person_roster_02",
+          "order": 2,
+          "sort_key": "Bbeyond",
+          "project": "Bbeyond",
+          "name": "Brian Patterson",
+          "project_original": "Bbeyond",
+          "name_original": "Brian Patterson",
+          "project_zh": "比比扬德",
+          "name_zh": "布赖恩·帕特森",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_03",
+          "project_id": "project_03",
+          "person_id": "person_lyudesheng",
+          "order": 3,
+          "sort_key": "CementPark",
+          "project": "CementPark",
+          "name": "Lyu Desheng",
+          "project_original": "CementPark",
+          "name_original": "Lyu Desheng",
+          "project_zh": "水泥公园",
+          "name_zh": "吕德生",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_04",
+          "project_id": "project_04",
+          "person_id": "person_roster_04",
+          "order": 4,
+          "sort_key": "CementPark Tokyo",
+          "project": "CementPark·Tokyo",
+          "name": "Yu Ohara",
+          "project_original": "CementPark·Tokyo",
+          "name_original": "Yu Ohara",
+          "project_zh": "水泥公园·东京",
+          "name_zh": "大原由",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_05",
+          "project_id": "project_05",
+          "person_id": "person_roster_05",
+          "order": 5,
+          "sort_key": "FEICHUAN",
+          "project": "FEICHUAN",
+          "name": "Pan Chennong",
+          "project_original": "FEICHUAN",
+          "name_original": "Pan Chennong",
+          "project_zh": "废船",
+          "name_zh": "潘晨农",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_06",
+          "project_id": "project_06",
+          "person_id": "person_roster_06",
+          "order": 6,
+          "sort_key": "Feminale",
+          "project": "Feminale",
+          "name": "Yeonjeong",
+          "project_original": "Feminale 페미날레",
+          "name_original": "Yeonjeong",
+          "project_zh": "费米纳勒",
+          "name_zh": "缘定",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_07",
+          "project_id": "project_07",
+          "person_id": "person_roster_07",
+          "order": 7,
+          "sort_key": "HEXXYDUXXYBOX",
+          "project": "HEXXYDUXXYBOX (HDBOX)",
+          "name": "Satadru Sovan",
+          "project_original": "HEXXYDUXXYBOX (HDBOX)",
+          "name_original": "Satadru Sovan",
+          "project_zh": "赫克西杜克西博克斯",
+          "name_zh": "萨塔德鲁·索万",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_08",
+          "project_id": "project_08",
+          "person_id": "person_roster_08",
+          "order": 8,
+          "sort_key": "Kua Jia",
+          "project": "Kua Jia",
+          "name": "Gao Xu",
+          "project_original": "Kua Jia",
+          "name_original": "Gao Xu",
+          "project_zh": "跨甲",
+          "name_zh": "高旭",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_09",
+          "project_id": "project_09",
+          "person_id": "person_roster_09",
+          "order": 9,
+          "sort_key": "OPEN SPACE",
+          "project": "OPEN SPACE",
+          "name": "Chen Jin",
+          "project_original": "OPEN SPACE",
+          "name_original": "Chen Jin",
+          "project_zh": "OPEN 空间",
+          "name_zh": "陈进",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_10",
+          "project_id": "project_10",
+          "person_id": "person_roster_10",
+          "order": 10,
+          "sort_key": "Shallow breathing",
+          "project": "Shallow breathing",
+          "name": "Huang Zongzhen",
+          "project_original": "Shallow breathing",
+          "name_original": "Huang Zongzhen",
+          "project_zh": "浅呼吸",
+          "name_zh": "黄宗镇",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_11",
+          "project_id": "project_11",
+          "person_id": "person_roster_11",
+          "order": 11,
+          "sort_key": "Studio erte",
+          "project": "Studio eŕté",
+          "name": "Rokko Juhasz",
+          "project_original": "Studio eŕté",
+          "name_original": "Rokko Juhasz",
+          "project_zh": "埃尔泰工作室",
+          "name_zh": "罗科·尤哈斯",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_12",
+          "project_id": "project_12",
+          "person_id": "person_roster_12",
+          "order": 12,
+          "sort_key": "Ta-Academy",
+          "project": "Ta-Academy",
+          "name": "Taikonot",
+          "project_original": "Ta-Academy",
+          "name_original": "Taikonot",
+          "project_zh": "塔院",
+          "name_zh": "阿莫",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_13",
+          "project_id": "project_13",
+          "person_id": "person_roster_13",
+          "order": 13,
+          "sort_key": "Waterfield Studio Catmaoworm",
+          "project": "Waterfield Studio, Catmaoworm",
+          "name": "Chiang Yuan Hsiang",
+          "project_original": "Waterfield Studio, Catmaoworm",
+          "name_original": "Chiang Yuan Hsiang",
+          "project_zh": "水田部落行為藝術營、貓蚯蚓",
+          "name_zh": "江源祥",
+          "name_status": "confirmed supplied Latin"
+        },
+        {
+          "id": "pair_14",
+          "project_id": "project_14",
+          "person_id": "person_roster_14",
+          "order": 14,
+          "sort_key": "ZOO",
+          "project": "ZOO",
+          "name": "Jin Jinjin",
+          "project_original": "ZOO",
+          "name_original": "Jin Jinjin",
+          "project_zh": "粗",
+          "name_zh": "金今今",
+          "name_status": "confirmed supplied Latin"
+        }
+      ],
+      "work_team": [
+        {
+          "id": "person_wendi",
+          "name": "Wen-Di Wu",
+          "original": "Wen-Di Wu",
+          "zh": "问地"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "Wang Yitu",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_lyudesheng",
+          "name": "Lyu Desheng",
+          "original": "Lyu Desheng",
+          "zh": "吕德生"
+        }
+      ],
+      "observers": [
+        {
+          "id": "observer_pending",
+          "name": "(    )",
+          "zh": "（    ）",
+          "status": "intentional_blank"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "Wang Yitu",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_zhengyifang",
+          "name": "Zheng Yifang",
+          "original": "Zheng Yifang",
+          "zh": "郑一方"
+        }
+      ],
+      "review_status": "confirmed Latin identities retained; new ordinary-English labels machine translated, editorial review pending",
+      "native_reviewed": false
+    },
+    "JA": {
+      "bcp47": "ja",
+      "display_name": "日本語",
+      "title": "私たちは知っている",
+      "title_mode": "semantic translation of 我们知道",
+      "labels": {
+        "project": "スペース／プロジェクト",
+        "attendees": "参加者",
+        "work_team": "運営チーム",
+        "observers": "オブザーバー",
+        "organizer": "主催",
+        "coorganizer": "共催",
+        "address": "会場所在地",
+        "dates": "会期",
+        "hours": "開場時間"
+      },
+      "identity_anchor": {
+        "title_zh": "我们知道",
+        "title_en": "We Know",
+        "venue_zh": "丄美术馆",
+        "venue_en": "Shang Art Museum"
+      },
+      "exhibition_original_en": "Project Materials Exhibition of Project",
+      "details": [
+        {
+          "id": "exhibition",
+          "text": "LALM プロジェクト資料交流展",
+          "dy": 0,
+          "role": "target_primary"
+        },
+        {
+          "id": "identity",
+          "text": "我们知道 / We Know",
+          "dy": 27,
+          "role": "small_identity_anchor"
+        },
+        {
+          "id": "dates",
+          "text": "2026年11月19日–21日",
+          "dy": 70,
+          "role": "target_primary"
+        },
+        {
+          "id": "hours",
+          "text": "10:00–18:00",
+          "dy": 103,
+          "role": "target_primary"
+        },
+        {
+          "id": "venue_short",
+          "text": "シャン・アート・ミュージアム · 杭州",
+          "dy": 147,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_tour",
+          "text": "開幕ガイドツアー",
+          "dy": 188,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_time",
+          "text": "11月21日 | 14:00–15:30",
+          "dy": 214,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session",
+          "text": "私たちは知らない — オープンセッション",
+          "dy": 250,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session_time",
+          "text": "11月21日 | 16:00–18:00",
+          "dy": 276,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_label",
+          "text": "運営チーム",
+          "dy": 316,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_1",
+          "text": "ウェンディ・ウー · ワン・イートゥ",
+          "dy": 341,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_2",
+          "text": "リュー・ドーション",
+          "dy": 364,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers_label",
+          "text": "オブザーバー",
+          "dy": 397,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers",
+          "text": "(    ) · ワン・イートゥ · ジョン・イーファン",
+          "dy": 422,
+          "role": "target_primary"
+        },
+        {
+          "id": "organizer",
+          "text": "主催: セメントパーク",
+          "dy": 457,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer",
+          "text": "共催: シャン・アート・ミュージアム",
+          "dy": 480,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_label",
+          "text": "会場所在地",
+          "dy": 513,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_1",
+          "text": "浙江省杭州市蕭山区",
+          "dy": 537,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_2",
+          "text": "河上镇下门村",
+          "dy": 560,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_3",
+          "text": "泽坞墅2号",
+          "dy": 585,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_4",
+          "text": "シャン・アート・ミュージアム",
+          "dy": 604,
+          "role": "target_primary"
+        }
+      ],
+      "roster": [
+        {
+          "id": "pair_01",
+          "project_id": "project_01",
+          "person_id": "person_roster_01",
+          "order": 1,
+          "sort_key": "Alkali",
+          "project": "アルカリ",
+          "name": "ハイエスト",
+          "project_original": "Alkali",
+          "name_original": "Highest",
+          "project_zh": "强碱",
+          "name_zh": "最高",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_02",
+          "project_id": "project_02",
+          "person_id": "person_roster_02",
+          "order": 2,
+          "sort_key": "Bbeyond",
+          "project": "ビー・ビヨンド",
+          "name": "ブライアン・パターソン",
+          "project_original": "Bbeyond",
+          "name_original": "Brian Patterson",
+          "project_zh": "比比扬德",
+          "name_zh": "布赖恩·帕特森",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_03",
+          "project_id": "project_03",
+          "person_id": "person_lyudesheng",
+          "order": 3,
+          "sort_key": "CementPark",
+          "project": "セメントパーク",
+          "name": "リュー・ドーション",
+          "project_original": "CementPark",
+          "name_original": "Lyu Desheng",
+          "project_zh": "水泥公园",
+          "name_zh": "吕德生",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_04",
+          "project_id": "project_04",
+          "person_id": "person_roster_04",
+          "order": 4,
+          "sort_key": "CementPark Tokyo",
+          "project": "セメントパーク・東京",
+          "name": "大原由",
+          "project_original": "CementPark·Tokyo",
+          "name_original": "Yu Ohara",
+          "project_zh": "水泥公园·东京",
+          "name_zh": "大原由",
+          "name_status": "user-supplied Japanese original 大原由"
+        },
+        {
+          "id": "pair_05",
+          "project_id": "project_05",
+          "person_id": "person_roster_05",
+          "order": 5,
+          "sort_key": "FEICHUAN",
+          "project": "フェイチュアン",
+          "name": "パン・チェンノン",
+          "project_original": "FEICHUAN",
+          "name_original": "Pan Chennong",
+          "project_zh": "废船",
+          "name_zh": "潘晨农",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_06",
+          "project_id": "project_06",
+          "person_id": "person_roster_06",
+          "order": 6,
+          "sort_key": "Feminale",
+          "project": "フェミナーレ",
+          "name": "ヨンジョン",
+          "project_original": "Feminale 페미날레",
+          "name_original": "Yeonjeong",
+          "project_zh": "费米纳勒",
+          "name_zh": "缘定",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_07",
+          "project_id": "project_07",
+          "person_id": "person_roster_07",
+          "order": 7,
+          "sort_key": "HEXXYDUXXYBOX",
+          "project": "ヘクシーダクシーボックス",
+          "name": "サタドル・ソヴァン",
+          "project_original": "HEXXYDUXXYBOX (HDBOX)",
+          "name_original": "Satadru Sovan",
+          "project_zh": "赫克西杜克西博克斯",
+          "name_zh": "萨塔德鲁·索万",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_08",
+          "project_id": "project_08",
+          "person_id": "person_roster_08",
+          "order": 8,
+          "sort_key": "Kua Jia",
+          "project": "クア・ジア",
+          "name": "ガオ・シュー",
+          "project_original": "Kua Jia",
+          "name_original": "Gao Xu",
+          "project_zh": "跨甲",
+          "name_zh": "高旭",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_09",
+          "project_id": "project_09",
+          "person_id": "person_roster_09",
+          "order": 9,
+          "sort_key": "OPEN SPACE",
+          "project": "オープンスペース",
+          "name": "チェン・ジン",
+          "project_original": "OPEN SPACE",
+          "name_original": "Chen Jin",
+          "project_zh": "OPEN 空间",
+          "name_zh": "陈进",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_10",
+          "project_id": "project_10",
+          "person_id": "person_roster_10",
+          "order": 10,
+          "sort_key": "Shallow breathing",
+          "project": "シャロウ・ブリージング",
+          "name": "ホアン・ゾンジェン",
+          "project_original": "Shallow breathing",
+          "name_original": "Huang Zongzhen",
+          "project_zh": "浅呼吸",
+          "name_zh": "黄宗镇",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_11",
+          "project_id": "project_11",
+          "person_id": "person_roster_11",
+          "order": 11,
+          "sort_key": "Studio erte",
+          "project": "スタジオ・エルテ",
+          "name": "ロコ・ユハース",
+          "project_original": "Studio eŕté",
+          "name_original": "Rokko Juhasz",
+          "project_zh": "埃尔泰工作室",
+          "name_zh": "罗科·尤哈斯",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_12",
+          "project_id": "project_12",
+          "person_id": "person_roster_12",
+          "order": 12,
+          "sort_key": "Ta-Academy",
+          "project": "ター・アカデミー",
+          "name": "タイコノット",
+          "project_original": "Ta-Academy",
+          "name_original": "Taikonot",
+          "project_zh": "塔院",
+          "name_zh": "阿莫",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_13",
+          "project_id": "project_13",
+          "person_id": "person_roster_13",
+          "order": 13,
+          "sort_key": "Waterfield Studio Catmaoworm",
+          "project": "ウォーターフィールド・スタジオ／キャットマオワーム",
+          "name": "チャン・ユエンシャン",
+          "project_original": "Waterfield Studio, Catmaoworm",
+          "name_original": "Chiang Yuan Hsiang",
+          "project_zh": "水田部落行為藝術營、貓蚯蚓",
+          "name_zh": "江源祥",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_14",
+          "project_id": "project_14",
+          "person_id": "person_roster_14",
+          "order": 14,
+          "sort_key": "ZOO",
+          "project": "ズー",
+          "name": "ジン・ジンジン",
+          "project_original": "ZOO",
+          "name_original": "Jin Jinjin",
+          "project_zh": "粗",
+          "name_zh": "金今今",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        }
+      ],
+      "work_team": [
+        {
+          "id": "person_wendi",
+          "name": "ウェンディ・ウー",
+          "original": "Wen-Di Wu",
+          "zh": "问地"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "ワン・イートゥ",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_lyudesheng",
+          "name": "リュー・ドーション",
+          "original": "Lyu Desheng",
+          "zh": "吕德生"
+        }
+      ],
+      "observers": [
+        {
+          "id": "observer_pending",
+          "name": "(    )",
+          "zh": "（    ）",
+          "status": "intentional_blank"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "ワン・イートゥ",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_zhengyifang",
+          "name": "ジョン・イーファン",
+          "original": "Zheng Yifang",
+          "zh": "郑一方"
+        }
+      ],
+      "review_status": "machine localization; native-language and proper-name approval pending",
+      "native_reviewed": false
+    },
+    "KO": {
+      "bcp47": "ko",
+      "display_name": "한국어",
+      "title": "우리는 알고 있다",
+      "title_mode": "semantic translation of 我们知道",
+      "labels": {
+        "project": "공간／프로젝트",
+        "attendees": "참가자",
+        "work_team": "운영팀",
+        "observers": "옵서버",
+        "organizer": "주최",
+        "coorganizer": "공동주최",
+        "address": "주소",
+        "dates": "기간",
+        "hours": "관람 시간"
+      },
+      "identity_anchor": {
+        "title_zh": "我们知道",
+        "title_en": "We Know",
+        "venue_zh": "丄美术馆",
+        "venue_en": "Shang Art Museum"
+      },
+      "exhibition_original_en": "Project Materials Exhibition of Project",
+      "details": [
+        {
+          "id": "exhibition",
+          "text": "LALM 프로젝트 자료 교류전",
+          "dy": 0,
+          "role": "target_primary"
+        },
+        {
+          "id": "identity",
+          "text": "我们知道 / We Know",
+          "dy": 27,
+          "role": "small_identity_anchor"
+        },
+        {
+          "id": "dates",
+          "text": "2026.11.19–11.21",
+          "dy": 70,
+          "role": "target_primary"
+        },
+        {
+          "id": "hours",
+          "text": "10:00–18:00",
+          "dy": 103,
+          "role": "target_primary"
+        },
+        {
+          "id": "venue_short",
+          "text": "샹 아트 뮤지엄 · 항저우",
+          "dy": 147,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_tour",
+          "text": "개막 현장 투어",
+          "dy": 188,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_time",
+          "text": "11월 21일 | 14:00–15:30",
+          "dy": 214,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session",
+          "text": "우리는 모른다 — 열린 현장",
+          "dy": 250,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session_time",
+          "text": "11월 21일 | 16:00–18:00",
+          "dy": 276,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_label",
+          "text": "운영팀",
+          "dy": 316,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_1",
+          "text": "원디 우 · 왕이투",
+          "dy": 341,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_2",
+          "text": "뤼더성",
+          "dy": 364,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers_label",
+          "text": "옵서버",
+          "dy": 397,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers",
+          "text": "(    ) · 왕이투 · 정이팡",
+          "dy": 422,
+          "role": "target_primary"
+        },
+        {
+          "id": "organizer",
+          "text": "주최: 시멘트파크",
+          "dy": 457,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer",
+          "text": "공동주최: 샹 아트 뮤지엄",
+          "dy": 480,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_label",
+          "text": "주소",
+          "dy": 513,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_1",
+          "text": "저장성 항저우시 샤오산구",
+          "dy": 537,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_2",
+          "text": "허상진 샤먼촌",
+          "dy": 560,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_3",
+          "text": "쩌우수 2호",
+          "dy": 585,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_4",
+          "text": "샹 아트 뮤지엄",
+          "dy": 604,
+          "role": "target_primary"
+        }
+      ],
+      "roster": [
+        {
+          "id": "pair_01",
+          "project_id": "project_01",
+          "person_id": "person_roster_01",
+          "order": 1,
+          "sort_key": "Alkali",
+          "project": "알칼리",
+          "name": "하이에스트",
+          "project_original": "Alkali",
+          "name_original": "Highest",
+          "project_zh": "强碱",
+          "name_zh": "最高",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_02",
+          "project_id": "project_02",
+          "person_id": "person_roster_02",
+          "order": 2,
+          "sort_key": "Bbeyond",
+          "project": "비비욘드",
+          "name": "브라이언 패터슨",
+          "project_original": "Bbeyond",
+          "name_original": "Brian Patterson",
+          "project_zh": "比比扬德",
+          "name_zh": "布赖恩·帕特森",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_03",
+          "project_id": "project_03",
+          "person_id": "person_lyudesheng",
+          "order": 3,
+          "sort_key": "CementPark",
+          "project": "시멘트파크",
+          "name": "뤼더성",
+          "project_original": "CementPark",
+          "name_original": "Lyu Desheng",
+          "project_zh": "水泥公园",
+          "name_zh": "吕德生",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_04",
+          "project_id": "project_04",
+          "person_id": "person_roster_04",
+          "order": 4,
+          "sort_key": "CementPark Tokyo",
+          "project": "시멘트파크 도쿄",
+          "name": "오하라 유",
+          "project_original": "CementPark·Tokyo",
+          "name_original": "Yu Ohara",
+          "project_zh": "水泥公园·东京",
+          "name_zh": "大原由",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_05",
+          "project_id": "project_05",
+          "person_id": "person_roster_05",
+          "order": 5,
+          "sort_key": "FEICHUAN",
+          "project": "페이촨",
+          "name": "판천눙",
+          "project_original": "FEICHUAN",
+          "name_original": "Pan Chennong",
+          "project_zh": "废船",
+          "name_zh": "潘晨农",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_06",
+          "project_id": "project_06",
+          "person_id": "person_roster_06",
+          "order": 6,
+          "sort_key": "Feminale",
+          "project": "페미날레",
+          "name": "연정",
+          "project_original": "Feminale 페미날레",
+          "name_original": "Yeonjeong",
+          "project_zh": "费米纳勒",
+          "name_zh": "缘定",
+          "name_status": "연정 and 페미날레 attested in artist publication; Chinese 緣定 identifies same artist",
+          "evidence_url": "https://fliphtml5.com/riivd/ikzr/Yeonjeong_performance_2018-2019/5/"
+        },
+        {
+          "id": "pair_07",
+          "project_id": "project_07",
+          "person_id": "person_roster_07",
+          "order": 7,
+          "sort_key": "HEXXYDUXXYBOX",
+          "project": "헥시덕시박스",
+          "name": "사타드루 소반",
+          "project_original": "HEXXYDUXXYBOX (HDBOX)",
+          "name_original": "Satadru Sovan",
+          "project_zh": "赫克西杜克西博克斯",
+          "name_zh": "萨塔德鲁·索万",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_08",
+          "project_id": "project_08",
+          "person_id": "person_roster_08",
+          "order": 8,
+          "sort_key": "Kua Jia",
+          "project": "콰자",
+          "name": "가오쉬",
+          "project_original": "Kua Jia",
+          "name_original": "Gao Xu",
+          "project_zh": "跨甲",
+          "name_zh": "高旭",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_09",
+          "project_id": "project_09",
+          "person_id": "person_roster_09",
+          "order": 9,
+          "sort_key": "OPEN SPACE",
+          "project": "오픈스페이스",
+          "name": "천진",
+          "project_original": "OPEN SPACE",
+          "name_original": "Chen Jin",
+          "project_zh": "OPEN 空间",
+          "name_zh": "陈进",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_10",
+          "project_id": "project_10",
+          "person_id": "person_roster_10",
+          "order": 10,
+          "sort_key": "Shallow breathing",
+          "project": "샬로 브리딩",
+          "name": "황쭝전",
+          "project_original": "Shallow breathing",
+          "name_original": "Huang Zongzhen",
+          "project_zh": "浅呼吸",
+          "name_zh": "黄宗镇",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_11",
+          "project_id": "project_11",
+          "person_id": "person_roster_11",
+          "order": 11,
+          "sort_key": "Studio erte",
+          "project": "스튜디오 에르테",
+          "name": "로코 유하스",
+          "project_original": "Studio eŕté",
+          "name_original": "Rokko Juhasz",
+          "project_zh": "埃尔泰工作室",
+          "name_zh": "罗科·尤哈斯",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_12",
+          "project_id": "project_12",
+          "person_id": "person_roster_12",
+          "order": 12,
+          "sort_key": "Ta-Academy",
+          "project": "타아카데미",
+          "name": "타이코노트",
+          "project_original": "Ta-Academy",
+          "name_original": "Taikonot",
+          "project_zh": "塔院",
+          "name_zh": "阿莫",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_13",
+          "project_id": "project_13",
+          "person_id": "person_roster_13",
+          "order": 13,
+          "sort_key": "Waterfield Studio Catmaoworm",
+          "project": "워터필드 스튜디오／캣마오웜",
+          "name": "장위안샹",
+          "project_original": "Waterfield Studio, Catmaoworm",
+          "name_original": "Chiang Yuan Hsiang",
+          "project_zh": "水田部落行為藝術營、貓蚯蚓",
+          "name_zh": "江源祥",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_14",
+          "project_id": "project_14",
+          "person_id": "person_roster_14",
+          "order": 14,
+          "sort_key": "ZOO",
+          "project": "주",
+          "name": "진진진",
+          "project_original": "ZOO",
+          "name_original": "Jin Jinjin",
+          "project_zh": "粗",
+          "name_zh": "金今今",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        }
+      ],
+      "work_team": [
+        {
+          "id": "person_wendi",
+          "name": "원디 우",
+          "original": "Wen-Di Wu",
+          "zh": "问地"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "왕이투",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_lyudesheng",
+          "name": "뤼더성",
+          "original": "Lyu Desheng",
+          "zh": "吕德生"
+        }
+      ],
+      "observers": [
+        {
+          "id": "observer_pending",
+          "name": "(    )",
+          "zh": "（    ）",
+          "status": "intentional_blank"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "왕이투",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_zhengyifang",
+          "name": "정이팡",
+          "original": "Zheng Yifang",
+          "zh": "郑一方"
+        }
+      ],
+      "review_status": "machine localization; native-language and proper-name approval pending",
+      "native_reviewed": false
+    },
+    "IN": {
+      "bcp47": "hi-Deva",
+      "display_name": "हिन्दी",
+      "title": "हम जानते हैं",
+      "title_mode": "semantic translation of 我们知道",
+      "labels": {
+        "project": "स्थान / परियोजना",
+        "attendees": "प्रतिभागी",
+        "work_team": "आयोजन दल",
+        "observers": "पर्यवेक्षक",
+        "organizer": "आयोजक",
+        "coorganizer": "सह-आयोजक",
+        "address": "पता",
+        "dates": "तिथियाँ",
+        "hours": "खुलने का समय"
+      },
+      "identity_anchor": {
+        "title_zh": "我们知道",
+        "title_en": "We Know",
+        "venue_zh": "丄美术馆",
+        "venue_en": "Shang Art Museum"
+      },
+      "exhibition_original_en": "Project Materials Exhibition of Project",
+      "details": [
+        {
+          "id": "exhibition",
+          "text": "LALM परियोजना सामग्री आदान-प्रदान प्रदर्शनी",
+          "dy": 0,
+          "role": "target_primary"
+        },
+        {
+          "id": "identity",
+          "text": "我们知道 / We Know",
+          "dy": 27,
+          "role": "small_identity_anchor"
+        },
+        {
+          "id": "dates",
+          "text": "19–21 नवंबर 2026",
+          "dy": 70,
+          "role": "target_primary"
+        },
+        {
+          "id": "hours",
+          "text": "10:00–18:00",
+          "dy": 103,
+          "role": "target_primary"
+        },
+        {
+          "id": "venue_short",
+          "text": "शांग आर्ट म्यूज़ियम · हांगझोउ",
+          "dy": 147,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_tour",
+          "text": "उद्घाटन निर्देशित भ्रमण",
+          "dy": 188,
+          "role": "target_primary"
+        },
+        {
+          "id": "opening_time",
+          "text": "21 नवंबर | 14:00–15:30",
+          "dy": 214,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session",
+          "text": "हम नहीं जानते — खुला सत्र",
+          "dy": 250,
+          "role": "target_primary"
+        },
+        {
+          "id": "open_session_time",
+          "text": "21 नवंबर | 16:00–18:00",
+          "dy": 276,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_label",
+          "text": "आयोजन दल",
+          "dy": 316,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_1",
+          "text": "वेन-दी वू · वांग यीतू",
+          "dy": 341,
+          "role": "target_primary"
+        },
+        {
+          "id": "work_team_2",
+          "text": "ल्यु देशेंग",
+          "dy": 364,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers_label",
+          "text": "पर्यवेक्षक",
+          "dy": 397,
+          "role": "target_primary"
+        },
+        {
+          "id": "observers",
+          "text": "(    ) · वांग यीतू · झेंग यीफांग",
+          "dy": 422,
+          "role": "target_primary"
+        },
+        {
+          "id": "organizer",
+          "text": "आयोजक: सीमेंट पार्क",
+          "dy": 457,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer",
+          "text": "सह-आयोजक: शांग आर्ट म्यूज़ियम",
+          "dy": 480,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_label",
+          "text": "पता",
+          "dy": 513,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_1",
+          "text": "झेजियांग प्रांत, हांगझोउ, श्याओशान जिला",
+          "dy": 537,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_2",
+          "text": "हेशांग कस्बा, श्यामेन गाँव",
+          "dy": 560,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_3",
+          "text": "ज़ेवूशू, संख्या 2",
+          "dy": 585,
+          "role": "target_primary"
+        },
+        {
+          "id": "address_4",
+          "text": "शांग आर्ट म्यूज़ियम",
+          "dy": 604,
+          "role": "target_primary"
+        }
+      ],
+      "roster": [
+        {
+          "id": "pair_01",
+          "project_id": "project_01",
+          "person_id": "person_roster_01",
+          "order": 1,
+          "sort_key": "Alkali",
+          "project": "अल्कली",
+          "name": "हाइएस्ट",
+          "project_original": "Alkali",
+          "name_original": "Highest",
+          "project_zh": "强碱",
+          "name_zh": "最高",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_02",
+          "project_id": "project_02",
+          "person_id": "person_roster_02",
+          "order": 2,
+          "sort_key": "Bbeyond",
+          "project": "बीबियॉन्ड",
+          "name": "ब्रायन पैटरसन",
+          "project_original": "Bbeyond",
+          "name_original": "Brian Patterson",
+          "project_zh": "比比扬德",
+          "name_zh": "布赖恩·帕特森",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_03",
+          "project_id": "project_03",
+          "person_id": "person_lyudesheng",
+          "order": 3,
+          "sort_key": "CementPark",
+          "project": "सीमेंट पार्क",
+          "name": "ल्यु देशेंग",
+          "project_original": "CementPark",
+          "name_original": "Lyu Desheng",
+          "project_zh": "水泥公园",
+          "name_zh": "吕德生",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_04",
+          "project_id": "project_04",
+          "person_id": "person_roster_04",
+          "order": 4,
+          "sort_key": "CementPark Tokyo",
+          "project": "सीमेंट पार्क टोक्यो",
+          "name": "यू ओहारा",
+          "project_original": "CementPark·Tokyo",
+          "name_original": "Yu Ohara",
+          "project_zh": "水泥公园·东京",
+          "name_zh": "大原由",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_05",
+          "project_id": "project_05",
+          "person_id": "person_roster_05",
+          "order": 5,
+          "sort_key": "FEICHUAN",
+          "project": "फ़ेइचुआन",
+          "name": "पान चेननोंग",
+          "project_original": "FEICHUAN",
+          "name_original": "Pan Chennong",
+          "project_zh": "废船",
+          "name_zh": "潘晨农",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_06",
+          "project_id": "project_06",
+          "person_id": "person_roster_06",
+          "order": 6,
+          "sort_key": "Feminale",
+          "project": "फ़ेमिनाले",
+          "name": "यॉनजॉन्ग",
+          "project_original": "Feminale 페미날레",
+          "name_original": "Yeonjeong",
+          "project_zh": "费米纳勒",
+          "name_zh": "缘定",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_07",
+          "project_id": "project_07",
+          "person_id": "person_roster_07",
+          "order": 7,
+          "sort_key": "HEXXYDUXXYBOX",
+          "project": "हेक्सी डक्सी बॉक्स",
+          "name": "सताद्रु सोवन",
+          "project_original": "HEXXYDUXXYBOX (HDBOX)",
+          "name_original": "Satadru Sovan",
+          "project_zh": "赫克西杜克西博克斯",
+          "name_zh": "萨塔德鲁·索万",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_08",
+          "project_id": "project_08",
+          "person_id": "person_roster_08",
+          "order": 8,
+          "sort_key": "Kua Jia",
+          "project": "कुआ ज्या",
+          "name": "गाओ श्यू",
+          "project_original": "Kua Jia",
+          "name_original": "Gao Xu",
+          "project_zh": "跨甲",
+          "name_zh": "高旭",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_09",
+          "project_id": "project_09",
+          "person_id": "person_roster_09",
+          "order": 9,
+          "sort_key": "OPEN SPACE",
+          "project": "ओपन स्पेस",
+          "name": "चेन जिन",
+          "project_original": "OPEN SPACE",
+          "name_original": "Chen Jin",
+          "project_zh": "OPEN 空间",
+          "name_zh": "陈进",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_10",
+          "project_id": "project_10",
+          "person_id": "person_roster_10",
+          "order": 10,
+          "sort_key": "Shallow breathing",
+          "project": "शैलो ब्रीदिंग",
+          "name": "हुआंग ज़ोंगझेन",
+          "project_original": "Shallow breathing",
+          "name_original": "Huang Zongzhen",
+          "project_zh": "浅呼吸",
+          "name_zh": "黄宗镇",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_11",
+          "project_id": "project_11",
+          "person_id": "person_roster_11",
+          "order": 11,
+          "sort_key": "Studio erte",
+          "project": "स्टूडियो एर्ते",
+          "name": "रोको यूहास",
+          "project_original": "Studio eŕté",
+          "name_original": "Rokko Juhasz",
+          "project_zh": "埃尔泰工作室",
+          "name_zh": "罗科·尤哈斯",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_12",
+          "project_id": "project_12",
+          "person_id": "person_roster_12",
+          "order": 12,
+          "sort_key": "Ta-Academy",
+          "project": "ता अकैडमी",
+          "name": "ताइकोनॉट",
+          "project_original": "Ta-Academy",
+          "name_original": "Taikonot",
+          "project_zh": "塔院",
+          "name_zh": "阿莫",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_13",
+          "project_id": "project_13",
+          "person_id": "person_roster_13",
+          "order": 13,
+          "sort_key": "Waterfield Studio Catmaoworm",
+          "project": "वॉटरफ़ील्ड स्टूडियो / कैटमाओवर्म",
+          "name": "च्यांग युआन श्यांग",
+          "project_original": "Waterfield Studio, Catmaoworm",
+          "name_original": "Chiang Yuan Hsiang",
+          "project_zh": "水田部落行為藝術營、貓蚯蚓",
+          "name_zh": "江源祥",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        },
+        {
+          "id": "pair_14",
+          "project_id": "project_14",
+          "person_id": "person_roster_14",
+          "order": 14,
+          "sort_key": "ZOO",
+          "project": "ज़ू",
+          "name": "जिन जिनजिन",
+          "project_original": "ZOO",
+          "name_original": "Jin Jinjin",
+          "project_zh": "粗",
+          "name_zh": "金今今",
+          "name_status": "machine phonetic proposal from Latin; native review pending"
+        }
+      ],
+      "work_team": [
+        {
+          "id": "person_wendi",
+          "name": "वेन-दी वू",
+          "original": "Wen-Di Wu",
+          "zh": "问地"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "वांग यीतू",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_lyudesheng",
+          "name": "ल्यु देशेंग",
+          "original": "Lyu Desheng",
+          "zh": "吕德生"
+        }
+      ],
+      "observers": [
+        {
+          "id": "observer_pending",
+          "name": "(    )",
+          "zh": "（    ）",
+          "status": "intentional_blank"
+        },
+        {
+          "id": "person_wangyitu",
+          "name": "वांग यीतू",
+          "original": "Wang Yitu",
+          "zh": "王一土"
+        },
+        {
+          "id": "person_zhengyifang",
+          "name": "झेंग यीफांग",
+          "original": "Zheng Yifang",
+          "zh": "郑一方"
+        }
+      ],
+      "review_status": "machine localization; native-language and proper-name approval pending",
+      "native_reviewed": false
+    }
+  }
+}

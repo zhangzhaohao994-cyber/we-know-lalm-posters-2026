@@ -1,0 +1,35 @@
+{
+  "EN": {
+    "primary_strings_checked": 58,
+    "font": "NotoSans-Regular.ttf",
+    "missing": [],
+    "roster_count": 14,
+    "sort_order_unchanged": true,
+    "native_reviewed": false
+  },
+  "JA": {
+    "primary_strings_checked": 58,
+    "font": "NotoSansCJKjp-Bold.otf",
+    "missing": [],
+    "roster_count": 14,
+    "sort_order_unchanged": true,
+    "native_reviewed": false
+  },
+  "KO": {
+    "primary_strings_checked": 58,
+    "font": "NotoSansCJKkr-Bold.otf",
+    "missing": [],
+    "roster_count": 14,
+    "sort_order_unchanged": true,
+    "native_reviewed": false
+  },
+  "IN": {
+    "primary_strings_checked": 58,
+    "font": "NotoSansDevanagari-Regular.ttf",
+    "missing": [],
+    "roster_count": 14,
+    "sort_order_unchanged": true,
+    "native_reviewed": false,
+    "all_primary_strings_harfbuzz_shaped": true
+  }
+}

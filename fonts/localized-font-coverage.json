@@ -1,0 +1,16 @@
+{
+  "JA": {
+    "requiredCount": 148,
+    "missing": "坞泽镇",
+    "requiredCharacters": " ()012345689:ALM|·–—いたちってなはらるァアィイゥウェエォオカガキクグコサザシジスズセソゾタダチッツテデトドナノハバパビフブプヘペホボマミムメャュユョヨラリルレロワンヴ・ー上下主交京会催共加区原参号営在地坞場墅大展山州市幕年所料日時月期村杭東江河泽流浙由省知私者蕭資運镇開間门／",
+    "source": "localizations.json title+labels+details excluding Chinese identity anchor+roster target project/name",
+    "font": "LALM-NotoSerifJP-Regular.ttf"
+  },
+  "KO": {
+    "requiredCount": 152,
+    "missing": "",
+    "requiredCharacters": " ().012345689:ALM|·–—가간개고공관교구기날노눙는다더덕데도동드디딩라람레로료루뤼류르른리린마막먼멘모뮤미박반버브비사산상샤샬샹서성소수쉬스슨시아안알어언엄에연열영오옵왕욘우운워원월웜위유이일있자장저전정젝주지진쩌쭝참천촌촨최카칼캣코콰쿄크타터테투튜트팀파판팡패페프픈필하항허헥현호황／",
+    "source": "localizations.json title+labels+details excluding Chinese identity anchor+roster target project/name",
+    "font": "LALM-NotoSerifKR-Regular.ttf"
+  }
+}

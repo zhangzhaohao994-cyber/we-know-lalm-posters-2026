@@ -1,0 +1,72 @@
+[
+  {
+    "name": "NotoSerifSC[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC[wght].ttf",
+    "bytes": 25125512
+  },
+  {
+    "name": "notoserifsc-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt",
+    "bytes": 4350
+  },
+  {
+    "name": "MaShanZheng-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/mashanzheng/MaShanZheng-Regular.ttf",
+    "bytes": 5857936
+  },
+  {
+    "name": "mashanzheng-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/mashanzheng/OFL.txt",
+    "bytes": 4397
+  },
+  {
+    "name": "ZCOOLXiaoWei-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf",
+    "bytes": 6313808
+  },
+  {
+    "name": "zcoolxiaowei-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolxiaowei/OFL.txt",
+    "bytes": 4400
+  },
+  {
+    "name": "ZCOOLQingKeHuangYou-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf",
+    "bytes": 8328684
+  },
+  {
+    "name": "zcoolqingkehuangyou-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolqingkehuangyou/OFL.txt",
+    "bytes": 4419
+  },
+  {
+    "name": "NotoSerifJP[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifjp/NotoSerifJP[wght].ttf",
+    "bytes": 13574352
+  },
+  {
+    "name": "notoserifjp-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifjp/OFL.txt",
+    "bytes": 4350
+  },
+  {
+    "name": "NotoSerifKR[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkr/NotoSerifKR[wght].ttf",
+    "bytes": 23795420
+  },
+  {
+    "name": "notoserifkr-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkr/OFL.txt",
+    "bytes": 4350
+  },
+  {
+    "name": "LXGWWenKai-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/fonts/TTF/LXGWWenKai-Regular.ttf",
+    "bytes": 25928940
+  },
+  {
+    "name": "LXGWWenKai-OFL.txt",
+    "url": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/OFL.txt",
+    "bytes": 5171
+  }
+]

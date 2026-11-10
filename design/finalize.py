@@ -4,17 +4,22 @@ import json,zipfile,hashlib
 P=Path(__file__).resolve().parent.parent
 Image.MAX_IMAGE_PIXELS=100_000_000
 m=json.loads((P/'manifest.json').read_text());items=m['posters']
+locales=json.loads((P/'content/localizations.json').read_text())['languages']
+matrix={r['id']:r for r in json.loads((P/'design/matrix.json').read_text())}
 for r in items:
- if r['id'].startswith('IN'):
-  r['status']='印地语拟音 · 待母语确认';r['verification']='用户指定印地语；HarfBuzz塑形，未作母语者审校'
-  r['concept']='连续笔势让完整的天城文字在流动中保持读音。' if r['id']=='IN01' else '同一句标题经过重复压印，边界留下细微而可见的差异。'
-m['notes']=['已确认原稿第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','新增日文、韩文与印地语主题采用既有We Know的拟音，已检查字体与排字，待母语者确认。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
+ if r['id']=='ORIGINAL':continue
+ r['title']=r['id'];r['typography']=matrix[r['id']]['typography']
+ if r['id'][:2] in locales:
+  r['status']='全页本地化 · 待参与者／母语核对';r['verification']='全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校'
+  r['concept']=matrix[r['id']]['concept']
+m['revision']='2 — full-page localization and distinct typography'
+m['notes']=['已确认原稿第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。','中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
 m['downloads']=[{'label':'26款新稿高清PNG合集','url':'downloads/26-posters-print.zip'},{'label':'可编辑源文件与资料','url':'downloads/design-notes.zip'},{'label':'27张总览','url':'gallery-overview.jpg'}]
 (P/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
 fonts=ImageFont.truetype(str(P/'fonts/NotoSansCJKsc-Regular.otf'),22)
 sheet=Image.new('RGB',(1800,9*940),'#e9e8e3');d=ImageDraw.Draw(sheet)
 for i,r in enumerate(items):
- im=Image.open(P/r['preview']).convert('RGB');im.thumbnail((570,855));x=(i%3)*600+15;y=(i//3)*940+50;sheet.paste(im,(x,y));d.text((x,y-35),r['id']+' · '+r['title'],font=fonts,fill='#222')
+ im=Image.open(P/r['preview']).convert('RGB');im.thumbnail((570,855));x=(i%3)*600+15;y=(i//3)*940+50;sheet.paste(im,(x,y));d.text((x,y-35),r['id'],font=fonts,fill='#222')
 sheet.save(P/'gallery-overview.jpg',quality=93)
 # Retain only current final contacts in publishable design files.
 for f in (P/'design').glob('contact-*.jpg'):f.unlink()
@@ -28,11 +33,23 @@ for r in items:
   assert im.info.get('icc_profile'),r['id']
   texts=json.loads((P/'design'/f"{r['id']}.text.json").read_text());alltext='\n'.join(z['text'] for z in texts)
   rows=json.loads((P/'content/final-layout.json').read_text())['rows']
-  for row in rows:
-   for v in [row['zh'],row['en'][0],*row['name']]:assert v in alltext,(r['id'],v)
+  if r['id'][:2] in locales:
+   loc=locales[r['id'][:2]]
+   for item in loc['details']:
+    if item['text']:assert item['text'] in alltext,(r['id'],item['text'])
+   for row in loc['roster']:
+    for key in ['project','name']:assert row[key] in alltext,(r['id'],row[key])
+   main=''.join(t['text'] for t in texts if not t.get('module')).replace(' ','')
+   assert loc['title'].replace(' ','').upper() in main.upper(),(r['id'],'theme missing')
+  else:
+   for row in rows:
+    for v in [row['zh'],row['en'][0],*row['name']]:assert v in alltext,(r['id'],v)
   assert (P/r['source']).read_text().count('<image ')==5
  report.append({'id':r['id'],'dimensions':im.size,'dpi':im.info.get('dpi'),'bytes':file.stat().st_size,'sha256':hashlib.sha256(file.read_bytes()).hexdigest()})
 (P/'qa/exports.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+quality=P/'QUALITY.md'
+base=quality.read_text().split('\n## 本轮成品验收\n')[0]
+quality.write_text(base+'\n## 本轮成品验收\n\n26 张新稿均通过 7087×10630、300 PPI、ICC 配置与完整文案检查；每张五份 logo。`qa/exports.json` 记录文件哈希。`qa/layout-v2.json` 验证信息模块内字形边界无相交，原定稿 GIF 哈希未变。\n\n中文十款和日韩四款已逐张看预览；英文十款已看联系页，另有五张外文预览独立检查。日文竖排小假名和印地语组合字形已检查；英文曲引号改用拉丁字体后复看通过。详见本轮 `*-v2*` 审查文件。新增译文仍待本人／母语核对。\n\n在线发布与下载验收结果另见当前 STATUS.md 及线上 QA 记录。\n')
 (P/'downloads').mkdir(exist_ok=True)
 with zipfile.ZipFile(P/'downloads/26-posters-print.zip','w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
  for r in items:

@@ -14,7 +14,7 @@
     },
     {
       "id": "JA01",
-      "title": "可见与不可见",
+      "title": "JA01",
       "language": "JA",
       "layout": "top",
       "colors": [
@@ -23,26 +23,27 @@
         "#e8d475"
       ],
       "paper": "#f2e6ab",
-      "concept": "纵向音译标题在白空间里建立可见的读取路径。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "上置信息／下方纵向音译",
-      "typography": "日文纵排",
+      "typography": "Full-page localized typography",
       "medium": "竖向空白",
       "reading": "纵向穿行",
       "preview": "previews/JA01.jpg",
       "full": "print/JA01.png",
       "source": "sources/JA01.svg",
-      "status": "机器拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "ggg 第1回展「大橋正展／野菜のイラストレーション」",
         "url": "https://www.dnpfcp.jp/publications/annual/pdf/annual_2023.pdf#page=7",
         "principle": "纵向文字与一条有机形体可以在大片留白中建立方向。"
       },
-      "details": "以日文纵向语句和原创细小的开口痕迹产生可见/不可见边界，不使用蔬菜图像。"
+      "details": "以日文纵向语句和原创细小的开口痕迹产生可见/不可见边界，不使用蔬菜图像。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "JA02",
-      "title": "复写中的差异",
+      "title": "JA02",
       "language": "JA",
       "layout": "bottom",
       "colors": [
@@ -51,26 +52,27 @@
         "#bf6d3b"
       ],
       "paper": "#dedce4",
-      "concept": "复写的同一句话总会错开一个位置。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "上部复写／下部资料",
-      "typography": "日文横向复写",
+      "typography": "Full-page localized typography",
       "medium": "透明片层",
       "reading": "叠影→清晰锚点",
       "preview": "previews/JA02.jpg",
       "full": "print/JA02.png",
       "source": "sources/JA02.svg",
-      "status": "机器拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Gessnerallee Cycle 4–11",
         "url": "https://intl.international/competition-legacy/",
         "principle": "不同复制层的遮叠能够让共同记忆保留差异。"
       },
-      "details": "以日文清晰主锚和原创复写纸痕迹相叠，局部网点显影，不使用原人物图像。"
+      "details": "以日文清晰主锚和原创复写纸痕迹相叠，局部网点显影，不使用原人物图像。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "KO01",
-      "title": "语块的构筑",
+      "title": "KO01",
       "language": "KO",
       "layout": "middle",
       "colors": [
@@ -79,26 +81,27 @@
         "#29466e"
       ],
       "paper": "#efc577",
-      "concept": "完整韩文字块像可组合建筑，但不拆散音节。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "上下标题／中间信息",
-      "typography": "韩文字块",
+      "typography": "Full-page localized typography",
       "medium": "模块文字",
       "reading": "两端聚合",
       "preview": "previews/KO01.jpg",
       "full": "print/KO01.png",
       "source": "sources/KO01.svg",
-      "status": "机器拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Extra Ball（画面标题；INTL caption 写作 Golden Ball）",
         "url": "https://intl.international/competition-legacy/",
         "principle": "模块边界与不同体量可以搭建完整结构。"
       },
-      "details": "将韩文完整音节块构成独立模块建筑，以深蓝和杏黄建立重力关系；不模拟弹珠台。"
+      "details": "将韩文完整音节块构成独立模块建筑，以深蓝和杏黄建立重力关系；不模拟弹珠台。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "KO02",
-      "title": "轻声的共同体",
+      "title": "KO02",
       "language": "KO",
       "layout": "top",
       "colors": [
@@ -107,26 +110,27 @@
         "#6b886f"
       ],
       "paper": "#dce9d5",
-      "concept": "手势路径将间隔很远的文字联系起来。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "上资料／下方开放手势",
-      "typography": "韩文轻盈排字",
+      "typography": "Full-page localized typography",
       "medium": "连续手绘曲线",
       "reading": "舒缓横向",
       "preview": "previews/KO02.jpg",
       "full": "print/KO02.png",
       "source": "sources/KO02.svg",
-      "status": "机器拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "FISSA",
         "url": "https://intl.international/competition-legacy/",
         "principle": "轻盈手势与稀疏文字能共同维持呼吸。"
       },
-      "details": "原创轻线条手势围绕完整韩文语块，让字与线有距离，信息形成小而稳定的阅读区。"
+      "details": "原创轻线条手势围绕完整韩文语块，让字与线有距离，信息形成小而稳定的阅读区。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "IN01",
-      "title": "连续的认知",
+      "title": "IN01",
       "language": "IN",
       "layout": "right",
       "colors": [
@@ -135,15 +139,15 @@
         "#a94830"
       ],
       "paper": "#cae0e6",
-      "concept": "连续笔势让完整的天城文字在流动中保持读音。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "右资料／左笔势",
-      "typography": "语种待定",
+      "typography": "Full-page localized typography",
       "medium": "连续贝塞尔笔势",
       "reading": "沿流线观看",
       "preview": "previews/IN01.jpg",
       "full": "print/IN01.png",
       "source": "sources/IN01.svg",
-      "status": "印地语拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Apno",
@@ -151,11 +155,11 @@
         "principle": "连续阅读可由字的节奏和行间介质产生，而非简单等距网格。"
       },
       "details": "按确认的印度文字体系和真实shaping建立连续文字流；只用完整词组，不逐码位拆字。",
-      "verification": "用户指定印地语；HarfBuzz塑形，未作母语者审校"
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "IN02",
-      "title": "共同的印记",
+      "title": "IN02",
       "language": "IN",
       "layout": "bottom",
       "colors": [
@@ -164,15 +168,15 @@
         "#d99826"
       ],
       "paper": "#eee8d9",
-      "concept": "同一句标题经过重复压印，边界留下细微而可见的差异。",
+      "concept": "Natural-language theme, localized details and phonetic proper-name identities.",
       "skeleton": "中央印痕／底部资料",
-      "typography": "语种待定",
+      "typography": "Full-page localized typography",
       "medium": "多重压印矢量",
       "reading": "层层显影",
       "preview": "previews/IN02.jpg",
       "full": "print/IN02.png",
       "source": "sources/IN02.svg",
-      "status": "印地语拟音 · 待母语确认",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Golden Ball（画面标题；INTL caption 写作 Extra Ball）",
@@ -180,11 +184,11 @@
         "principle": "局部压强与密集边界能够让一块平面产生触觉想象。"
       },
       "details": "转为原创纸张压印的局部凸凹，印度文字与印记采用疏密对照；舍弃对称脸/机台构造。",
-      "verification": "用户指定印地语；HarfBuzz塑形，未作母语者审校"
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "ZH01",
-      "title": "缺失的共识",
+      "title": "ZH01",
       "language": "ZH",
       "layout": "bottom",
       "colors": [
@@ -195,7 +199,13 @@
       "paper": "#ffffff",
       "concept": "负形中的缺口成为共同认知的边界。",
       "skeleton": "超大字双行／负形切口",
-      "typography": "黑体负形",
+      "typography": {
+        "title_font": "songBold",
+        "body_fonts": [
+          "song",
+          "songBold"
+        ]
+      },
       "medium": "标题空缺",
       "reading": "高密度上部→信息底部",
       "preview": "previews/ZH01.jpg",
@@ -212,7 +222,7 @@
     },
     {
       "id": "ZH02",
-      "title": "身体的证词",
+      "title": "ZH02",
       "language": "ZH",
       "layout": "bottom",
       "colors": [
@@ -223,7 +233,13 @@
       "paper": "#e4e0db",
       "concept": "手掌接触看不见的表面，知道来自身体的阻力。",
       "skeleton": "摄影网点／左下标题",
-      "typography": "克制黑体",
+      "typography": {
+        "title_font": "brush",
+        "body_fonts": [
+          "wenkai",
+          "wenkai"
+        ]
+      },
       "medium": "原创摄影转矢量网点",
       "reading": "触感图像→精确信息",
       "preview": "previews/ZH02.jpg",
@@ -240,7 +256,7 @@
     },
     {
       "id": "ZH03",
-      "title": "公共声明",
+      "title": "ZH03",
       "language": "ZH",
       "layout": "top",
       "colors": [
@@ -251,7 +267,13 @@
       "paper": "#f8f6ed",
       "concept": "重复的确定声明被一条空白打断。",
       "skeleton": "上置信息／整行文字场",
-      "typography": "整行黑体",
+      "typography": {
+        "title_font": "qing",
+        "body_fonts": [
+          "reg",
+          "bold"
+        ]
+      },
       "medium": "重复与擦除",
       "reading": "小字入口→向下重复",
       "preview": "previews/ZH03.jpg",
@@ -268,7 +290,7 @@
     },
     {
       "id": "ZH04",
-      "title": "知识的剖面",
+      "title": "ZH04",
       "language": "ZH",
       "layout": "left",
       "colors": [
@@ -279,7 +301,13 @@
       "paper": "#dedbe4",
       "concept": "只有透过多层边界才能辨认一句话。",
       "skeleton": "左索引／纵向层叠",
-      "typography": "单字纵深",
+      "typography": {
+        "title_font": "song",
+        "body_fonts": [
+          "song",
+          "songBold"
+        ]
+      },
       "medium": "半透明矢量材料",
       "reading": "左→层层向右",
       "preview": "previews/ZH04.jpg",
@@ -296,7 +324,7 @@
     },
     {
       "id": "ZH05",
-      "title": "集体档案",
+      "title": "ZH05",
       "language": "ZH",
       "layout": "register",
       "colors": [
@@ -307,7 +335,13 @@
       "paper": "#eee9db",
       "concept": "名单与刻度把分散的经验收进同一份档案。",
       "skeleton": "登记索引／中部双栏",
-      "typography": "理性编号式字",
+      "typography": {
+        "title_font": "xiaowei",
+        "body_fonts": [
+          "wenkai",
+          "wenkai"
+        ]
+      },
       "medium": "横向索引线",
       "reading": "标题→并列档案",
       "preview": "previews/ZH05.jpg",
@@ -324,7 +358,7 @@
     },
     {
       "id": "ZH06",
-      "title": "知道的回声",
+      "title": "ZH06",
       "language": "ZH",
       "layout": "bottom",
       "colors": [
@@ -335,7 +369,13 @@
       "paper": "#f48232",
       "concept": "同一句话沿不同角度传播而不重合。",
       "skeleton": "放射文字路径",
-      "typography": "旋转黑体",
+      "typography": {
+        "title_font": "bold",
+        "body_fonts": [
+          "song",
+          "songBold"
+        ]
+      },
       "medium": "回声文字",
       "reading": "旋转阅读→底部停顿",
       "preview": "previews/ZH06.jpg",
@@ -352,7 +392,7 @@
     },
     {
       "id": "ZH07",
-      "title": "不稳定的秩序",
+      "title": "ZH07",
       "language": "ZH",
       "layout": "right",
       "colors": [
@@ -363,7 +403,13 @@
       "paper": "#f6cdd0",
       "concept": "每个字都按同一斜率偏离稳定轴。",
       "skeleton": "右侧静态／左侧倾斜",
-      "typography": "倾斜厚字",
+      "typography": {
+        "title_font": "wenkai",
+        "body_fonts": [
+          "wenkai",
+          "wenkai"
+        ]
+      },
       "medium": "偏心色面",
       "reading": "对角上升→右侧核对",
       "preview": "previews/ZH07.jpg",
@@ -380,7 +426,7 @@
     },
     {
       "id": "ZH08",
-      "title": "手的记忆",
+      "title": "ZH08",
       "language": "ZH",
       "layout": "right",
       "colors": [
@@ -391,7 +437,13 @@
       "paper": "#d9b65e",
       "concept": "印刷字像被手工反复擦印，保留未能完全复制的痕迹。",
       "skeleton": "右侧资料／四个独立拓印",
-      "typography": "磨损字形",
+      "typography": {
+        "title_font": "brush",
+        "body_fonts": [
+          "song",
+          "songBold"
+        ]
+      },
       "medium": "原创矢量拓印",
       "reading": "四字游走→边栏",
       "preview": "previews/ZH08.jpg",
@@ -408,7 +460,7 @@
     },
     {
       "id": "ZH09",
-      "title": "局部成为整体",
+      "title": "ZH09",
       "language": "ZH",
       "layout": "windows",
       "colors": [
@@ -419,7 +471,13 @@
       "paper": "#daeaf1",
       "concept": "纸纤维被放大成无法轻易定位的边界。",
       "skeleton": "微观图像穿插对角资料窗口",
-      "typography": "测量式标题",
+      "typography": {
+        "title_font": "song",
+        "body_fonts": [
+          "reg",
+          "bold"
+        ]
+      },
       "medium": "原创微观影像转网点",
       "reading": "微观→标题→信息",
       "preview": "previews/ZH09.jpg",
@@ -436,7 +494,7 @@
     },
     {
       "id": "ZH10",
-      "title": "迟疑的确定",
+      "title": "ZH10",
       "language": "ZH",
       "layout": "split",
       "colors": [
@@ -447,7 +505,13 @@
       "paper": "#f6f4ec",
       "concept": "细线的突然折返让一句肯定停顿。",
       "skeleton": "对角双区／大留白",
-      "typography": "小型清晰标题",
+      "typography": {
+        "title_font": "wenkai",
+        "body_fonts": [
+          "wenkai",
+          "wenkai"
+        ]
+      },
       "medium": "一根折线",
       "reading": "空白→细小主题→名单",
       "preview": "previews/ZH10.jpg",
@@ -464,7 +528,7 @@
     },
     {
       "id": "EN01",
-      "title": "A shared field",
+      "title": "EN01",
       "language": "EN",
       "layout": "right",
       "colors": [
@@ -481,18 +545,19 @@
       "preview": "previews/EN01.jpg",
       "full": "print/EN01.png",
       "source": "sources/EN01.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "The Big Bang",
         "url": "https://intl.international/competition-legacy/",
         "principle": "多中心的聚集通过空隙产生关联，而非依靠中心大图。"
       },
-      "details": "把WE与KNOW分布成共享场，原创文字节点与名单索引连接，不使用现成商业图标。"
+      "details": "把WE与KNOW分布成共享场，原创文字节点与名单索引连接，不使用现成商业图标。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN02",
-      "title": "A statement under pressure",
+      "title": "EN02",
       "language": "EN",
       "layout": "left",
       "colors": [
@@ -509,18 +574,19 @@
       "preview": "previews/EN02.jpg",
       "full": "print/EN02.png",
       "source": "sources/EN02.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "JP ISBA 2019",
         "url": "https://intl.international/competition-legacy/",
         "principle": "字的纵向比例本身可以传达压力。"
       },
-      "details": "用真实窄体英文字体与两端压缩的留白制造受压结构，必要信息保持常规比例。"
+      "details": "用真实窄体英文字体与两端压缩的留白制造受压结构，必要信息保持常规比例。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN03",
-      "title": "An image withheld",
+      "title": "EN03",
       "language": "EN",
       "layout": "top",
       "colors": [
@@ -537,18 +603,19 @@
       "preview": "previews/EN03.jpg",
       "full": "print/EN03.png",
       "source": "sources/EN03.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Black Flag",
         "url": "https://intl.international/competition-legacy/",
         "principle": "强烈具象局部可把观看者拉近，再让文字给出语境。"
       },
-      "details": "使用原创遮挡身体图像，只露出关键动作局部，WE KNOW与遮挡边缘形成关系。"
+      "details": "使用原创遮挡身体图像，只露出关键动作局部，WE KNOW与遮挡边缘形成关系。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN04",
-      "title": "Reading through a fold",
+      "title": "EN04",
       "language": "EN",
       "layout": "bottom",
       "colors": [
@@ -565,18 +632,19 @@
       "preview": "previews/EN04.jpg",
       "full": "print/EN04.png",
       "source": "sources/EN04.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Royal Academy of Art Offprint Paris",
         "url": "https://intl.international/competition-legacy/",
         "principle": "物理折叠可以成为阅读顺序的原因。"
       },
-      "details": "原创纸面折口穿过WE KNOW，信息分别沿折面的真实边界对齐，保持必要文字完整。"
+      "details": "原创纸面折口穿过WE KNOW，信息分别沿折面的真实边界对齐，保持必要文字完整。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN05",
-      "title": "The register",
+      "title": "EN05",
       "language": "EN",
       "layout": "receipt",
       "colors": [
@@ -593,18 +661,19 @@
       "preview": "previews/EN05.jpg",
       "full": "print/EN05.png",
       "source": "sources/EN05.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Ruhr Ding: Territorien",
         "url": "https://intl.international/competition-legacy/",
         "principle": "日期与条目可作为可扫描的登记结构。"
       },
-      "details": "将项目与艺术家绑定成连续登记记录，英文主标题嵌入编号起点，以酒红和乳白建立阅读节拍。"
+      "details": "将项目与艺术家绑定成连续登记记录，英文主标题嵌入编号起点，以酒红和乳白建立阅读节拍。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN06",
-      "title": "Between two voices",
+      "title": "EN06",
       "language": "EN",
       "layout": "split",
       "colors": [
@@ -621,18 +690,19 @@
       "preview": "previews/EN06.jpg",
       "full": "print/EN06.png",
       "source": "sources/EN06.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "East Palace West Palace — 3 years anniversary",
         "url": "https://intl.international/competition-legacy/",
         "principle": "两种声音可以通过交错而非机械均分建立对话。"
       },
-      "details": "英文WE与KNOW分属不对称对话区，中文作为回应，信息跨越边界但仍按原序。"
+      "details": "英文WE与KNOW分属不对称对话区，中文作为回应，信息跨越边界但仍按原序。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN07",
-      "title": "One signal",
+      "title": "EN07",
       "language": "EN",
       "layout": "bottom",
       "colors": [
@@ -649,18 +719,19 @@
       "preview": "previews/EN07.jpg",
       "full": "print/EN07.png",
       "source": "sources/EN07.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Vienna-Fiera",
         "url": "https://intl.international/competition-legacy/",
         "principle": "一个细长核心形象可在极简场中建立纪念碑式焦点。"
       },
-      "details": "绘制原创的开口/闭口认知符号，配极少量大号WE KNOW；不使用国旗或塔。"
+      "details": "绘制原创的开口/闭口认知符号，配极少量大号WE KNOW；不使用国旗或塔。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN08",
-      "title": "Almost aligned",
+      "title": "EN08",
       "language": "EN",
       "layout": "top",
       "colors": [
@@ -677,18 +748,19 @@
       "preview": "previews/EN08.jpg",
       "full": "print/EN08.png",
       "source": "sources/EN08.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Minutos para el fin",
         "url": "https://intl.international/competition-legacy/",
         "principle": "图像分层和错位色片可以让表面呈现不稳定的知觉。"
       },
-      "details": "将受控红蓝套印用于英文轮廓，色层差异被限制在标题，不干扰正文。"
+      "details": "将受控红蓝套印用于英文轮廓，色层差异被限制在标题，不干扰正文。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN09",
-      "title": "A room of words",
+      "title": "EN09",
       "language": "EN",
       "layout": "left",
       "colors": [
@@ -705,18 +777,19 @@
       "preview": "previews/EN09.jpg",
       "full": "print/EN09.png",
       "source": "sources/EN09.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Modelle",
         "url": "https://intl.international/competition-legacy/",
         "principle": "文字可以充当有表面的空间物件。"
       },
-      "details": "原创一间由WE KNOW文字表面构成的房间，正文作为稳定平面，不借用原标签与照片。"
+      "details": "原创一间由WE KNOW文字表面构成的房间，正文作为稳定平面，不借用原标签与照片。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     },
     {
       "id": "EN10",
-      "title": "An interrupted broadcast",
+      "title": "EN10",
       "language": "EN",
       "layout": "middle",
       "colors": [
@@ -733,19 +806,21 @@
       "preview": "previews/EN10.jpg",
       "full": "print/EN10.png",
       "source": "sources/EN10.svg",
-      "status": "文字与版式检查通过",
+      "status": "全页本地化 · 待参与者／母语核对",
       "size": "7087 × 10630 px · 300 PPI · 60 × 90 cm",
       "reference": {
         "title": "Crossfade",
         "url": "https://intl.international/competition-legacy/",
         "principle": "精细标记与大面积主体的密度差能控制读取的停顿。"
       },
-      "details": "用线性信号和明确停顿控制WE KNOW的播报节奏，只有可读短语与真实名单，不制造乱码。"
+      "details": "用线性信号和明确停顿控制WE KNOW的播报节奏，只有可读短语与真实名单，不制造乱码。",
+      "verification": "全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校"
     }
   ],
   "notes": [
     "已确认原稿第一；日文、韩文、印地语六款随后，中英文版本依编号排列。",
-    "新增日文、韩文与印地语主题采用既有We Know的拟音，已检查字体与排字，待母语者确认。",
+    "外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。",
+    "中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。",
     "印地语由用户指定，不据此推断参与者母语。",
     "新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。"
   ],
@@ -762,5 +837,6 @@
       "label": "27张总览",
       "url": "gallery-overview.jpg"
     }
-  ]
+  ],
+  "revision": "2 — full-page localization and distinct typography"
 }

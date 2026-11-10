@@ -1,0 +1,279 @@
+{
+  "posters": [
+    {
+      "id": "EN01",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN02",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN03",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN04",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN05",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN06",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN07",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN08",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN09",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "EN10",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "latin",
+        "latinBold"
+      ]
+    },
+    {
+      "id": "IN01",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "Devanagari-Bold",
+        "Devanagari-Regular",
+        "latin",
+        "reg"
+      ]
+    },
+    {
+      "id": "IN02",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "Devanagari-Bold",
+        "Devanagari-Regular",
+        "latin",
+        "reg"
+      ]
+    },
+    {
+      "id": "JA01",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "jp",
+        "jpSerif",
+        "latin"
+      ]
+    },
+    {
+      "id": "JA02",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "jpSerif",
+        "jpSerifBold",
+        "latin"
+      ]
+    },
+    {
+      "id": "KO01",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "ko",
+        "koSerif",
+        "latin"
+      ]
+    },
+    {
+      "id": "KO02",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 11,
+      "body_families": [
+        "bold",
+        "koSerif",
+        "koSerifBold",
+        "latin"
+      ]
+    },
+    {
+      "id": "ZH01",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "song",
+        "songBold"
+      ]
+    },
+    {
+      "id": "ZH02",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "wenkai"
+      ]
+    },
+    {
+      "id": "ZH03",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "ko",
+        "latin",
+        "reg"
+      ]
+    },
+    {
+      "id": "ZH04",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "song",
+        "songBold"
+      ]
+    },
+    {
+      "id": "ZH05",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "wenkai"
+      ]
+    },
+    {
+      "id": "ZH06",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "song",
+        "songBold"
+      ]
+    },
+    {
+      "id": "ZH07",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "wenkai"
+      ]
+    },
+    {
+      "id": "ZH08",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "song",
+        "songBold"
+      ]
+    },
+    {
+      "id": "ZH09",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "ko",
+        "latin",
+        "reg"
+      ]
+    },
+    {
+      "id": "ZH10",
+      "information_text_overlaps": 0,
+      "minimum_body_size": 12,
+      "body_families": [
+        "bold",
+        "latin",
+        "wenkai"
+      ]
+    }
+  ],
+  "original_gif_unchanged": true,
+  "original_sha256": "49ea3dbfe09dc591920c4630ed43bc0b1b3a275185c1fa80503a5a8fe5583acc",
+  "scope": "Information text bounds in each local module; intentional title overlay is excluded."
+}

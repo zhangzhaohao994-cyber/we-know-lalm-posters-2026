@@ -1,0 +1,86 @@
+{
+  "ZH01": {
+    "title": "LALM-NotoSerifSC-Bold.ttf",
+    "body": "NotoSansCJKsc-Regular.otf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "让宋体三角衬线成为负形切口的来源；不继续沿用黑体的同一条斜切。"
+  },
+  "ZH02": {
+    "title": "LALM-WenKai-Regular.ttf",
+    "body": "LALM-WenKai-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "标题用有笔势的楷书短句，正文同用文楷，但减小强调，匹配身体证词的亲近尺度。"
+  },
+  "ZH03": {
+    "title": "LALM-QingKeHuangYou-Regular.ttf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-QingKeHuangYou-Regular.ttf",
+    "action": "圆角窄体整行声明与宋体正文形成公共标语/刊物对照，圆角不要伪装成书写。"
+  },
+  "ZH04": {
+    "title": "LALM-XiaoWei-Regular.ttf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "用楔形宋体的粗细边界穿过半透明层，避免只是黑体竖列换紫色。"
+  },
+  "ZH05": {
+    "title": "LALM-NotoSerifSC-Regular.ttf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "档案方向采用编辑式宋体、字面留白和索引，不把细宋仍排成巨大黑体的同一块。"
+  },
+  "ZH06": {
+    "title": "LALM-QingKeHuangYou-Regular.ttf",
+    "body": "LALM-WenKai-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "用细长圆角字延长回声节奏；文楷名单形成相对静止的人工记录。"
+  },
+  "ZH07": {
+    "title": "LALM-NotoSerifSC-Bold.ttf",
+    "body": "NotoSansCJKsc-Regular.otf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "宋体重笔画在斜向轴线受力，保留衬线端点作为速度感来源，不是机械给黑体skew。"
+  },
+  "ZH08": {
+    "title": "LALM-MaShanZheng-Regular.ttf",
+    "body": "LALM-WenKai-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "用真实毛笔字轮廓作原创编排，去掉把无衬线字刮几条白线冒充手写的处理；正文楷书稳读。"
+  },
+  "ZH09": {
+    "title": "LALM-XiaoWei-Regular.ttf",
+    "body": "NotoSansCJKsc-Regular.otf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "楔形小薇标题作测量标签，宋/黑的层级与微观网点相对；不把所有正文一起变成装饰字。"
+  },
+  "ZH10": {
+    "title": "LALM-NotoSerifSC-Regular.ttf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "用小字号高对比宋体保持迟疑与精确，扩大字间呼吸而不是只缩小默认黑体。"
+  },
+  "JA01": {
+    "title": "LALM-NotoSerifJP-Regular.ttf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "日文标题使用日文区域明朝体，保留GSUB vert替换；中文内文用SC，不用JP字体覆盖简体中文。"
+  },
+  "JA02": {
+    "title": "LALM-NotoSerifJP-Bold.ttf",
+    "body": "LALM-WenKai-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "复写层使用真实不同印痕位置和字重，不能把语音转写错误掩盖为视觉效果。"
+  },
+  "KO01": {
+    "title": "NotoSansCJKkr-Bold.otf",
+    "body": "LALM-NotoSerifSC-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "保留韩文整块结构，正文改为宋体以区别模块主视觉。"
+  },
+  "KO02": {
+    "title": "LALM-NotoSerifKR-Regular.ttf",
+    "body": "LALM-WenKai-Regular.ttf",
+    "head": "LALM-NotoSerifSC-Bold.ttf",
+    "action": "韩文明朝型细节与轻线条呼应，与KO01的黑体字块明显区分。"
+  }
+}

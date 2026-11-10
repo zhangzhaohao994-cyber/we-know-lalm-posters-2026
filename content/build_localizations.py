@@ -99,7 +99,7 @@ LANGS = {
 
 result = {
  'schema_version':1,
- 'scope':'26 new poster variants only; approved ORIGINAL and locked source content stay unchanged',
+ 'scope':'All 27 posters; user-added GRAVITATIONAL BODY and Lin Zhongfei included in 15 pairs',
  'instruction_precedence':'Latest user instruction requests full target-language presentation and natural semantic theme translation; supersedes earlier phonetic-only new theme policy.',
  'source_identity':'content.json locked and final-layout.json',
  'sort_rule':'Keep confirmed project Latin A–Z order; never resort by translated script or nationality.',
@@ -113,8 +113,11 @@ result = {
  'languages':{},
 }
 
+for lang,project,name in [('JA','グラビテーショナル・ボディ','リン・ジョンフェイ'),('KO','그래비테이셔널 바디','린중페이'),('IN','ग्रैविटेशनल बॉडी','लिन झोंगफ़ेइ')]:
+    PROJECTS[lang].insert(6,project);NAMES[lang].insert(6,name)
+
 for code,cfg in LANGS.items():
-    assert len(PROJECTS[code]) == len(NAMES[code]) == 14
+    assert len(PROJECTS[code]) == len(NAMES[code]) == 15
     people = PEOPLE[code]
     sep = ' · '
     lbl = cfg['labels']
@@ -153,4 +156,4 @@ for code,cfg in LANGS.items():
     result['languages'][code]=d
 
 (ROOT/'localizations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-print('Saved localizations.json: 4 languages x 21 detail lines x 14 roster pairs')
+print('Saved localizations.json: 4 languages x 21 detail lines x 15 roster pairs')

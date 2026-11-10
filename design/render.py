@@ -107,20 +107,20 @@ def roster(a,x,y,w=610,scale=1,columns=False):
   a.text(labels['project'],0,0,20,'bold',width=cut-15);a.text(labels['attendees'],cut,0,20,'bold',width=w-cut)
   a.line(0,23,w,23,a.ink,.7)
   for i,r in enumerate(loc['roster']):
-   yy=62+i*39
+   yy=62+i*(39*13/14)
    a.text(r['project'],0,yy,19,'bold',width=cut-15);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
    # Original identities are subordinate anchors, never untranslated instructions.
    if a.lang=='EN':
-    a.text(r['project_zh'],0,yy+18,11,'reg',width=cut-15);a.text(r['name_zh'],cut,yy+18,11,'reg',width=w-cut)
+    a.text(r['project_zh'],0,yy+16,11,'reg',width=cut-15);a.text(r['name_zh'],cut,yy+16,11,'reg',width=w-cut)
    else:
-    a.text(r['project_original'],0,yy+18,11,'latin',width=cut-15);a.text(r['name_original'],cut,yy+18,11,'latin',width=w-cut)
+    a.text(r['project_original'],0,yy+16,11,'latin',width=cut-15);a.text(r['name_original'],cut,yy+16,11,'latin',width=w-cut)
  else:
   a.text('空间／项目',0,0,20,'bold');a.text('参会者',cut,0,20,'bold')
   a.text('Space / Project',0,24,12,'latin');a.text('Attendees',cut,24,12,'latin')
   for i,r in enumerate(ROWS):
-   yy=62+i*39
-   a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+18,12,width=cut-15)
-   a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+18,12,width=w-cut)
+   yy=62+i*(39*13/14)
+   a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+16,12,width=cut-15)
+   a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+16,12,width=w-cut)
  a.end()
  a.module=None
 def info(a,mode,paper,ink):
@@ -141,7 +141,7 @@ def info(a,mode,paper,ink):
   a.rect(480,1040,720,760,paper);roster(a,515,1090,690,.93);a.logos(515,1700,640)
  elif mode=='receipt':
   details(a,55,70,620,.70);roster(a,55,650,760,1.43);a.logos(55,1700,1090)
-  for i in range(15):a.line(55,715+i*55.77,1145,715+i*55.77,ink,.5)
+  for i in range(16):a.line(55,715+i*(55.77*14/15),1145,715+i*(55.77*14/15),ink,.5)
  elif mode=='windows':
   a.rect(535,0,665,650,paper);roster(a,575,65,665,.88)
   a.rect(0,1120,530,680,paper);details(a,50,1180,500,.85);a.logos(570,1690,580)

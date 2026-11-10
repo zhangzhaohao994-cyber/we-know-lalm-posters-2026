@@ -5,12 +5,12 @@
       "id": "ORIGINAL",
       "title": "已确认定稿",
       "language": "原版",
-      "concept": "最初确认的动态海报，完整保留。",
+      "concept": "已确认版补入重力体／林中飞，保持原主视觉与动效。",
       "preview": "previews/ORIGINAL.gif",
       "full": "print/ORIGINAL.png",
       "status": "用户已确认",
       "size": "静态原稿1200×1800；非300PPI印刷稿",
-      "verification": "保留原尺寸，不放大冒充印刷高清"
+      "verification": "15组名单；主视觉与12秒循环沿用确认版"
     },
     {
       "id": "JA01",
@@ -818,7 +818,7 @@
     }
   ],
   "notes": [
-    "已确认原稿第一；日文、韩文、印地语六款随后，中英文版本依编号排列。",
+    "已确认版补录后仍在第一；日文、韩文、印地语六款随后，中英文版本依编号排列。",
     "外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。",
     "中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。",
     "印地语由用户指定，不据此推断参与者母语。",
@@ -838,5 +838,5 @@
       "url": "gallery-overview.jpg"
     }
   ],
-  "revision": "2 — full-page localization and distinct typography"
+  "revision": "3 — added GRAVITATIONAL BODY and Lin Zhongfei"
 }

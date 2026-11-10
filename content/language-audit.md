@@ -20,7 +20,7 @@ localizations.json 的 languages.EN/JA/KO/IN 各含21条 details，保留原版2
 
 每项名单同时保存 project/name（本地化主文字）、project_original/name_original（锁定原文）及 project_zh/name_zh（既有中文身份）。渲染时可用较小的 Latin 行辅助识别，不要求每行三语。中文主题与场馆可保留为小号身份锚。
 
-日期、时段、场馆、地址层级、3位工作团队成员、观察员有意空位及2位有名成员、14组项目与参会者均保留。英文展名继续使用已定 Project Materials Exhibition of Project，不自行纠正其英语风格。英文活动说明 Opening guided tour 与 We Don’t Know — Open Session 是本次新增的普通说明翻译，不冒充已有官方译名。
+日期、时段、场馆、地址层级、3位工作团队成员、观察员有意空位及2位有名成员、15组项目与参会者均保留。英文展名继续使用已定 Project Materials Exhibition of Project，不自行纠正其英语风格。英文活动说明 Opening guided tour 与 We Don’t Know — Open Session 是本次新增的普通说明翻译，不冒充已有官方译名。
 
 ## 已有原名证据
 
@@ -48,6 +48,6 @@ localizations.json 的 languages.EN/JA/KO/IN 各含21条 details，保留原版2
 
 ## 当前已完成的技术检查与边界
 
-四种语言各58条主文字的字体覆盖检查通过，无缺字；14组名单均在、排序不变。全部印地语主文字通过 HarfBuzz 塑形，无 gid0。结果见 qa/localization-glyph-audit.json。
+四种语言各58条主文字的字体覆盖检查通过，无缺字；15组名单均在、排序不变。全部印地语主文字通过 HarfBuzz 塑形，无 gid0。结果见 qa/localization-glyph-audit.json。
 
 这些检查证明文件结构、字符覆盖和塑形可运行，不等同母语翻译认可，也不等同海报最终版式验收。新的全页外语已完成16张内容与字形bbox检查，并实际查看JA01、KO01、IN01、EN01、EN05全预览；详见qa/localization-v2-review.md/json。未宣称人工逐张检查16个印刷尺寸PNG；旧版只有外语大标题的预览检查不可沿用。全体新增本地化保留「机器翻译／拟音，待母语与本人名称核对」状态。

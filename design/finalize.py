@@ -12,8 +12,8 @@ for r in items:
  if r['id'][:2] in locales:
   r['status']='全页本地化 · 待参与者／母语核对';r['verification']='全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校'
   r['concept']=matrix[r['id']]['concept']
-m['revision']='2 — full-page localization and distinct typography'
-m['notes']=['已确认原稿第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。','中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
+m['revision']='3 — added GRAVITATIONAL BODY and Lin Zhongfei'
+m['notes']=['已确认版补录后仍在第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。','中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
 m['downloads']=[{'label':'26款新稿高清PNG合集','url':'downloads/26-posters-print.zip'},{'label':'可编辑源文件与资料','url':'downloads/design-notes.zip'},{'label':'27张总览','url':'gallery-overview.jpg'}]
 (P/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
 fonts=ImageFont.truetype(str(P/'fonts/NotoSansCJKsc-Regular.otf'),22)
@@ -49,7 +49,7 @@ for r in items:
 (P/'qa/exports.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 quality=P/'QUALITY.md'
 base=quality.read_text().split('\n## 本轮成品验收\n')[0]
-quality.write_text(base+'\n## 本轮成品验收\n\n26 张新稿均通过 7087×10630、300 PPI、ICC 配置与完整文案检查；每张五份 logo。`qa/exports.json` 记录文件哈希。`qa/layout-v2.json` 验证信息模块内字形边界无相交，原定稿 GIF 哈希未变。\n\n中文十款和日韩四款已逐张看预览；英文十款已看联系页，另有五张外文预览独立检查。日文竖排小假名和印地语组合字形已检查；英文曲引号改用拉丁字体后复看通过。详见本轮 `*-v2*` 审查文件。新增译文仍待本人／母语核对。\n\n在线发布与下载验收结果另见当前 STATUS.md 及线上 QA 记录。\n')
+quality.write_text(base+'\n## 本轮成品验收\n\n26 张新稿均通过 7087×10630、300 PPI、ICC 配置与完整文案检查；每张五份 logo。`qa/exports.json` 记录文件哈希。`qa/layout-r3.json` 验证信息模块内字形边界无相交，原版 GIF 已补入重力体／林中飞，动效保持原参数。\n\n中文十款和日韩四款已逐张看预览；英文十款已看联系页，另有五张外文预览独立检查。日文竖排小假名和印地语组合字形已检查；英文曲引号改用拉丁字体后复看通过。详见本轮补录验收记录。新增译文仍待本人／母语核对。\n\n在线发布与下载验收结果另见当前 STATUS.md 及线上 QA 记录。\n')
 (P/'downloads').mkdir(exist_ok=True)
 with zipfile.ZipFile(P/'downloads/26-posters-print.zip','w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
  for r in items:

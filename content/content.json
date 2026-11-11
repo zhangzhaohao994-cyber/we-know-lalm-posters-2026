@@ -364,7 +364,11 @@
           "en": "Jin Jinjin"
         }
       }
-    ]
+    ],
+    "additional_coorganizer": {
+      "zh": "孵创作者社区",
+      "en": "Fu Art Coliving"
+    }
   },
   "designable": [
     "layout",

@@ -92,6 +92,9 @@ def details(a,x,y,w=430,scale=1):
  a.module='details'
  a.group(f'translate({x},{y}) scale({scale})');x=y=0
  lines=[('LALM 项目资料交流展',0,25,'bold'),('Project Materials Exhibition of Project',27,14,'reg'),('2026.11.19–11.21',70,32,'wide'),('10:00–18:00',103,23,'reg'),('丄美术馆 · 杭州',147,27,'bold'),('开幕现场导览',188,18,'bold'),('11.21｜14:00–15:30',214,19,'reg'),('我们不知道—开放现场',250,18,'bold'),('11.21｜16:00–18:00',276,19,'reg'),('工作团队 / WORK TEAM',316,15,'bold'),('问地 Wen-Di Wu · 王一土 Wang Yitu',341,15,'reg'),('吕德生 Lyu Desheng',364,15,'reg'),('观察员 / OBSERVERS',397,15,'bold'),('（    ）· 王一土 Wang Yitu · 郑一方 Zheng Yifang',422,15,'reg'),('主办 Organizer：水泥公园 CementPark',457,15,'reg'),('协办 Co-organizer：丄美术馆 Shang Art Museum',480,15,'reg'),('地址 Venue',513,14,'bold'),('浙江省杭州市萧山区河上镇',537,15,'reg'),('下门村泽坞墅2号，丄美术馆',560,15,'reg'),('Shang Art Museum, No. 2, Zewushu, Xiamen Village,',585,12,'reg'),('Heshang Town, Xiaoshan District, Hangzhou, Zhejiang Province',604,12,'reg')]
+ lines.insert(16,('协办 Co-organizer：孵创作者社区 Fu Art Coliving',498,15,'reg'))
+ baselines=[0,27,70,103,147,188,214,250,276,316,341,364,397,422,452,475,498,526,545,565,586,604]
+ lines=[(v[0],dy,v[2],v[3]) for v,dy in zip(lines,baselines)]
  if a.lang in LOCALES:
   localized=LOCALES[a.lang]['details']
   assert len(localized)==len(lines),(a.lang,len(localized))

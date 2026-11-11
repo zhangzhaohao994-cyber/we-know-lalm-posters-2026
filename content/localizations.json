@@ -123,37 +123,43 @@
         {
           "id": "organizer",
           "text": "Organizer: CementPark",
-          "dy": 457,
+          "dy": 452,
           "role": "target_primary"
         },
         {
           "id": "coorganizer",
           "text": "Co-organizer: Shang Art Museum",
-          "dy": 480,
+          "dy": 475,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer_additional",
+          "text": "Co-organizer: Fu Art Coliving",
+          "dy": 498,
           "role": "target_primary"
         },
         {
           "id": "address_label",
           "text": "Address",
-          "dy": 513,
+          "dy": 526,
           "role": "target_primary"
         },
         {
           "id": "address_1",
           "text": "Shang Art Museum, No. 2, Zewushu,",
-          "dy": 537,
+          "dy": 545,
           "role": "target_primary"
         },
         {
           "id": "address_2",
           "text": "Xiamen Village, Heshang Town,",
-          "dy": 560,
+          "dy": 565,
           "role": "target_primary"
         },
         {
           "id": "address_3",
           "text": "Xiaoshan District, Hangzhou,",
-          "dy": 585,
+          "dy": 586,
           "role": "target_primary"
         },
         {
@@ -529,37 +535,43 @@
         {
           "id": "organizer",
           "text": "主催: セメントパーク",
-          "dy": 457,
+          "dy": 452,
           "role": "target_primary"
         },
         {
           "id": "coorganizer",
           "text": "共催: シャン・アート・ミュージアム",
-          "dy": 480,
+          "dy": 475,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer_additional",
+          "text": "共催: Fu Art Coliving",
+          "dy": 498,
           "role": "target_primary"
         },
         {
           "id": "address_label",
           "text": "会場所在地",
-          "dy": 513,
+          "dy": 526,
           "role": "target_primary"
         },
         {
           "id": "address_1",
           "text": "浙江省杭州市蕭山区",
-          "dy": 537,
+          "dy": 545,
           "role": "target_primary"
         },
         {
           "id": "address_2",
           "text": "河上镇下门村",
-          "dy": 560,
+          "dy": 565,
           "role": "target_primary"
         },
         {
           "id": "address_3",
           "text": "泽坞墅2号",
-          "dy": 585,
+          "dy": 586,
           "role": "target_primary"
         },
         {
@@ -935,37 +947,43 @@
         {
           "id": "organizer",
           "text": "주최: 시멘트파크",
-          "dy": 457,
+          "dy": 452,
           "role": "target_primary"
         },
         {
           "id": "coorganizer",
           "text": "공동주최: 샹 아트 뮤지엄",
-          "dy": 480,
+          "dy": 475,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer_additional",
+          "text": "공동주최: Fu Art Coliving",
+          "dy": 498,
           "role": "target_primary"
         },
         {
           "id": "address_label",
           "text": "주소",
-          "dy": 513,
+          "dy": 526,
           "role": "target_primary"
         },
         {
           "id": "address_1",
           "text": "저장성 항저우시 샤오산구",
-          "dy": 537,
+          "dy": 545,
           "role": "target_primary"
         },
         {
           "id": "address_2",
           "text": "허상진 샤먼촌",
-          "dy": 560,
+          "dy": 565,
           "role": "target_primary"
         },
         {
           "id": "address_3",
           "text": "쩌우수 2호",
-          "dy": 585,
+          "dy": 586,
           "role": "target_primary"
         },
         {
@@ -1342,37 +1360,43 @@
         {
           "id": "organizer",
           "text": "आयोजक: सीमेंट पार्क",
-          "dy": 457,
+          "dy": 452,
           "role": "target_primary"
         },
         {
           "id": "coorganizer",
           "text": "सह-आयोजक: शांग आर्ट म्यूज़ियम",
-          "dy": 480,
+          "dy": 475,
+          "role": "target_primary"
+        },
+        {
+          "id": "coorganizer_additional",
+          "text": "सह-आयोजक: Fu Art Coliving",
+          "dy": 498,
           "role": "target_primary"
         },
         {
           "id": "address_label",
           "text": "पता",
-          "dy": 513,
+          "dy": 526,
           "role": "target_primary"
         },
         {
           "id": "address_1",
           "text": "झेजियांग प्रांत, हांगझोउ, श्याओशान जिला",
-          "dy": 537,
+          "dy": 545,
           "role": "target_primary"
         },
         {
           "id": "address_2",
           "text": "हेशांग कस्बा, श्यामेन गाँव",
-          "dy": 560,
+          "dy": 565,
           "role": "target_primary"
         },
         {
           "id": "address_3",
           "text": "ज़ेवूशू, संख्या 2",
-          "dy": 585,
+          "dy": 586,
           "role": "target_primary"
         },
         {

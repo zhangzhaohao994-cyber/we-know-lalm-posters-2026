@@ -1,3 +1,3 @@
-第三轮：补录重力体 / GRAVITATIONAL BODY — 林中飞 / Lin Zhongfei。
-全部27张按15组名单更新，新增项目在Feminale之后。主视觉、尺寸与网站单列布局沿用。
-高清导出及上线进行中。
+2026-11-12：27张海报均已加入协办孵创作者社区 / Fu Art Coliving。
+入口：https://lalmposter.zhangzhaohao.com/
+DNS已生效，证书已签发并启用强制HTTPS。

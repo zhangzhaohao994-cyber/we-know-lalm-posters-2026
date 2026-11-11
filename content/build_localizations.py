@@ -4,10 +4,10 @@ import json
 
 ROOT = Path(__file__).resolve().parent
 LOCKED = json.loads((ROOT / 'content.json').read_text())['locked']
-BASELINES = [0,27,70,103,147,188,214,250,276,316,341,364,397,422,457,480,513,537,560,585,604]
+BASELINES = [0,27,70,103,147,188,214,250,276,316,341,364,397,422,452,475,498,526,545,565,586,604]
 IDS = ['exhibition','identity','dates','hours','venue_short','opening_tour','opening_time',
        'open_session','open_session_time','work_team_label','work_team_1','work_team_2',
-       'observers_label','observers','organizer','coorganizer','address_label',
+       'observers_label','observers','organizer','coorganizer','coorganizer_additional','address_label',
        'address_1','address_2','address_3','address_4']
 
 PROJECTS = {
@@ -126,7 +126,9 @@ for code,cfg in LANGS.items():
        sep.join(people[:2]),people[2],lbl['observers'],'(    )' + sep + sep.join([people[1],people[3]]),
        lbl['organizer'] + ': ' + PROJECTS[code][2],lbl['coorganizer'] + ': ' + cfg['museum'],
        lbl['address'],*cfg['address']]
-    assert len(detail_texts)==21
+    community={'EN':'Fu Art Coliving','JA':'Fu Art Coliving','KO':'Fu Art Coliving','IN':'Fu Art Coliving'}[code]
+    detail_texts.insert(16,lbl['coorganizer'] + ': ' + community)
+    assert len(detail_texts)==22
     d={
       'bcp47':cfg['bcp47'],'display_name':cfg['display_name'],
       'title':cfg['title'],'title_mode':'semantic translation of 我们知道',
@@ -156,4 +158,4 @@ for code,cfg in LANGS.items():
     result['languages'][code]=d
 
 (ROOT/'localizations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-print('Saved localizations.json: 4 languages x 21 detail lines x 15 roster pairs')
+print('Saved localizations.json: 4 languages x 22 detail lines x 15 roster pairs')

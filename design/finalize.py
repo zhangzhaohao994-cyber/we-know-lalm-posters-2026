@@ -12,7 +12,7 @@ for r in items:
  if r['id'][:2] in locales:
   r['status']='全页本地化 · 待参与者／母语核对';r['verification']='全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校'
   r['concept']=matrix[r['id']]['concept']
-m['revision']='3 — added GRAVITATIONAL BODY and Lin Zhongfei'
+m['revision']='4 — Fu Art Coliving added to all posters'
 m['notes']=['已确认版补录后仍在第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。','中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
 m['downloads']=[{'label':'26款新稿高清PNG合集','url':'downloads/26-posters-print.zip'},{'label':'可编辑源文件与资料','url':'downloads/design-notes.zip'},{'label':'27张总览','url':'gallery-overview.jpg'}]
 (P/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))

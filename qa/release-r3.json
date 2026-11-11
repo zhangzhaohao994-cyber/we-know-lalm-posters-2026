@@ -1,0 +1,13 @@
+{
+  "revision": 3,
+  "posters": 27,
+  "roster_pairs": 15,
+  "new_pair_position": 7,
+  "online_assets_checked": 32,
+  "hash_samples": [
+    "ORIGINAL.gif",
+    "JA01.png",
+    "ZH01.png"
+  ],
+  "passed": true
+}

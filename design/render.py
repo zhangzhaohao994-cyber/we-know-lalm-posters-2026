@@ -1,5 +1,6 @@
 from pathlib import Path
-import json,math,random,base64,html,sys
+import json,math,random,base64,html,sys,io
+from functools import lru_cache
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.boundsPen import BoundsPen
@@ -27,6 +28,13 @@ BODY_FONTS={'ZH01':('song','songBold'),'ZH02':('wenkai','wenkai'),'ZH03':('reg',
 BODY_FONTS.update({'JA01':('jpSerif','jp'),'JA02':('jpSerif','jpSerifBold'),'KO01':('koSerif','ko'),'KO02':('koSerif','koSerifBold')})
 BODY_FONTS.update({f'EN{i:02}':('latin','latinBold') for i in range(1,11)})
 TITLE_FONTS={'ZH01':'songBold','ZH02':'brush','ZH03':'qing','ZH04':'song','ZH05':'xiaowei','ZH06':'bold','ZH07':'wenkai','ZH08':'brush','ZH09':'song','ZH10':'wenkai'}
+PROJECT_LOGOS=json.loads((AS/'project-logos.json').read_text())
+@lru_cache(maxsize=32)
+def project_logo_data(name):
+ im=Image.open(AS/'project-logos'/name).convert('RGBA');paper=Image.new('RGBA',im.size,'white');paper.alpha_composite(im);im=paper.convert('RGB')
+ r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<235 else 0);box=mask.getbbox()
+ if box:im=im.crop((max(0,box[0]-2),max(0,box[1]-2),min(im.width,box[2]+2),min(im.height,box[3]+2)))
+ im.thumbnail((256,256),Image.Resampling.LANCZOS);out=io.BytesIO();im.save(out,format='PNG',optimize=True);return base64.b64encode(out.getvalue()).decode()
 # Caption fonts are OFL; all final text is outlined to remove runtime font substitutions.
 class Art:
  def __init__(self,bg,ink,id):
@@ -77,6 +85,11 @@ class Art:
    self.p.append(f'<use href="#{gid}" transform="translate({cur},0) scale({size/up}, {-size/up})"/>');cur+=gs[g].width*size/up
   if boxes:entry['bbox']=[min(b[0] for b in boxes),min(b[1] for b in boxes),max(b[2] for b in boxes),max(b[3] for b in boxes)]
   self.p.append('</g>');return cur
+ def project_logos(self,key,x,y):
+  files=PROJECT_LOGOS[key];cell=32/len(files)
+  for i,name in enumerate(files):
+   self.rect(x+i*cell,y,cell,30,'#ffffff')
+   self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{x+i*cell+1}" y="{y+1}" width="{cell-2}" height="28" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{project_logo_data(name)}"/>')
  def logos(self,x,y,w=1080):
   for i,(key,bw) in enumerate([('lalm',75),('cement',130),('museum',52),('council',120),('fund',130)]):
    im=Image.open(next(AS.glob(key+'.*'))).convert('RGB');r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<205 else 0);box=mask.getbbox();im=im.crop(box)
@@ -111,18 +124,18 @@ def roster(a,x,y,w=610,scale=1,columns=False):
   a.line(0,23,w,23,a.ink,.7)
   for i,r in enumerate(loc['roster']):
    yy=62+i*(39*13/14)
-   a.text(r['project'],0,yy,19,'bold',width=cut-15);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
+   a.project_logos(ROWS[i]['key'],0,yy-14);a.text(r['project'],40,yy,19,'bold',width=cut-55);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
    # Original identities are subordinate anchors, never untranslated instructions.
    if a.lang=='EN':
-    a.text(r['project_zh'],0,yy+16,11,'reg',width=cut-15);a.text(r['name_zh'],cut,yy+16,11,'reg',width=w-cut)
+    a.text(r['project_zh'],40,yy+16,11,'reg',width=cut-55);a.text(r['name_zh'],cut,yy+16,11,'reg',width=w-cut)
    else:
-    a.text(r['project_original'],0,yy+16,11,'latin',width=cut-15);a.text(r['name_original'],cut,yy+16,11,'latin',width=w-cut)
+    a.text(r['project_original'],40,yy+16,11,'latin',width=cut-55);a.text(r['name_original'],cut,yy+16,11,'latin',width=w-cut)
  else:
   a.text('空间／项目',0,0,20,'bold');a.text('参会者',cut,0,20,'bold')
   a.text('Space / Project',0,24,12,'latin');a.text('Attendees',cut,24,12,'latin')
   for i,r in enumerate(ROWS):
    yy=62+i*(39*13/14)
-   a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+16,12,width=cut-15)
+   a.project_logos(r['key'],0,yy-14);a.text(r['zh'],40,yy,18,'bold',width=cut-55);a.text(r['en'][0],40,yy+16,12,width=cut-55)
    a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+16,12,width=w-cut)
  a.end()
  a.module=None

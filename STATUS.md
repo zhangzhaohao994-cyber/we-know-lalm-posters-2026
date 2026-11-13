@@ -1,2 +1,2 @@
-2026-11-14：仅16张外文海报主标题改为LALM / Live Art Live Meet / 现场艺术会议。中文与定稿不变。
+2026-11-14：27张海报加入全部现有机构Logo；孵创作者社区官方Logo素材待补。
 主入口：https://lalmposter.zhangzhaohao.com/

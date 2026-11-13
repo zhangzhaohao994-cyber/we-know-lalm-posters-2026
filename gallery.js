@@ -1,5 +1,5 @@
 'use strict';
-const ASSET_VERSION='20261114-r7';
+const ASSET_VERSION='20261114-r8';
 const assetUrl=value=>{const u=new URL(value,location.href);u.searchParams.set('v',ASSET_VERSION);return u.href};
 const order=['ORIGINAL','JA01','JA02','KO01','KO02','IN01','IN02','HI01','HI02',...Array.from({length:10},(_,i)=>'ZH'+String(i+1).padStart(2,'0')),...Array.from({length:10},(_,i)=>'EN'+String(i+1).padStart(2,'0'))];
 const languages={ORIGINAL:'定稿',JA:'日本語',KO:'한국어',IN:'हिन्दी',HI:'हिन्दी',ZH:'中文',EN:'English'};

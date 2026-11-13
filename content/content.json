@@ -368,7 +368,130 @@
     "additional_coorganizer": {
       "zh": "孵创作者社区",
       "en": "Fu Art Coliving"
-    }
+    },
+    "project_logos": [
+      {
+        "project_key": "Alkali",
+        "files": [
+          "assets/project-logos/alkali.png"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Bbeyond",
+        "files": [
+          "assets/project-logos/bbeyond.webp"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "CementPark",
+        "files": [
+          "assets/project-logos/cementpark.png"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "CementPark Tokyo",
+        "files": [
+          "assets/project-logos/cementpark-tokyo.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "CU",
+        "files": [
+          "assets/project-logos/cu.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "FEICHUAN",
+        "files": [
+          "assets/project-logos/feichuan.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Feminale",
+        "files": [
+          "assets/project-logos/feminale.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "GRAVITATIONAL BODY",
+        "files": [
+          "assets/project-logos/gravitational-body-20261111.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "HEXXYDUXXYBOX",
+        "files": [
+          "assets/project-logos/hexxyduxxybox.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Kua Jia",
+        "files": [
+          "assets/project-logos/kua-jia.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "OPEN SPACE",
+        "files": [
+          "assets/project-logos/open-space.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Shallow breathing",
+        "files": [
+          "assets/project-logos/shallow-breathing.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Studio erte",
+        "files": [
+          "assets/project-logos/studio-erte.jpeg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Ta-Academy",
+        "files": [
+          "assets/project-logos/ta-academy.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      },
+      {
+        "project_key": "Waterfield Studio Catmaoworm",
+        "files": [
+          "assets/project-logos/waterfield.jpg",
+          "assets/project-logos/catmaoworm.jpg"
+        ],
+        "role": "participating_project",
+        "required": true
+      }
+    ]
   },
   "designable": [
     "layout",
@@ -506,5 +629,12 @@
     }
   },
   "current_localization_source": "localizations.json",
-  "localization_policy": "Full target-language primary text in all foreign-language new posters; original Chinese/Latin retained as identity data and optional small anchors. Approved ORIGINAL unchanged."
+  "localization_policy": "Full target-language primary text in all foreign-language new posters; original Chinese/Latin retained as identity data and optional small anchors. Approved ORIGINAL unchanged.",
+  "pending_logo_assets": [
+    {
+      "institution_zh": "孵创作者社区",
+      "institution_en": "Fu Art Coliving",
+      "status": "official_logo_not_supplied"
+    }
+  ]
 }

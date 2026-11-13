@@ -200,10 +200,25 @@
         }
       },
       {
+        "id": "pair_14",
+        "project_id": "project_14",
+        "person_id": "person_roster_14",
+        "order": 5,
+        "sort_key": "CU",
+        "project": {
+          "zh": "粗",
+          "en": "CU"
+        },
+        "person": {
+          "zh": "金今今",
+          "en": "Jin Jinjin"
+        }
+      },
+      {
         "id": "pair_05",
         "project_id": "project_05",
         "person_id": "person_roster_05",
-        "order": 5,
+        "order": 6,
         "sort_key": "FEICHUAN",
         "project": {
           "zh": "废船",
@@ -218,7 +233,7 @@
         "id": "pair_06",
         "project_id": "project_06",
         "person_id": "person_roster_06",
-        "order": 6,
+        "order": 7,
         "sort_key": "Feminale",
         "project": {
           "zh": "费米纳勒",
@@ -233,7 +248,7 @@
         "id": "pair_gravitational_body",
         "project_id": "project_gravitational_body",
         "person_id": "person_lin_zhongfei",
-        "order": 7,
+        "order": 8,
         "sort_key": "GRAVITATIONAL BODY",
         "project": {
           "zh": "重力体",
@@ -248,7 +263,7 @@
         "id": "pair_07",
         "project_id": "project_07",
         "person_id": "person_roster_07",
-        "order": 8,
+        "order": 9,
         "sort_key": "HEXXYDUXXYBOX",
         "project": {
           "zh": "赫克西杜克西博克斯",
@@ -263,7 +278,7 @@
         "id": "pair_08",
         "project_id": "project_08",
         "person_id": "person_roster_08",
-        "order": 9,
+        "order": 10,
         "sort_key": "Kua Jia",
         "project": {
           "zh": "跨甲",
@@ -278,7 +293,7 @@
         "id": "pair_09",
         "project_id": "project_09",
         "person_id": "person_roster_09",
-        "order": 10,
+        "order": 11,
         "sort_key": "OPEN SPACE",
         "project": {
           "zh": "OPEN 空间",
@@ -293,7 +308,7 @@
         "id": "pair_10",
         "project_id": "project_10",
         "person_id": "person_roster_10",
-        "order": 11,
+        "order": 12,
         "sort_key": "Shallow breathing",
         "project": {
           "zh": "浅呼吸",
@@ -308,7 +323,7 @@
         "id": "pair_11",
         "project_id": "project_11",
         "person_id": "person_roster_11",
-        "order": 12,
+        "order": 13,
         "sort_key": "Studio erte",
         "project": {
           "zh": "埃尔泰工作室",
@@ -323,7 +338,7 @@
         "id": "pair_12",
         "project_id": "project_12",
         "person_id": "person_roster_12",
-        "order": 13,
+        "order": 14,
         "sort_key": "Ta-Academy",
         "project": {
           "zh": "塔院",
@@ -338,7 +353,7 @@
         "id": "pair_13",
         "project_id": "project_13",
         "person_id": "person_roster_13",
-        "order": 14,
+        "order": 15,
         "sort_key": "Waterfield Studio Catmaoworm",
         "project": {
           "zh": "水田部落行為藝術營、貓蚯蚓",
@@ -347,21 +362,6 @@
         "person": {
           "zh": "江源祥",
           "en": "Chiang Yuan Hsiang"
-        }
-      },
-      {
-        "id": "pair_14",
-        "project_id": "project_14",
-        "person_id": "person_roster_14",
-        "order": 15,
-        "sort_key": "ZOO",
-        "project": {
-          "zh": "粗",
-          "en": "ZOO"
-        },
-        "person": {
-          "zh": "金今今",
-          "en": "Jin Jinjin"
         }
       }
     ],
@@ -487,7 +487,7 @@
     "江源祥",
     "Chiang Yuan Hsiang",
     "粗",
-    "ZOO",
+    "CU",
     "金今今",
     "Jin Jinjin"
   ],

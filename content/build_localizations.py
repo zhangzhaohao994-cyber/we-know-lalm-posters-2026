@@ -4,6 +4,9 @@ import json
 
 ROOT = Path(__file__).resolve().parent
 LOCKED = json.loads((ROOT / 'content.json').read_text())['locked']
+_by_id={r['id']:r for r in LOCKED['roster']}
+LOCKED=dict(LOCKED,roster=[_by_id[i] for i in ['pair_01', 'pair_02', 'pair_03', 'pair_04', 'pair_05', 'pair_06', 'pair_gravitational_body', 'pair_07', 'pair_08', 'pair_09', 'pair_10', 'pair_11', 'pair_12', 'pair_13', 'pair_14']])
+
 BASELINES = [0,27,70,103,147,188,214,250,276,316,341,364,397,422,452,475,498,526,545,565,586,604]
 IDS = ['exhibition','identity','dates','hours','venue_short','opening_tour','opening_time',
        'open_session','open_session_time','work_team_label','work_team_1','work_team_2',
@@ -15,13 +18,13 @@ PROJECTS = {
  'JA': ['アルカリ','ビー・ビヨンド','セメントパーク','セメントパーク・東京',
         'フェイチュアン','フェミナーレ','ヘクシーダクシーボックス','クア・ジア',
         'オープンスペース','シャロウ・ブリージング','スタジオ・エルテ','ター・アカデミー',
-        'ウォーターフィールド・スタジオ／キャットマオワーム','ズー'],
+        'ウォーターフィールド・スタジオ／キャットマオワーム','CU'],
  'KO': ['알칼리','비비욘드','시멘트파크','시멘트파크 도쿄','페이촨','페미날레',
         '헥시덕시박스','콰자','오픈스페이스','샬로 브리딩','스튜디오 에르테',
-        '타아카데미','워터필드 스튜디오／캣마오웜','주'],
+        '타아카데미','워터필드 스튜디오／캣마오웜','CU'],
  'IN': ['अल्कली','बीबियॉन्ड','सीमेंट पार्क','सीमेंट पार्क टोक्यो','फ़ेइचुआन','फ़ेमिनाले',
         'हेक्सी डक्सी बॉक्स','कुआ ज्या','ओपन स्पेस','शैलो ब्रीदिंग','स्टूडियो एर्ते',
-        'ता अकैडमी','वॉटरफ़ील्ड स्टूडियो / कैटमाओवर्म','ज़ू'],
+        'ता अकैडमी','वॉटरफ़ील्ड स्टूडियो / कैटमाओवर्म','CU'],
 }
 NAMES = {
  'EN': [r['person']['en'] for r in LOCKED['roster']],
@@ -155,6 +158,10 @@ for code,cfg in LANGS.items():
             row['name_status']='연정 and 페미날레 attested in artist publication; Chinese 緣定 identifies same artist'
             row['evidence_url']='https://fliphtml5.com/riivd/ikzr/Yeonjeong_performance_2018-2019/5/'
         d['roster'].append(row)
+    for r in d['roster']:
+        if r['project_zh']=='粗':r['project']='CU';r['project_original']='CU';r['sort_key']='CU'
+    d['roster'].sort(key=lambda r:r['sort_key'].casefold())
+    for i,r in enumerate(d['roster']):r['order']=i+1
     result['languages'][code]=d
 
 (ROOT/'localizations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

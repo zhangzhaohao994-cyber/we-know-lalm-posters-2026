@@ -290,10 +290,10 @@
     "kind": "project",
     "target_language": "EN",
     "target_script": "en",
-    "source_latin": "ZOO",
+    "source_latin": "CU",
     "source_zh": "粗",
-    "localized": "ZOO",
-    "status": "confirmed supplied Latin",
+    "localized": "CU",
+    "status": "user-confirmed official English name CU",
     "evidence_url": ""
   },
   {
@@ -631,10 +631,10 @@
     "kind": "project",
     "target_language": "JA",
     "target_script": "ja",
-    "source_latin": "ZOO",
+    "source_latin": "CU",
     "source_zh": "粗",
-    "localized": "ズー",
-    "status": "machine phonetic proposal from Latin; native review pending",
+    "localized": "CU",
+    "status": "user-confirmed official English name CU",
     "evidence_url": ""
   },
   {
@@ -972,10 +972,10 @@
     "kind": "project",
     "target_language": "KO",
     "target_script": "ko",
-    "source_latin": "ZOO",
+    "source_latin": "CU",
     "source_zh": "粗",
-    "localized": "주",
-    "status": "machine phonetic proposal from Latin; native review pending",
+    "localized": "CU",
+    "status": "user-confirmed official English name CU",
     "evidence_url": ""
   },
   {
@@ -1313,10 +1313,10 @@
     "kind": "project",
     "target_language": "IN",
     "target_script": "hi-Deva",
-    "source_latin": "ZOO",
+    "source_latin": "CU",
     "source_zh": "粗",
-    "localized": "ज़ू",
-    "status": "machine phonetic proposal from Latin; native review pending",
+    "localized": "CU",
+    "status": "user-confirmed official English name CU",
     "evidence_url": ""
   },
   {

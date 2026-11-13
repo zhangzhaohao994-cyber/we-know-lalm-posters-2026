@@ -10,6 +10,7 @@
     "Bbeyond",
     "CementPark",
     "CementPark Tokyo",
+    "CU",
     "FEICHUAN",
     "Feminale",
     "GRAVITATIONAL BODY",
@@ -19,8 +20,7 @@
     "Shallow breathing",
     "Studio erte",
     "Ta-Academy",
-    "Waterfield Studio Catmaoworm",
-    "ZOO"
+    "Waterfield Studio Catmaoworm"
   ],
   "rows": [
     {
@@ -65,6 +65,17 @@
       "name": [
         "大原由",
         "Yu Ohara"
+      ]
+    },
+    {
+      "key": "CU",
+      "zh": "粗",
+      "en": [
+        "CU"
+      ],
+      "name": [
+        "金今今",
+        "Jin Jinjin"
       ]
     },
     {
@@ -175,17 +186,6 @@
       "name": [
         "江源祥",
         "Chiang Yuan Hsiang"
-      ]
-    },
-    {
-      "key": "ZOO",
-      "zh": "粗",
-      "en": [
-        "ZOO"
-      ],
-      "name": [
-        "金今今",
-        "Jin Jinjin"
       ]
     }
   ],
@@ -1806,7 +1806,7 @@
       ]
     },
     {
-      "text": "ZOO",
+      "text": "CU",
       "bounds": [
         640,
         1750.0,

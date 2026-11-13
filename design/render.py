@@ -29,12 +29,37 @@ BODY_FONTS.update({'JA01':('jpSerif','jp'),'JA02':('jpSerif','jpSerifBold'),'KO0
 BODY_FONTS.update({f'EN{i:02}':('latin','latinBold') for i in range(1,11)})
 TITLE_FONTS={'ZH01':'songBold','ZH02':'brush','ZH03':'qing','ZH04':'song','ZH05':'xiaowei','ZH06':'bold','ZH07':'wenkai','ZH08':'brush','ZH09':'song','ZH10':'wenkai'}
 PROJECT_LOGOS=json.loads((AS/'project-logos.json').read_text())
-@lru_cache(maxsize=32)
-def project_logo_data(name):
- im=Image.open(AS/'project-logos'/name).convert('RGBA');paper=Image.new('RGBA',im.size,'white');paper.alpha_composite(im);im=paper.convert('RGB')
- r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<235 else 0);box=mask.getbbox()
- if box:im=im.crop((max(0,box[0]-2),max(0,box[1]-2),min(im.width,box[2]+2),min(im.height,box[3]+2)))
- im.thumbnail((640,640),Image.Resampling.LANCZOS);out=io.BytesIO();im.save(out,format='PNG',optimize=True);return base64.b64encode(out.getvalue()).decode()
+@lru_cache(maxsize=48)
+def logo_data(name,project=True):
+ cached=AS/'logo-composites'/((('project-' if project else 'global-')+Path(name).stem)+'.png')
+ if cached.exists():return 'data:image/png;base64,'+base64.b64encode(cached.read_bytes()).decode()
+ path=AS/'project-logos'/name if project else next(AS.glob(name+'.*'))
+ im=Image.open(path).convert('RGBA');paper=Image.new('RGBA',im.size,'white');paper.alpha_composite(im);rgb=paper.convert('RGB')
+ r,g,b=rgb.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<235 else 0);box=mask.getbbox()
+ crop=(max(0,box[0]-2),max(0,box[1]-2),min(im.width,box[2]+2),min(im.height,box[3]+2)) if box else (0,0,*im.size)
+ im=im.crop(crop);original_w,original_h=im.size;im.thumbnail((640,640),Image.Resampling.LANCZOS)
+ out=io.BytesIO();im.save(out,format='PNG',optimize=True);data='data:image/png;base64,'+base64.b64encode(out.getvalue()).decode()
+ # Native SVG compositing removes the paper matte without repainting the supplied mark.
+ # Photographic and dark-backed pictorial marks retain their intrinsic white details.
+ keep_full=name in ['studio-erte.jpeg','waterfield.jpg','shallow-breathing.jpg','hexxyduxxybox.jpg','feminale.jpg','lalm']
+ keep=''
+ if name=='gravitational-body-20261111.jpg':
+  cx=(129.5-crop[0])/original_w;cy=(89-crop[1])/original_h;rx=60/original_w;ry=60/original_h
+  keep=f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}"/>'
+ elif name=='council':
+  x=(22-crop[0])/original_w;y=(121-crop[1])/original_h;w=120/original_w;h=63/original_h
+  keep=f'<rect x="{x}" y="{y}" width="{w}" height="{h}"/>'
+ elif name=='feichuan.jpg':
+  # Its purple panel is the mark; the surrounding white paper is not.
+  pass
+ w,h=im.size
+ filt='<filter id="paper-out" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%"><feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -16 -16 -16 0 45.6" result="matte"/><feComposite in="SourceGraphic" in2="matte" operator="in"/></filter>'
+ clip=f'<clipPath id="keep" clipPathUnits="objectBoundingBox">{keep}</clipPath>' if keep else ''
+ image=f'<image width="{w}" height="{h}" href="{data}"/>'
+ body=image if keep_full else f'<g filter="url(#paper-out)">{image}</g>'
+ if keep:body+=f'<g clip-path="url(#keep)">{image}</g>'
+ svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}"><defs>{filt}{clip}</defs>{body}</svg>'
+ return 'data:image/svg+xml;base64,'+base64.b64encode(svg.encode()).decode()
 # Caption fonts are OFL; all final text is outlined to remove runtime font substitutions.
 class Art:
  def __init__(self,bg,ink,id):
@@ -85,25 +110,16 @@ class Art:
    self.p.append(f'<use href="#{gid}" transform="translate({cur},0) scale({size/up}, {-size/up})"/>');cur+=gs[g].width*size/up
   if boxes:entry['bbox']=[min(b[0] for b in boxes),min(b[1] for b in boxes),max(b[2] for b in boxes),max(b[3] for b in boxes)]
   self.p.append('</g>');return cur
- def project_logos(self,key,x,y):
-  files=PROJECT_LOGOS[key];cell=32/len(files)
-  for i,name in enumerate(files):
-   self.rect(x+i*cell,y,cell,30,'#ffffff')
-   self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{x+i*cell+1}" y="{y+1}" width="{cell-2}" height="28" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{project_logo_data(name)}"/>')
  def project_logo_grid(self,x,y,w,h,cols):
   files=[(key,name) for key,names in PROJECT_LOGOS.items() for name in names]
   rows=math.ceil(len(files)/cols);cw=w/cols;ch=h/rows
-  self.rect(x,y,w,h,'#ffffff')
   for i,(key,name) in enumerate(files):
    xx=x+(i%cols)*cw;yy=y+(i//cols)*ch
-   self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{xx+8}" y="{yy+8}" width="{cw-16}" height="{ch-16}" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{project_logo_data(name)}"/>')
+   self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{xx+8}" y="{yy+8}" width="{cw-16}" height="{ch-16}" preserveAspectRatio="xMidYMid meet" href="{logo_data(name)}"/>')
  def logos(self,x,y,w=1080):
-  for i,(key,bw) in enumerate([('lalm',75),('cement',130),('museum',52),('council',120),('fund',130)]):
-   im=Image.open(next(AS.glob(key+'.*'))).convert('RGB');r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<205 else 0);box=mask.getbbox();im=im.crop(box)
-   import io
-   out=io.BytesIO();im.save(out,format='PNG');data=base64.b64encode(out.getvalue()).decode()
-   cell=w/5;self.rect(x+i*cell,y,cell-8,58,'#ffffff')
-   self.p.append(f'<image x="{x+i*cell+5}" y="{y+4}" width="{cell-18}" height="50" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{data}"/>')
+  for i,key in enumerate(['lalm','cement','museum','council','fund']):
+   cell=w/5
+   self.p.append(f'<image x="{x+i*cell+5}" y="{y+4}" width="{cell-18}" height="50" preserveAspectRatio="xMidYMid meet" href="{logo_data(key,False)}"/>')
  def save(self,id):
   svg='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="1800" viewBox="0 0 1200 1800"><defs>'+''.join(self.defs.values())+'</defs>'+''.join(self.p)+'</svg>'
   (R/'sources'/f'{id}.svg').write_text(svg);(R/'design'/f'{id}.text.json').write_text(json.dumps(self.log,ensure_ascii=False))

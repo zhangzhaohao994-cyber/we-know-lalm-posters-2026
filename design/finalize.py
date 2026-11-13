@@ -12,7 +12,7 @@ for r in items:
  if r['id'][:2] in locales:
   r['status']='全页本地化 · 待参与者／母语核对';r['verification']='全页正文、名单与主题按目标语言排版；原文身份保留，未作母语者审校'
   r['concept']=matrix[r['id']]['concept']
-m['revision']='9 — restore approved Chinese posters; large independent logo bands on foreign variants'
+m['revision']='10 — remove logo paper backgrounds on 26 variants; preserve approved ORIGINAL'
 m['notes']=['已确认版补录后仍在第一；日文、韩文、印地语六款随后，中英文版本依编号排列。','外文新稿主题与普通文案整页本地化；专名按原名读音拟写，新增译文待本人／母语核对。','中文十款使用不同真实字体家族与正文搭配；首页十语，桌面手机均单列。','印地语由用户指定，不据此推断参与者母语。','新稿PNG从矢量文字与图形直接导出；网点意象为原创生成图再设计，不是现场纪实照片。']
 m['downloads']=[{'label':'26款新稿高清PNG合集','url':'downloads/26-posters-print.zip'},{'label':'可编辑源文件与资料','url':'downloads/design-notes.zip'},{'label':'源文件配套字体','url':'downloads/fonts.zip'},{'label':'27张总览','url':'gallery-overview.jpg'}]
 (P/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
@@ -55,13 +55,28 @@ quality.write_text(base+'\n## 本轮成品验收\n\n26 张新稿均通过 7087×
 with zipfile.ZipFile(P/'downloads/26-posters-print.zip','w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
  for r in items:
   if r['id']!='ORIGINAL':z.write(P/r['full'],arcname=Path(r['full']).name)
+# Split only if the complete collection exceeds the repository's single-file budget.
+collection=P/'downloads/26-posters-print.zip'
+if collection.stat().st_size>=99_000_000:
+ collection.unlink()
+ packs=[('zh-posters-print.zip','中文10款高清PNG合集','ZH'),('foreign-posters-print.zip','外文16款高清PNG合集',None)]
+ for filename,label,prefix in packs:
+  with zipfile.ZipFile(P/'downloads'/filename,'w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
+   for r in items:
+    if r['id']!='ORIGINAL' and (r['id'].startswith('ZH') if prefix else not r['id'].startswith('ZH')):z.write(P/r['full'],arcname=Path(r['full']).name)
+ m['downloads']=[{'label':label,'url':'downloads/'+filename} for filename,label,_ in packs]+m['downloads'][1:]
+ (P/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
+else:
+ for old in ['zh-posters-print.zip','foreign-posters-print.zip']:(P/'downloads'/old).unlink(missing_ok=True)
 with zipfile.ZipFile(P/'downloads/design-notes.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
  for folder in ['sources','content','design','assets','qa']:
   for f in (P/folder).rglob('*'):
    if f.is_file() and '__pycache__' not in f.parts and 'Variable' not in f.name and not f.name.startswith('final-contact') and not (folder=='qa' and f.suffix.lower() in ['.png','.jpg','.jpeg','.svg']):z.write(f,arcname=str(f.relative_to(P)))
  for name in ['README.md','LICENSES.md','QUALITY.md','package.json','research/references.json','research/参考研究台账.md','manifest.json']:
   if (P/name).exists():z.write(P/name,arcname=name)
-with zipfile.ZipFile(P/'downloads/fonts.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
- for f in (P/'fonts').rglob('*'):
-  if f.is_file() and 'Variable' not in f.name:z.write(f,arcname=str(f.relative_to(P)))
+font_archive=P/'downloads/fonts.zip'
+if not font_archive.exists() or any(f.stat().st_mtime>font_archive.stat().st_mtime for f in (P/'fonts').rglob('*') if f.is_file()):
+ with zipfile.ZipFile(P/'downloads/fonts.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+  for f in (P/'fonts').rglob('*'):
+   if f.is_file() and 'Variable' not in f.name:z.write(f,arcname=str(f.relative_to(P)))
 print('Verified',len(items),'items;',sum(r['bytes'] for r in report),'PNG bytes')

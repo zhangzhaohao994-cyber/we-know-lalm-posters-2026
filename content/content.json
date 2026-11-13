@@ -493,7 +493,7 @@
       }
     ],
     "project_logos_scope": "Foreign-language variants only: EN, JA, KO, IN",
-    "chinese_logo_policy": "Restore approved Chinese and ORIGINAL files from before R8; no participant logos added"
+    "chinese_logo_policy": "Original GIF and PNG unchanged; Chinese variants retain their five existing logos, with white logo mattes removed"
   },
   "designable": [
     "layout",

@@ -159,7 +159,7 @@ for code,cfg in LANGS.items():
             row['evidence_url']='https://fliphtml5.com/riivd/ikzr/Yeonjeong_performance_2018-2019/5/'
         d['roster'].append(row)
     for r in d['roster']:
-        if r['project_zh']=='粗':r['project']='CU';r['project_original']='CU';r['sort_key']='CU'
+        if r['project_zh']=='粗ZOO':r['project']='CU';r['project_original']='CU';r['sort_key']='CU'
     d['roster'].sort(key=lambda r:r['sort_key'].casefold())
     for i,r in enumerate(d['roster']):r['order']=i+1
     result['languages'][code]=d

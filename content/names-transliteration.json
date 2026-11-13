@@ -291,7 +291,7 @@
     "target_language": "EN",
     "target_script": "en",
     "source_latin": "CU",
-    "source_zh": "粗",
+    "source_zh": "粗ZOO",
     "localized": "CU",
     "status": "user-confirmed official English name CU",
     "evidence_url": ""
@@ -632,7 +632,7 @@
     "target_language": "JA",
     "target_script": "ja",
     "source_latin": "CU",
-    "source_zh": "粗",
+    "source_zh": "粗ZOO",
     "localized": "CU",
     "status": "user-confirmed official English name CU",
     "evidence_url": ""
@@ -973,7 +973,7 @@
     "target_language": "KO",
     "target_script": "ko",
     "source_latin": "CU",
-    "source_zh": "粗",
+    "source_zh": "粗ZOO",
     "localized": "CU",
     "status": "user-confirmed official English name CU",
     "evidence_url": ""
@@ -1314,7 +1314,7 @@
     "target_language": "IN",
     "target_script": "hi-Deva",
     "source_latin": "CU",
-    "source_zh": "粗",
+    "source_zh": "粗ZOO",
     "localized": "CU",
     "status": "user-confirmed official English name CU",
     "evidence_url": ""

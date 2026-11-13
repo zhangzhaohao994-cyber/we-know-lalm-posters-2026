@@ -162,6 +162,7 @@ for code,cfg in LANGS.items():
         if r['project_zh']=='粗ZOO':r['project']='CU';r['project_original']='CU';r['sort_key']='CU'
     d['roster'].sort(key=lambda r:r['sort_key'].casefold())
     for i,r in enumerate(d['roster']):r['order']=i+1
+    d.update(primary_title='LALM',expanded_brand='Live Art Live Meet',primary_title_zh='现场艺术会议')
     result['languages'][code]=d
 
 (ROOT/'localizations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

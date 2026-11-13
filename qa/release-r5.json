@@ -1,8 +1,10 @@
 {
-  "commit": "2be1a50cdb1235776c36459379f894b471025269",
-  "url": "https://lalmposter.zhangzhaohao.com/",
-  "posters": 27,
-  "official_name": "CU",
+  "commit": "03e9d6ebea25f25176d4302b28d93179a6976acd",
+  "gallery": "https://lalmposter.zhangzhaohao.com/",
+  "all_posters": 27,
+  "organization_zh": "\u7c97ZOO",
+  "organization_en": "CU",
   "artist": "Jin Jinjin",
-  "netlify_articles_verified": 3
+  "article_variants": 3,
+  "netlify_verified": true
 }

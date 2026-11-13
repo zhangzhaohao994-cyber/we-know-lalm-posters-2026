@@ -134,9 +134,9 @@ def info(a,mode,paper,ink):
   a.rect(0,0,1200,660,paper);details(a,48,65,430,.86);roster(a,485,58,720,.87);a.logos(48,590,1104)
  elif mode=='left':
   a.rect(0,0,435,1800,paper);details(a,38,70,420,.86);roster(a,38,690,430,.85);a.logos(38,1570,360)
-  a.text('我们知道 / We Know',38,1715,19,'bold',width=360)
+  a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',38,1715,19,'bold',width=360)
  elif mode=='right':
-  a.rect(765,0,435,1800,paper);details(a,800,70,420,.86);roster(a,800,690,430,.85);a.logos(800,1570,360);a.text('我们知道 / We Know',800,1715,19,'bold',width=360)
+  a.rect(765,0,435,1800,paper);details(a,800,70,420,.86);roster(a,800,690,430,.85);a.logos(800,1570,360);a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',800,1715,19,'bold',width=360)
  elif mode=='middle':
   a.rect(0,610,1200,665,paper);details(a,48,661,430,.86);roster(a,485,651,720,.87);a.logos(48,1200,1104)
  elif mode=='split':
@@ -209,66 +209,64 @@ def art(id):
   a.rect(572,350,5,480,accent);a.text('我们知道',610,515,78,'wenkai',width=535);a.text('We Know',610,565,20,'serif')
   a.path('M577,830 l125,-55 l-125,15',accent)
  elif id=='EN01':
-  for txt,x,y,sz in [('WE',40,340,220),('KNOW',60,910,190),('WE',320,1450,120)]:a.text(txt,x,y,sz,'wide',ink,690)
+  for txt,x,y,sz in [('LALM',40,340,220),('LALM',60,910,190),('LALM',320,1450,120)]:a.text(txt,x,y,sz,'wide',ink,690)
   for x,y,X,Y in [(80,430,650,790),(130,990,400,1280),(80,430,400,1280)]:a.line(x,y,X,Y,ink,3)
   for x,y in [(80,430),(650,790),(400,1280)]:a.circle(x,y,17,ink)
-  a.text('我们知道',65,1680,32,'bold')
+  a.text('Live Art Live Meet',65,1595,38,'latin',width=680);a.text('现场艺术会议',65,1680,32,'bold')
  elif id=='EN02':
-  a.group('translate(505,105) scale(.65,1.95)');a.text('WE',0,380,400,'cond',ink,960);a.text('KNOW',0,760,400,'cond',ink,960);a.end();a.text('我们知道',500,1730,38,'bold')
+  a.group('translate(505,105) scale(.65,1.95)');a.text('LA',0,380,400,'cond',ink,960);a.text('LM',0,760,400,'cond',ink,960);a.end();a.text('Live Art Live Meet',500,1660,30,'latin',width=650);a.text('现场艺术会议',500,1730,38,'bold')
  elif id=='EN03':
-  dots(a,'hands.png',240,710,810,1000,ink);a.rect(0,1050,1200,215,accent);a.text('WE KNOW',40,1215,200,'cond',bg,1120);a.text('我们知道',60,1740,34,'bold')
+  dots(a,'hands.png',240,710,810,1000,ink);a.rect(0,1050,1200,215,accent);a.text('LALM',40,1215,200,'cond',bg,1120);a.text('Live Art Live Meet',60,1640,46,'latin',width=1060);a.text('现场艺术会议',60,1740,34,'bold')
  elif id=='EN04':
   a.path('M0,0 L1200,0 L1200,900 L800,1100 L200,950',accent)
   a.path('M800,0 L600,960 L800,1100 L1000,150',bg);a.path('M800,0 L750,1060 L800,1100 L1000,150',ink,opacity=.14)
-  a.text('WE',60,330,330,'wide',bg);a.text('KNOW',60,690,290,'cond',bg,1100);a.text('我们知道',65,1030,36,'bold',ink)
+  a.text('LA',60,330,330,'wide',bg);a.text('LM',60,690,290,'cond',bg,1100);a.text('Live Art Live Meet',230,850,36,'latin',bg,width=370);a.text('现场艺术会议',65,1030,36,'bold',ink)
  elif id=='EN05':
   for y in range(30,1770,40):a.circle(1190,y,5,accent)
-  a.text('WE',600,260,225,'serif',accent,550);a.text('KNOW',580,470,180,'serif',accent,570)
-  a.text('我们知道',620,540,30,'bold');a.rect(55,600,1090,8,accent)
+  a.text('LA',600,260,225,'serif',accent,550);a.text('LM',580,470,180,'serif',accent,570)
+  a.text('Live Art Live Meet',600,510,24,'latin',width=540);a.text('现场艺术会议',620,555,30,'bold');a.rect(55,600,1090,8,accent)
  elif id=='EN06':
   a.path('M470,0 L1200,0 L1200,1040 L480,1040 L480,1800 L0,1800 L0,700 L470,700',accent)
-  a.text('WE',550,400,320,'wide',bg,590);a.text('KNOW',55,1080,120,'wide',ink,420);a.text('我们知道',55,1140,32,'bold');a.line(540,475,1040,940,bg,10)
+  a.text('LA',550,400,320,'wide',bg,590);a.text('LM',55,1080,120,'wide',ink,420);a.text('Live Art Live Meet',550,940,30,'latin',bg,width=590);a.text('现场艺术会议',55,1140,32,'bold');a.line(540,475,1040,940,bg,10)
  elif id=='EN07':
   a.circle(600,480,330,ink);a.circle(600,480,205,bg);a.rect(530,60,140,880,bg);a.rect(530,390,140,180,ink)
-  a.text('WE KNOW',70,1080,150,'wide',ink,1060);a.text('我们知道',75,1115,25,'bold')
+  a.text('Live Art Live Meet',75,900,40,'latin',width=1060);a.text('LALM',70,1080,150,'wide',ink,1060);a.text('现场艺术会议',75,1115,25,'bold')
  elif id=='EN08':
   for dx,c in [(7,accent),(-7,ink)]:
-   a.text('WE',60+dx,1090,410,'wide',c);a.text('KNOW',60-dx,1570,320,'cond',c,1080)
-  a.text('我们知道',70,1740,40,'bold',ink)
+   a.text('LA',60+dx,1090,410,'wide',c);a.text('LM',60-dx,1570,320,'cond',c,1080)
+  a.text('Live Art Live Meet',70,1660,40,'latin',width=1080);a.text('现场艺术会议',70,1740,40,'bold',ink)
  elif id=='EN09':
   for x,y in [(450,60),(1150,60),(450,1740),(1150,1740)]:a.line(x,y,780,900,accent,3)
   a.path('M540,380 L1080,510 L1050,1420 L550,1510 Z',stroke=ink,sw=3)
-  a.group('translate(570,440) skewY(13)');a.text('WE',0,230,220,'serif',ink,470);a.text('KNOW',0,650,200,'serif',ink,460);a.end();a.text('我们知道',490,1690,30,'bold')
+  a.group('translate(570,440) skewY(13)');a.text('LA',0,230,220,'serif',ink,470);a.text('LM',0,650,200,'serif',ink,460);a.end();a.text('Live Art Live Meet',490,1620,34,'latin',width=660);a.text('现场艺术会议',490,1690,30,'bold')
  elif id=='EN10':
-  a.text('WE KNOW',55,380,220,'cond',accent,1090);a.text('我们知道',60,460,30,'bold',accent)
+  a.text('LALM',55,380,340,'cond',accent,1090);a.text('Live Art Live Meet',60,520,42,'latin',accent,width=1090);a.text('现场艺术会议',60,575,30,'bold',accent)
   for i,y in enumerate(range(1330,1750,35)):
    a.line(50,y,1150,y,accent,2);a.rect(180+(i*83)%750,y-9,130,18,accent)
  elif id=='KO01':
-  a.rect(0,0,1200,610,ink);a.text('우리는',50,252,260,'ko',bg,1090);a.text('알고 있다',50,535,260,'ko',bg,1090)
-  a.text('우리는',60,1485,180,'ko',ink,1080);a.text('알고 있다',60,1710,220,'ko',ink,1080);a.text('我们知道 / We Know',70,1760,22,'bold')
+  a.rect(0,0,1200,610,ink);a.text('LA',50,252,260,'wide',bg,1090);a.text('LM',50,535,260,'wide',bg,1090)
+  a.text('LALM',60,1630,300,'wide',ink,1080);a.text('Live Art Live Meet',60,1700,46,'latin',ink,1080);a.text('现场艺术会议',70,1760,22,'bold')
  elif id=='KO02':
   a.path('M90,1700 C970,1550 -50,790 1050,870 C700,1250 650,1600 1140,1730',stroke=accent,sw=7)
-  a.text('우리는',75,1080,240,'koSerif',ink,1030);a.text('알고 있다',75,1395,240,'koSerif',ink,1050);a.text('我们知道 / We Know',80,1730,24,'bold')
+  a.text('LALM',75,1100,300,'serif',ink,1050);a.text('Live Art Live Meet',75,1400,80,'serif',ink,1050);a.text('现场艺术会议',80,1730,24,'bold')
  elif id=='JA01':
-  a.rect(760,700,160,800,accent);a.rect(460,840,160,865,accent)
-  for i,ch in enumerate('私たちは'):a.text(ch,770,900+i*180,150,'jpv',ink)
-  for i,ch in enumerate('知っている'):a.text(ch,470,1025+i*160,145,'jpv',ink)
-  a.text('我们知道 / We Know',60,1740,28,'bold',ink,450)
+  a.rect(760,690,160,890,accent);a.rect(460,840,160,865,accent)
+  for i,ch in enumerate('LALM'):a.text(ch,770,900+i*180,150,'wide',ink)
+  a.group('translate(530,940) rotate(90)');a.text('Live Art Live Meet',0,0,52,'latin',ink,720);a.end()
+  a.text('现场艺术会议',60,1740,28,'bold',ink,450)
  elif id=='JA02':
   for i in range(8):a.rect(75+i*28,90+i*80,940-i*55,860-i*36,accent,opacity=.10)
-  for i in range(3):a.text('私たちは知っている',40+i*20,390+i*245,160,'jpSerif',ink if i==2 else accent,1100)
-  a.text('我们知道 / We Know',65,1070,30,'bold')
+  for i in range(3):a.text('LALM',40+i*20,390+i*245,300,'serif',ink if i==2 else accent,1100)
+  a.text('Live Art Live Meet',65,1010,46,'latin',ink,1070);a.text('现场艺术会议',65,1070,30,'bold')
  elif id=='IN01':
   for i in range(8):a.path(f'M30,{180+i*195} C630,{100+i*195} 100,{500+i*150} 720,{300+i*180}',stroke=accent,sw=5)
-  for word,x,y,sz in [('हम',55,490,400),('जानते',55,1000,360),('हैं',330,1490,430)]:
-   a.text(word,x,y,sz,'bold',ink,width=710-x)
-  a.text('我们知道 / We Know',65,1710,25,'bold')
+  a.text('LA',55,560,350,'wide',ink,655);a.text('LM',55,1120,350,'wide',ink,655)
+  a.text('Live Art Live Meet',55,1570,35,'latin',ink,650);a.text('现场艺术会议',65,1710,25,'bold')
  elif id=='IN02':
   for i in range(7):a.rect(65+i*8,70+i*6,1070-i*16,950-i*12,accent,opacity=.08)
-  for word,baseline,sz in [('हम जानते',490,270),('हैं',890,390)]:
-   sz=min(sz,sz*1030/shaped_width(word,sz));xx=(1200-shaped_width(word,sz))/2
-   for dx,dy,col in [(5,5,accent),(-4,-3,'#fffdf4'),(0,0,ink)]:a.text(word,xx+dx,baseline+dy,sz,'bold',col)
-  a.text('我们知道 / We Know',90,1040,30,'bold')
+  sz=min(360,360*1030/a.width('LALM',360,'wide'));xx=(1200-a.width('LALM',sz,'wide'))/2
+  for dx,dy,col in [(5,5,accent),(-4,-3,'#fffdf4'),(0,0,ink)]:a.text('LALM',xx+dx,670+dy,sz,'wide',col)
+  a.text('Live Art Live Meet',90,930,55,'latin',ink,1020);a.text('现场艺术会议',90,1040,30,'bold')
  info(a,mode,spec['paper'],bg if id in ['ZH03','EN10'] else ink)
  # Title identity is already in composition; body always preserves all locked data.
  a.save(id);return a

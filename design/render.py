@@ -34,7 +34,7 @@ def project_logo_data(name):
  im=Image.open(AS/'project-logos'/name).convert('RGBA');paper=Image.new('RGBA',im.size,'white');paper.alpha_composite(im);im=paper.convert('RGB')
  r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<235 else 0);box=mask.getbbox()
  if box:im=im.crop((max(0,box[0]-2),max(0,box[1]-2),min(im.width,box[2]+2),min(im.height,box[3]+2)))
- im.thumbnail((256,256),Image.Resampling.LANCZOS);out=io.BytesIO();im.save(out,format='PNG',optimize=True);return base64.b64encode(out.getvalue()).decode()
+ im.thumbnail((640,640),Image.Resampling.LANCZOS);out=io.BytesIO();im.save(out,format='PNG',optimize=True);return base64.b64encode(out.getvalue()).decode()
 # Caption fonts are OFL; all final text is outlined to remove runtime font substitutions.
 class Art:
  def __init__(self,bg,ink,id):
@@ -90,6 +90,13 @@ class Art:
   for i,name in enumerate(files):
    self.rect(x+i*cell,y,cell,30,'#ffffff')
    self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{x+i*cell+1}" y="{y+1}" width="{cell-2}" height="28" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{project_logo_data(name)}"/>')
+ def project_logo_grid(self,x,y,w,h,cols):
+  files=[(key,name) for key,names in PROJECT_LOGOS.items() for name in names]
+  rows=math.ceil(len(files)/cols);cw=w/cols;ch=h/rows
+  self.rect(x,y,w,h,'#ffffff')
+  for i,(key,name) in enumerate(files):
+   xx=x+(i%cols)*cw;yy=y+(i//cols)*ch
+   self.p.append(f'<image data-institution="{html.escape(key,quote=True)}" x="{xx+8}" y="{yy+8}" width="{cw-16}" height="{ch-16}" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{project_logo_data(name)}"/>')
  def logos(self,x,y,w=1080):
   for i,(key,bw) in enumerate([('lalm',75),('cement',130),('museum',52),('council',120),('fund',130)]):
    im=Image.open(next(AS.glob(key+'.*'))).convert('RGB');r,g,b=im.split();mask=ImageChops.darker(ImageChops.darker(r,g),b).point(lambda z:255 if z<205 else 0);box=mask.getbbox();im=im.crop(box)
@@ -124,40 +131,49 @@ def roster(a,x,y,w=610,scale=1,columns=False):
   a.line(0,23,w,23,a.ink,.7)
   for i,r in enumerate(loc['roster']):
    yy=62+i*(39*13/14)
-   a.project_logos(ROWS[i]['key'],0,yy-14);a.text(r['project'],40,yy,19,'bold',width=cut-55);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
+   a.text(r['project'],0,yy,19,'bold',width=cut-15);a.text(r['name'],cut,yy,18,'bold',width=w-cut)
    # Original identities are subordinate anchors, never untranslated instructions.
    if a.lang=='EN':
-    a.text(r['project_zh'],40,yy+16,11,'reg',width=cut-55);a.text(r['name_zh'],cut,yy+16,11,'reg',width=w-cut)
+    a.text(r['project_zh'],0,yy+16,11,'reg',width=cut-15);a.text(r['name_zh'],cut,yy+16,11,'reg',width=w-cut)
    else:
-    a.text(r['project_original'],40,yy+16,11,'latin',width=cut-55);a.text(r['name_original'],cut,yy+16,11,'latin',width=w-cut)
+    a.text(r['project_original'],0,yy+16,11,'latin',width=cut-15);a.text(r['name_original'],cut,yy+16,11,'latin',width=w-cut)
  else:
   a.text('空间／项目',0,0,20,'bold');a.text('参会者',cut,0,20,'bold')
   a.text('Space / Project',0,24,12,'latin');a.text('Attendees',cut,24,12,'latin')
   for i,r in enumerate(ROWS):
    yy=62+i*(39*13/14)
-   a.project_logos(r['key'],0,yy-14);a.text(r['zh'],40,yy,18,'bold',width=cut-55);a.text(r['en'][0],40,yy+16,12,width=cut-55)
+   a.text(r['zh'],0,yy,18,'bold',width=cut-15);a.text(r['en'][0],0,yy+16,12,width=cut-15)
    a.text(r['name'][0],cut,yy,17,'bold',width=w-cut);a.text(r['name'][1],cut,yy+16,12,width=w-cut)
  a.end()
  a.module=None
 def info(a,mode,paper,ink):
  old=a.ink;a.ink=ink;a.in_info=True
+ foreign=a.lang!='ZH'
  if mode=='bottom':
   a.rect(0,1130,1200,670,paper);details(a,48,1180,500,0.83);roster(a,500,1170,720,.90);a.logos(48,1710,1104)
+  if foreign:a.project_logo_grid(48,940,1104,168,8)
  elif mode=='top':
   a.rect(0,0,1200,660,paper);details(a,48,65,430,.86);roster(a,485,58,720,.87);a.logos(48,590,1104)
+  if foreign:a.rect(0,660,1200,190,paper);a.project_logo_grid(48,672,1104,160,8)
  elif mode=='left':
-  a.rect(0,0,435,1800,paper);details(a,38,70,420,.86);roster(a,38,690,430,.85);a.logos(38,1570,360)
-  a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',38,1715,19,'bold',width=360)
+  a.rect(0,0,435,1800,paper);details(a,38,70,420,.86);roster(a,38,690,430,.85);a.logos(38,1710 if foreign else 1570,360)
+  a.project_logo_grid(38,1230,360,420,4) if foreign else None
+  a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',38,1788 if foreign else 1715,15 if foreign else 19,'bold',width=360)
  elif mode=='right':
-  a.rect(765,0,435,1800,paper);details(a,800,70,420,.86);roster(a,800,690,430,.85);a.logos(800,1570,360);a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',800,1715,19,'bold',width=360)
+  a.rect(765,0,435,1800,paper);details(a,800,70,420,.86);roster(a,800,690,430,.85);a.logos(800,1710 if foreign else 1570,360)
+  if foreign:a.project_logo_grid(800,1230,360,420,4)
+  a.text('我们知道 / We Know' if a.lang=='ZH' else '现场艺术会议 / LALM',800,1788 if foreign else 1715,15 if foreign else 19,'bold',width=360)
  elif mode=='middle':
   a.rect(0,610,1200,665,paper);details(a,48,661,430,.86);roster(a,485,651,720,.87);a.logos(48,1200,1104)
+  if foreign:a.rect(0,1275,1200,185,paper);a.project_logo_grid(48,1290,1104,150,8)
  elif mode=='split':
   a.rect(0,0,470,700,paper);details(a,45,65,430,.90)
   a.rect(480,1040,720,760,paper);roster(a,515,1090,690,.93);a.logos(515,1700,640)
+  if foreign:a.rect(480,550,720,360,paper);a.project_logo_grid(520,570,640,320,4)
  elif mode=='receipt':
   details(a,55,70,620,.70);roster(a,55,650,760,1.43);a.logos(55,1700,1090)
   for i in range(16):a.line(55,715+i*(55.77*14/15),1145,715+i*(55.77*14/15),ink,.5)
+  if foreign:a.project_logo_grid(55,1510,1090,160,8)
  elif mode=='windows':
   a.rect(535,0,665,650,paper);roster(a,575,65,665,.88)
   a.rect(0,1120,530,680,paper);details(a,50,1180,500,.85);a.logos(570,1690,580)
@@ -183,6 +199,8 @@ def dots(a,file,x,y,w,h,c):
 
 def art(id):
  spec=SPECS[id];bg,ink,accent=spec['colors'];a=Art(bg,ink,id);lang=id[:2];mode=spec['layout']
+ main_scaled=lang!='ZH' and mode in ['bottom','top']
+ if main_scaled:a.group('translate(108,0) scale(.82)' if mode=='bottom' else 'translate(126,329) scale(.79)')
  if id=='ZH01':
   a.rect(0,0,1200,1100,ink);a.text('我们',-28,510,560,'songBold',bg,1250);a.text('知道',-28,1040,560,'songBold',bg,1250)
   a.path('M0,435 L1200,335 L1200,390 L0,490',bg);a.text('We Know',65,1095,36,'wide',bg)
@@ -254,11 +272,11 @@ def art(id):
   a.group('translate(570,440) skewY(13)');a.text('LA',0,230,220,'serif',ink,470);a.text('LM',0,650,200,'serif',ink,460);a.end();a.text('Live Art Live Meet',490,1620,34,'latin',width=660);a.text('现场艺术会议',490,1690,30,'bold')
  elif id=='EN10':
   a.text('LALM',55,380,340,'cond',accent,1090);a.text('Live Art Live Meet',60,520,42,'latin',accent,width=1090);a.text('现场艺术会议',60,575,30,'bold',accent)
-  for i,y in enumerate(range(1330,1750,35)):
+  for i,y in enumerate(range(1470,1770,27)):
    a.line(50,y,1150,y,accent,2);a.rect(180+(i*83)%750,y-9,130,18,accent)
  elif id=='KO01':
   a.rect(0,0,1200,610,ink);a.text('LA',50,252,260,'wide',bg,1090);a.text('LM',50,535,260,'wide',bg,1090)
-  a.text('LALM',60,1630,300,'wide',ink,1080);a.text('Live Art Live Meet',60,1700,46,'latin',ink,1080);a.text('现场艺术会议',70,1760,22,'bold')
+  a.text('LALM',60,1630,200,'wide',ink,1080);a.text('Live Art Live Meet',60,1700,46,'latin',ink,1080);a.text('现场艺术会议',70,1760,22,'bold')
  elif id=='KO02':
   a.path('M90,1700 C970,1550 -50,790 1050,870 C700,1250 650,1600 1140,1730',stroke=accent,sw=7)
   a.text('LALM',75,1100,300,'serif',ink,1050);a.text('Live Art Live Meet',75,1400,80,'serif',ink,1050);a.text('现场艺术会议',80,1730,24,'bold')
@@ -280,6 +298,7 @@ def art(id):
   sz=min(360,360*1030/a.width('LALM',360,'wide'));xx=(1200-a.width('LALM',sz,'wide'))/2
   for dx,dy,col in [(5,5,accent),(-4,-3,'#fffdf4'),(0,0,ink)]:a.text('LALM',xx+dx,670+dy,sz,'wide',col)
   a.text('Live Art Live Meet',90,930,55,'latin',ink,1020);a.text('现场艺术会议',90,1040,30,'bold')
+ if main_scaled:a.end()
  info(a,mode,spec['paper'],bg if id in ['ZH03','EN10'] else ink)
  # Title identity is already in composition; body always preserves all locked data.
  a.save(id);return a

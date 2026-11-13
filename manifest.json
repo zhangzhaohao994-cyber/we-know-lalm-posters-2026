@@ -834,9 +834,13 @@
       "url": "downloads/design-notes.zip"
     },
     {
+      "label": "源文件配套字体",
+      "url": "downloads/fonts.zip"
+    },
+    {
       "label": "27张总览",
       "url": "gallery-overview.jpg"
     }
   ],
-  "revision": "8 — all supplied institutional logos placed beside project names"
+  "revision": "9 — restore approved Chinese posters; large independent logo bands on foreign variants"
 }

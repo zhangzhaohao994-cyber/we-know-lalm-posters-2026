@@ -1,0 +1,134 @@
+{
+  "Chinese_original_files_unchanged": 42,
+  "foreign": [
+    {
+      "id": "EN01",
+      "logos": 16,
+      "minimum_logo_cell": [
+        74.0,
+        89.0
+      ]
+    },
+    {
+      "id": "EN02",
+      "logos": 16,
+      "minimum_logo_cell": [
+        74.0,
+        89.0
+      ]
+    },
+    {
+      "id": "EN03",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        64.0
+      ]
+    },
+    {
+      "id": "EN04",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        68.0
+      ]
+    },
+    {
+      "id": "EN05",
+      "logos": 16,
+      "minimum_logo_cell": [
+        120.25,
+        64.0
+      ]
+    },
+    {
+      "id": "EN06",
+      "logos": 16,
+      "minimum_logo_cell": [
+        144.0,
+        64.0
+      ]
+    },
+    {
+      "id": "EN07",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        68.0
+      ]
+    },
+    {
+      "id": "EN08",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        64.0
+      ]
+    },
+    {
+      "id": "EN09",
+      "logos": 16,
+      "minimum_logo_cell": [
+        74.0,
+        89.0
+      ]
+    },
+    {
+      "id": "EN10",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        59.0
+      ]
+    },
+    {
+      "id": "IN01",
+      "logos": 16,
+      "minimum_logo_cell": [
+        74.0,
+        89.0
+      ]
+    },
+    {
+      "id": "IN02",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        68.0
+      ]
+    },
+    {
+      "id": "JA01",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        64.0
+      ]
+    },
+    {
+      "id": "JA02",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        68.0
+      ]
+    },
+    {
+      "id": "KO01",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        59.0
+      ]
+    },
+    {
+      "id": "KO02",
+      "logos": 16,
+      "minimum_logo_cell": [
+        122.0,
+        64.0
+      ]
+    }
+  ],
+  "visual_review": "All 16 foreign layouts reviewed; separate logo bands and matrices"
+}

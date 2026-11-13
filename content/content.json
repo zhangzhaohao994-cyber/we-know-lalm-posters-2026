@@ -491,7 +491,9 @@
         "role": "participating_project",
         "required": true
       }
-    ]
+    ],
+    "project_logos_scope": "Foreign-language variants only: EN, JA, KO, IN",
+    "chinese_logo_policy": "Restore approved Chinese and ORIGINAL files from before R8; no participant logos added"
   },
   "designable": [
     "layout",
